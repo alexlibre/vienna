@@ -1,30 +1,51 @@
+<script lang="ts">
+import vHeader from "@/components/global/VHeader.vue";
+
+import { ref, onMounted, computed } from "vue";
+
+export default {
+  components: {
+    vHeader,
+  },
+  setup() {
+    const data = ref({
+      isMobile: false,
+    });
+
+    const mobile = computed(() => screen.width <= 760);
+
+    onMounted(() => {
+      data.value.isMobile = screen.width <= 760;
+    });
+
+    return {
+      data,
+      mobile,
+    };
+  },
+};
+</script>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <v-header>
+    <nav class="nav">
+      <router-link to="/">Home</router-link>
+      <router-link to="/components">Components</router-link>
+    </nav>
+  </v-header>
+  <main class="main">
+    <router-view />
+  </main>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.main {
+  padding: 24px;
 }
 </style>
