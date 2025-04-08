@@ -1,51 +1,23 @@
-<script lang="ts">
-import vHeader from "@/components/global/VHeader.vue";
+<script setup lang="ts">
+import { Toaster } from '@/components/ui/sonner'
+import { RouterView } from 'vue-router'
 
-import { ref, onMounted, computed } from "vue";
+import { computed, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 
-export default {
-  components: {
-    vHeader,
-  },
-  setup() {
-    const data = ref({
-      isMobile: false,
-    });
+const route = useRoute()
 
-    const mobile = computed(() => screen.width <= 760);
+const layout = computed(() => {
+  const layout = route?.meta?.layout
+  return layout ? `${layout}Layout` : 'DefaultLayout'
+})
 
-    onMounted(() => {
-      data.value.isMobile = screen.width <= 760;
-    });
-
-    return {
-      data,
-      mobile,
-    };
-  },
-};
+onMounted(async () => { })
 </script>
 
 <template>
-  <v-header>
-    <nav class="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/components">Components</router-link>
-    </nav>
-  </v-header>
-  <main class="main">
+  <component :is="layout">
     <router-view />
-  </main>
+  </component>
+  <Toaster />
 </template>
-
-<style lang="scss">
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.main {
-  padding: 24px;
-}
-</style>
