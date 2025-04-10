@@ -1,0 +1,210 @@
+// MEDIA
+@mixin phone-s {
+  @media (max-width: 374px) {
+    @content;
+  }
+}
+
+@mixin phone($only: false) {
+  @if $only {
+    @media (min-width: 375px) and (max-width: 639px) {
+      @content;
+    }
+  } @else {
+    @media (max-width: 639px) {
+      @content;
+    }
+  }
+}
+
+@mixin tablet($only: false) {
+  @if $only {
+    @media (min-width: 640px) and (max-width: 1023px) {
+      @content;
+    }
+  } @else {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  }
+}
+
+@mixin laptop($only: false) {
+  @if $only {
+    @media (min-width: 1024px) and (max-width: 1279px) {
+      @content;
+    }
+  } @else {
+    @media (max-width: 1279px) {
+      @content;
+    }
+  }
+}
+
+@mixin desktop($only: false) {
+  @if $only {
+    @media (min-width: 1280px) and (max-width: 1535px) {
+      @content;
+    }
+  } @else {
+    @media (max-width: 1535px) {
+      @content;
+    }
+  }
+}
+
+@mixin desktop-l($only: false) {
+  @if $only {
+    @media (min-width: 1536px) and (max-width: 1800px) {
+      @content;
+    }
+  } @else {
+    @media (max-width: 1800px) {
+      @content;
+    }
+  }
+}
+
+@mixin media($min-width: null, $max-width: null) {
+  @if $min-width {
+    @media (min-width: $min-width) {
+      @content;
+    }
+  } @else if $max-width {
+    @media (max-width: $max-width) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+      @content;
+    }
+  }
+}
+
+$container-width: 1520;
+
+@mixin container {
+  @media (max-width: $container-width + "px") {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (min-width: 1024px) {
+    &:not([disabled]):hover {
+      @content;
+    }
+  }
+}
+
+// OBJECT FIT
+@mixin object-fit($fit: fill, $position: null) {
+  -o-object-fit: $fit;
+  object-fit: $fit;
+  @if $position {
+    -o-object-position: $position;
+    object-position: $position;
+    font-family: "object-fit: #{$fit}; object-position: #{$position}";
+  } @else {
+    font-family: "object-fit: #{$fit}";
+  }
+}
+
+// ABSOLUTE FIT
+@mixin absolute-fit($fit: fill, $position: null) {
+  @include object-fit($fit, $position);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// VISUALLY HIDDEN
+@mixin visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+// FULL WIDTH CONTAINER
+@mixin full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+// ABSOLUTE FILL
+@mixin absolute-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+// GPU
+@mixin gpu($change: transform) {
+  transform: translateZ(0);
+  will-change: $change;
+  backface-visibility: hidden;
+}
+
+// FLEX CENTER
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ABSOLUTE CENTER
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// ABSOLUTE COVER
+@mixin absolute-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// LAZY LOADED
+@mixin lazy-loaded {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+
+  &._is-loaded {
+    opacity: 1;
+  }
+}
+
+// LAZY SWIPER LOADED
+@mixin swiper-lazy-loaded {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+
+  &.swiper-lazy-loaded {
+    opacity: 1;
+  }
+}
+
+// YANDEX MAP FILTER
+@mixin ymaps-filter {
+  [class*="-ground-pane"] {
+    position: relative;
+    @content;
+  }
+}
