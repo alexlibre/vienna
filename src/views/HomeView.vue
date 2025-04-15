@@ -1,13 +1,8 @@
 <template>
-  <div>
-    Home
+  <div class="flex items-center justify-center">
   </div>
 </template>
 
 <script setup lang="ts">
 
 </script>
-
-<style lang="scss" scoped>
-@include flex-center();
-</style>
