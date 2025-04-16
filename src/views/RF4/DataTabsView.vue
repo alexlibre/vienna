@@ -6,10 +6,10 @@
             <TabsTrigger value="spinreels">
                 БК
             </TabsTrigger>
-            <!-- <TabsTrigger value="feeders">
+            <TabsTrigger value="feeders">
                 ДУ
             </TabsTrigger>
-            <TabsTrigger value="spinnings">
+            <!-- <TabsTrigger value="spinnings">
                 СУ
             </TabsTrigger> -->
         </TabsList>
@@ -35,15 +35,15 @@ import LoadingComponent from '@/components/base/LoadingComponent.vue';
 
 const asyncComponents = {
     spinreels: defineAsyncComponent({
-        loader: () => import('@/components/data/DataTable.vue'),
+        loader: () => import('@/components/data/DataTableSpinReels.vue'),
         loadingComponent: LoadingComponent,
     }),
     feeders: defineAsyncComponent({
-        loader: () => import('@/components/data/DataTable.vue'),
+        loader: () => import('@/components/data/DataTableFeeders.vue'),
         loadingComponent: LoadingComponent,
     }),
     spinnings: defineAsyncComponent({
-        loader: () => import('@/components/data/DataTable.vue'),
+        loader: () => import('@/components/data/DataTableSpinReels.vue'),
         loadingComponent: LoadingComponent,
     })
 }

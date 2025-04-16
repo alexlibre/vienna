@@ -57,12 +57,12 @@
                 )
               }">
               <div :class="cn(
-                'mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary',
+                'mr-2 flex rounded-[4px] items-center justify-center border border-primary',
                 checkSelected(option.value)
-                  ? 'bg-brand-foreground text-brand border-brand-foreground'
+                  ? 'bg-red-500 text-white border-red-500'
                   : 'opacity-50 [&_svg]:invisible',
               )">
-                <CheckIcon :class="cn('h-4 w-4')" />
+                <CheckIcon :class="cn('size-3.5 text-white')" />
               </div>
               <component :is="option.icon"
                 v-if="option.icon"
