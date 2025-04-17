@@ -1,26 +1,38 @@
 <template>
     <TabsContent value="spinreels"
         class="relative">
-        <div class="space-y-2 py-4 sticky top-8 z-10 bg-primary-foreground">
-            <div class="flex gap-4 items-center">
+        <div class="space-y-2 py-4 sticky top-8 z-10 bg-primary-foreground/20 backdrop-blur-sm">
+            <div class="flex gap-4 h-9 items-center">
                 <DataTableFacetedFilter v-if="table.getColumn('size')"
                     :column="table.getColumn('size')"
                     title="Размер"
                     :options="sizes" />
+                <Separator orientation="vertical"
+                    class="mx-2 h-4" />
                 <DataTableFacetedFilter v-if="table.getColumn('brand')"
                     :column="table.getColumn('brand')"
                     title="Бренд"
                     :options="brands" />
+                <Separator orientation="vertical"
+                    class="mx-2 h-4" />
                 <SliderInput :range="frictionRange"
                     label="Фрикцион"
                     v-model="frictionModel"
                     @update:model-value="table.getColumn('friction')?.setFilterValue($event)"
                     :step="0.1" />
+                <Separator orientation="vertical"
+                    class="mx-2 h-4" />
                 <SliderInput :range="mechRange"
                     label="Механизм"
                     v-model="mechModel"
                     @update:model-value="table.getColumn('mech')?.setFilterValue($event)"
                     :step="0.1" />
+            </div>
+            <div class="flex justify-between">
+                <Input class="max-w-sm bg-primary-foreground"
+                    placeholder="Поиск по названию"
+                    :model-value="table.getColumn('name')?.getFilterValue() as string"
+                    @update:model-value=" table.getColumn('name')?.setFilterValue($event)" />
                 <DropdownMenu>
                     <DropdownMenuTrigger as-child>
                         <Button variant="outline"
@@ -42,10 +54,6 @@
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
-            <Input class="max-w-sm"
-                placeholder="Поиск по названию"
-                :model-value="table.getColumn('name')?.getFilterValue() as string"
-                @update:model-value=" table.getColumn('name')?.setFilterValue($event)" />
         </div>
 
         <div class="relative">
@@ -160,6 +168,8 @@ import {
     SelectContent,
     SelectItem
 } from "@/components/ui/select"
+import { Separator } from '@/components/ui/separator'
+// import { Switch } from '@/components/ui/switch'
 import {
     Table,
     TableBody,
@@ -248,7 +258,6 @@ const mechModel = ref([])
 const inRange = (x: number, arr: number[]) => {
     return ((x - arr[0]) * (x - arr[1]) <= 0);
 }
-
 
 const columns: ColumnDef<IReel>[] = [
     {
@@ -351,7 +360,11 @@ const columns: ColumnDef<IReel>[] = [
     },
     {
         accessorKey: 'sealed',
-        header: 'Защита',
+        header: () => {
+            return h('p', {
+                class: 'text-sm font-medium',
+            }, 'Защита')
+        },
         cell: ({ row }) => h('div', { class: 'flex justify-center' }, row.getValue('sealed') ? h(Droplet, { class: 'size-4 text-blue-500' }) : h(DropletOff, { class: 'size-4 text-red-500' })),
     },
     {

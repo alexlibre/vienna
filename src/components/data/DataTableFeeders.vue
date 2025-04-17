@@ -1,11 +1,14 @@
 <template>
-    <TabsContent value="feeders">
-        <div class="space-y-2 py-4">
-            <div class="flex gap-4 items-center">
+    <TabsContent value="feeders"
+        class="relative">
+        <div class="space-y-2 py-4 sticky top-8 z-10 bg-primary-foreground">
+            <div class="flex gap-4 h-9 items-center">
                 <DataTableFacetedFilter v-if="table.getColumn('type')"
                     :column="table.getColumn('type')"
                     title="Тип"
                     :options="types" />
+                <Separator orientation="vertical"
+                    class="mx-2 h-4" />
                 <DataTableFacetedFilter v-if="table.getColumn('actions')"
                     :column="table.getColumn('actions')"
                     title="Строй"
@@ -21,6 +24,13 @@
                     v-model="mechModel"
                     @update:model-value="table.getColumn('mech')?.setFilterValue($event)"
                     :step="0.1" /> -->
+
+            </div>
+            <div class="flex justify-between">
+                <Input class="max-w-sm bg-primary-foreground"
+                    placeholder="Поиск по названию"
+                    :model-value="table.getColumn('name')?.getFilterValue() as string"
+                    @update:model-value=" table.getColumn('name')?.setFilterValue($event)" />
                 <DropdownMenu>
                     <DropdownMenuTrigger as-child>
                         <Button variant="outline"
@@ -42,10 +52,6 @@
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
-            <Input class="max-w-sm"
-                placeholder="Поиск по названию"
-                :model-value="table.getColumn('name')?.getFilterValue() as string"
-                @update:model-value=" table.getColumn('name')?.setFilterValue($event)" />
         </div>
 
         <div class="relative">
@@ -160,6 +166,7 @@ import {
     SelectContent,
     SelectItem
 } from "@/components/ui/select"
+import { Separator } from '@/components/ui/separator'
 import {
     Table,
     TableBody,

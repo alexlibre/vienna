@@ -3,7 +3,8 @@
     <PopoverTrigger as-child>
       <Button variant="outline"
         size="sm"
-        class="h-8 border-dashed">
+        class="h-8 border-dashed cursor-pointer"
+        :class="{ 'border-red-500': selectedValues.size > 0 }">
         <PlusCircleIcon class="mr-2 h-4 w-4" />
         {{ title }}
         <template v-if="selectedValues.size > 0">
