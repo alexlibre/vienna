@@ -254,6 +254,7 @@ const columns: ColumnDef<IFeeder>[] = [
     {
         id: 'select',
         header: ({ table }) => h(Checkbox, {
+            // @ts-ignore
             'modelValue': table.getIsAllPageRowsSelected() || (table.getIsSomePageRowsSelected() && 'indeterminate'),
             'onUpdate:modelValue': value => table.toggleAllPageRowsSelected(!!value),
             'ariaLabel': 'Select all',

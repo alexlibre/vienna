@@ -4,6 +4,11 @@ import tailwindcss from "@tailwindcss/vite";
 import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
+  base: "/vienna/",
+  build: {
+    outDir: "dist", // Явно указываем папку для сборки
+    emptyOutDir: true, // Очищать папку перед сборкой
+  },
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {
