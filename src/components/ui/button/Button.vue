@@ -8,6 +8,7 @@ interface Props extends PrimitiveProps {
   variant?: ButtonVariants['variant']
   size?: ButtonVariants['size']
   class?: HTMLAttributes['class']
+  disabled?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -16,12 +17,10 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <Primitive
-    data-slot="button"
+  <Primitive data-slot="button"
     :as="as"
     :as-child="asChild"
-    :class="cn(buttonVariants({ variant, size }), props.class)"
-  >
+    :class="cn(buttonVariants({ variant, size }), { 'cursor-pointer': !props.disabled }, props.class)">
     <slot />
   </Primitive>
 </template>

@@ -2,7 +2,7 @@
     <Tabs :default-value="componentToRender"
         v-model:model-value="componentToRender"
         class="w-full p-4 relative">
-        <TabsList class="grid w-full px-4 grid-cols-3 sticky top-0 z-10">
+        <TabsList class="grid w-full gap-1 px-4 grid-cols-3 sticky top-0 z-10">
             <TabsTrigger value="spinreels"
                 class="bg-primary-foreground">
                 БК
