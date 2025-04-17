@@ -9,9 +9,7 @@ const routes: Array<RouteRecordRaw> = [
   },
 ];
 
-const router = createRouter({
+export default createRouter({
   history: createWebHistory(),
   routes,
 });
-
-export default router;
