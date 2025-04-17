@@ -11,6 +11,7 @@
             <PopoverContent class="w-[300px] p-0"
                 :style="comboboxPosition"
                 @pointer-down-outside="closeCombobox">
+                <!-- @ts-ignore -->
                 <Combobox @update:model-value="insertMention">
                     <ComboboxInput v-model="mentionQuery"
                         class="w-full"
@@ -103,7 +104,7 @@ const checkForMention = (cursorPos: number) => {
     showCombobox.value = true
 }
 
-const insertMention = (user: User) => {
+const insertMention = (user: User | any): any => {
     const mention = `@${user.username}`
     const newText =
         text.value.slice(0, mentionPosition.value) +
