@@ -49,7 +49,7 @@
         </div>
 
         <div class="relative">
-            <ScrollArea class="w-full h-[70dvh] rounded-md border">
+            <ScrollArea class="w-full h-full rounded-md border">
                 <div>
                     <Table class="text-xs">
                         <TableHeader>

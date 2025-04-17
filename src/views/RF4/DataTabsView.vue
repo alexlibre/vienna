@@ -1,12 +1,14 @@
 <template>
     <Tabs :default-value="componentToRender"
         v-model:model-value="componentToRender"
-        class="w-full h-dvh p-4">
-        <TabsList class="grid w-full grid-cols-3">
-            <TabsTrigger value="spinreels">
+        class="w-full p-4 relative">
+        <TabsList class="grid w-full grid-cols-3 sticky top-0 z-10">
+            <TabsTrigger value="spinreels"
+                class="bg-primary-foreground">
                 БК
             </TabsTrigger>
-            <TabsTrigger value="feeders">
+            <TabsTrigger value="feeders"
+                class="bg-primary-foreground">
                 ДУ
             </TabsTrigger>
             <!-- <TabsTrigger value="spinnings">

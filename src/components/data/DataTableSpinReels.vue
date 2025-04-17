@@ -1,6 +1,7 @@
 <template>
-    <TabsContent value="spinreels">
-        <div class="space-y-2 py-4">
+    <TabsContent value="spinreels"
+        class="relative">
+        <div class="space-y-2 py-4 sticky top-8 z-10 bg-primary-foreground">
             <div class="flex gap-4 items-center">
                 <DataTableFacetedFilter v-if="table.getColumn('size')"
                     :column="table.getColumn('size')"
@@ -48,7 +49,7 @@
         </div>
 
         <div class="relative">
-            <ScrollArea class="w-full h-[70dvh] rounded-md border">
+            <ScrollArea class="w-full h-full rounded-md border">
                 <div>
                     <Table class="text-xs">
                         <TableHeader>
