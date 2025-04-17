@@ -1,5 +1,6 @@
 <template>
-  <div class="p-4">
+  <div>
+    <BaseHeader />
     <router-view />
     <div class="flex justify-center text-center">
       <a href="https://github.com/alexlibre">Alexlibre - GitHub</a>
@@ -8,5 +9,5 @@
 </template>
 
 <script setup lang="ts">
-
+import BaseHeader from './components/base/BaseHeader.vue';
 </script>

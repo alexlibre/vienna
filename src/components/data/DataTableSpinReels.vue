@@ -1,8 +1,8 @@
 <template>
     <TabsContent value="spinreels"
         class="relative">
-        <div class="space-y-2 py-4 sticky top-8 z-10 bg-primary-foreground/20 backdrop-blur-sm">
-            <div class="flex gap-4 h-9 items-center">
+        <div class="space-y-2 py-4 sticky top-8 z-10 bg-primary-foreground">
+            <div class="flex gap-4 px-4 h-9 items-center">
                 <DataTableFacetedFilter v-if="table.getColumn('size')"
                     :column="table.getColumn('size')"
                     title="Размер"
@@ -28,7 +28,7 @@
                     @update:model-value="table.getColumn('mech')?.setFilterValue($event)"
                     :step="0.1" />
             </div>
-            <div class="flex justify-between">
+            <div class="flex justify-between px-4">
                 <Input class="max-w-sm bg-primary-foreground"
                     placeholder="Поиск по названию"
                     :model-value="table.getColumn('name')?.getFilterValue() as string"
@@ -56,7 +56,7 @@
             </div>
         </div>
 
-        <div class="relative">
+        <div class="relative px-4">
             <ScrollArea class="w-full h-full rounded-md border">
                 <div>
                     <Table class="text-xs">
