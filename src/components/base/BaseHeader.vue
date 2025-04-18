@@ -1,7 +1,9 @@
 <template>
-    <div class="flex p-4">
-        <Button class="ml-auto"
-            variant="ghost"
+    <div class="flex p-4 justify-end gap-8 items-center">
+        <a class="hover:text-red-500 transition-colors text-xs"
+            href="https://github.com/alexlibre"
+            target="_blank">GitHub</a>
+        <Button variant="ghost"
             @click="toggleMode">
             <Moon class="size-5"
                 v-if="mode === 'light'" />
