@@ -15,6 +15,13 @@
                     :options="actions" />
                 <Separator orientation="vertical"
                     class="mx-2 h-4" />
+                <SliderInput :range="strengthRange"
+                    label="Прочность"
+                    v-model="strengthModel"
+                    @update:model-value="table.getColumn('strength')?.setFilterValue($event)"
+                    :step="0.1" />
+                <Separator orientation="vertical"
+                    class="mx-2 h-4" />
                 <SliderInput :range="silverRange"
                     label="Цена"
                     v-model="silverModel"
@@ -184,7 +191,7 @@ import {
 } from '@/components/ui/table'
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Label } from '@/components/ui/label'
-// import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
+import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 
 import { valueUpdater } from '@/helpers'
 import { ArrowUpDown, ChevronDown } from 'lucide-vue-next'
@@ -252,6 +259,12 @@ const silverRange = computed(() => {
     return [Math.min(...silvers), Math.max(...silvers)]
 })
 const silverModel = ref([])
+
+const strengthRange = computed(() => {
+    const strengths = data.map((r: IFeeder) => r.strength)
+    return [Math.min(...strengths), Math.max(...strengths)]
+})
+const strengthModel = ref([])
 
 // const frictionRange = computed(() => {
 //     const frictions = data.map((r: IFeeder) => r.friction)

@@ -22,6 +22,13 @@
                     :step="0.1" />
                 <Separator orientation="vertical"
                     class="mx-2 h-4" />
+                <SliderInput :range="strengthRange"
+                    label="Прочность"
+                    v-model="strengthModel"
+                    @update:model-value="table.getColumn('strength')?.setFilterValue($event)"
+                    :step="0.1" />
+                <Separator orientation="vertical"
+                    class="mx-2 h-4" />
                 <SliderInput :range="silverRange"
                     label="Цена"
                     v-model="silverModel"
@@ -266,6 +273,12 @@ const silverRange = computed(() => {
     return [Math.min(...silvers), Math.max(...silvers)]
 })
 const silverModel = ref([])
+
+const strengthRange = computed(() => {
+    const strengths = data.map((r: IFloat) => r.strength)
+    return [Math.min(...strengths), Math.max(...strengths)]
+})
+const strengthModel = ref([])
 
 // const mechRange = computed(() => {
 //     const mechs = data.map((r: IFloat) => r.mech)
