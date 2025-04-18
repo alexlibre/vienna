@@ -1,27 +1,23 @@
 <template>
     <TabsContent value="feeders"
         class="relative">
-        <div class="space-y-2 py-4 sticky top-8 z-10 bg-primary-foreground">
-            <div class="flex gap-4 px-4 h-9 items-center">
+        <div class="space-y-8 py-4 sticky top-9 z-10 bg-primary-foreground">
+            <div class="flex gap-8 px-4 h-9 items-center">
                 <DataTableFacetedFilter v-if="table.getColumn('type')"
                     :column="table.getColumn('type')"
                     title="Тип"
                     :options="types" />
-                <Separator orientation="vertical"
-                    class="mx-2 h-4" />
                 <DataTableFacetedFilter v-if="table.getColumn('actions')"
                     :column="table.getColumn('actions')"
                     title="Строй"
                     :options="actions" />
-                <Separator orientation="vertical"
-                    class="mx-2 h-4" />
+            </div>
+            <div class="flex gap-8 px-4 h-9 items-center">
                 <SliderInput :range="strengthRange"
                     label="Прочность"
                     v-model="strengthModel"
                     @update:model-value="table.getColumn('strength')?.setFilterValue($event)"
                     :step="0.1" />
-                <Separator orientation="vertical"
-                    class="mx-2 h-4" />
                 <SliderInput :range="silverRange"
                     label="Цена"
                     v-model="silverModel"
@@ -113,7 +109,7 @@
             </ScrollArea>
         </div>
 
-        <div class="flex items-center justify-end space-x-2 py-4">
+        <div class="flex items-center justify-end space-x-2 p-4">
             <div class="flex-1 text-sm text-muted-foreground">
                 <p>
                     Результатов: {{ table.getFilteredRowModel().rows?.length || 0 }}
@@ -180,7 +176,6 @@ import {
     SelectContent,
     SelectItem
 } from "@/components/ui/select"
-import { Separator } from '@/components/ui/separator'
 import {
     Table,
     TableBody,

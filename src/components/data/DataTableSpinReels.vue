@@ -1,39 +1,42 @@
 <template>
     <TabsContent value="spinreels"
         class="relative">
-        <div class="space-y-2 py-4 sticky top-8 z-10 bg-primary-foreground">
-            <div class="flex gap-4 px-4 h-9 items-center">
+        <div class="space-y-8 py-4 sticky top-9 z-10 bg-primary-foreground">
+            <div class="flex gap-8 px-4 h-9 items-center">
                 <DataTableFacetedFilter v-if="table.getColumn('size')"
                     :column="table.getColumn('size')"
                     title="Размер"
                     :options="sizes" />
-                <Separator orientation="vertical"
-                    class="mx-2 h-4" />
                 <DataTableFacetedFilter v-if="table.getColumn('brand')"
                     :column="table.getColumn('brand')"
                     title="Бренд"
                     :options="brands" />
-                <Separator orientation="vertical"
-                    class="mx-2 h-4" />
+                <div class="flex gap-2 items-center">
+                    <Label for="isSealed"
+                        class="cursor-pointer">Защита</Label>
+                    <Switch id="isSealed"
+                        class="cursor-pointer"
+                        v-model="isSealed"
+                        @update:modelValue="table.getColumn('sealed')?.setFilterValue($event)" />
+                </div>
+            </div>
+            <div class="flex gap-8 px-4 h-9 items-center">
                 <SliderInput :range="frictionRange"
                     label="Фрикцион"
                     v-model="frictionModel"
                     @update:model-value="table.getColumn('friction')?.setFilterValue($event)"
                     :step="0.1" />
-                <Separator orientation="vertical"
-                    class="mx-2 h-4" />
                 <SliderInput :range="mechRange"
                     label="Механизм"
                     v-model="mechModel"
                     @update:model-value="table.getColumn('mech')?.setFilterValue($event)"
                     :step="0.1" />
-                <Separator orientation="vertical"
-                    class="mx-2 h-4" />
                 <SliderInput :range="silverRange"
                     label="Цена"
                     v-model="silverModel"
                     @update:model-value="table.getColumn('silver')?.setFilterValue($event)"
                     :step="1" />
+
             </div>
             <div class="flex justify-between px-4">
                 <Input class="max-w-sm bg-primary-foreground"
@@ -108,7 +111,7 @@
             </ScrollArea>
         </div>
 
-        <div class="flex items-center justify-end space-x-2 py-4">
+        <div class="flex items-center justify-end space-x-2 p-4">
             <div class="flex-1 text-sm text-muted-foreground">
                 <p>
                     Результатов: {{ table.getFilteredRowModel().rows?.length || 0 }}
@@ -175,8 +178,7 @@ import {
     SelectContent,
     SelectItem
 } from "@/components/ui/select"
-import { Separator } from '@/components/ui/separator'
-// import { Switch } from '@/components/ui/switch'
+import { Switch } from '@/components/ui/switch'
 import {
     Table,
     TableBody,
@@ -271,6 +273,8 @@ const silverRange = computed(() => {
     return [Math.min(...silvers), Math.max(...silvers)]
 })
 const silverModel = ref([])
+
+const isSealed = ref(false)
 
 const columns: ColumnDef<IReel>[] = [
     {
@@ -379,6 +383,10 @@ const columns: ColumnDef<IReel>[] = [
             }, 'Защита')
         },
         cell: ({ row }) => h('div', { class: 'flex justify-center' }, row.getValue('sealed') ? h(Droplet, { class: 'size-4 text-blue-500' }) : h(DropletOff, { class: 'size-4 text-red-500' })),
+        filterFn: (row, id, value: boolean): boolean => {
+            const val: boolean = row.getValue(id)
+            return value ? val : true
+        },
     },
     {
         accessorKey: 'silver',

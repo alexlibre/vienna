@@ -39,54 +39,54 @@
       <Command :filter-function="filterFunc">
         <CommandInput :placeholder="title" />
         <CommandList>
-          <ScrollArea class="h-[320px]">
-            <CommandEmpty>Нет результатов.</CommandEmpty>
+          <!-- <ScrollArea class="h-[193px]"> -->
+          <CommandEmpty>Нет результатов.</CommandEmpty>
+          <CommandGroup>
+            <CommandItem v-for="option in options"
+              :key="option.value"
+              :value="option"
+              @select="() => {
+                const isSelected = checkSelected(option.value)
+                if (isSelected) {
+                  deleteSelected(option.value)
+                }
+                else {
+                  addSelected(option.value)
+                }
+                const filterValues = Array.from(selectedValues)
+                column?.setFilterValue(
+                  filterValues.length ? filterValues : undefined,
+                )
+              }">
+              <div :class="cn(
+                'mr-2 flex rounded-[4px] items-center justify-center border border-primary',
+                checkSelected(option.value)
+                  ? 'bg-red-500 text-white border-red-500'
+                  : 'opacity-50 [&_svg]:invisible',
+              )">
+                <CheckIcon :class="cn('size-3.5 text-white')" />
+              </div>
+              <component :is="option.icon"
+                v-if="option.icon"
+                class="mr-2 h-4 w-4 text-muted-foreground" />
+              <span>{{ option.label }}</span>
+              <span v-if="facets?.get(option.value)"
+                class="ml-auto flex h-4 w-4 items-center justify-center font-mono text-xs">
+                {{ facets.get(option.value) }}
+              </span>
+            </CommandItem>
+          </CommandGroup>
+          <template v-if="selectedValues.size > 0">
+            <CommandSeparator />
             <CommandGroup>
-              <CommandItem v-for="option in options"
-                :key="option.value"
-                :value="option"
-                @select="() => {
-                  const isSelected = checkSelected(option.value)
-                  if (isSelected) {
-                    deleteSelected(option.value)
-                  }
-                  else {
-                    addSelected(option.value)
-                  }
-                  const filterValues = Array.from(selectedValues)
-                  column?.setFilterValue(
-                    filterValues.length ? filterValues : undefined,
-                  )
-                }">
-                <div :class="cn(
-                  'mr-2 flex rounded-[4px] items-center justify-center border border-primary',
-                  checkSelected(option.value)
-                    ? 'bg-red-500 text-white border-red-500'
-                    : 'opacity-50 [&_svg]:invisible',
-                )">
-                  <CheckIcon :class="cn('size-3.5 text-white')" />
-                </div>
-                <component :is="option.icon"
-                  v-if="option.icon"
-                  class="mr-2 h-4 w-4 text-muted-foreground" />
-                <span>{{ option.label }}</span>
-                <span v-if="facets?.get(option.value)"
-                  class="ml-auto flex h-4 w-4 items-center justify-center font-mono text-xs">
-                  {{ facets.get(option.value) }}
-                </span>
+              <CommandItem :value="{ label: 'Очистить' }"
+                class="justify-center text-center"
+                @select="column?.setFilterValue(undefined)">
+                Очистить
               </CommandItem>
             </CommandGroup>
-            <template v-if="selectedValues.size > 0">
-              <CommandSeparator />
-              <CommandGroup>
-                <CommandItem :value="{ label: 'Очистить' }"
-                  class="justify-center text-center"
-                  @select="column?.setFilterValue(undefined)">
-                  Очистить
-                </CommandItem>
-              </CommandGroup>
-            </template>
-          </ScrollArea>
+          </template>
+          <!-- </ScrollArea> -->
         </CommandList>
 
       </Command>
@@ -108,7 +108,7 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover'
 import { Separator } from '@/components/ui/separator'
-import { ScrollArea } from '@/components/ui/scroll-area'
+// import { ScrollArea } from '@/components/ui/scroll-area'
 import { cn } from '@/lib/utils'
 
 import { CheckIcon, PlusCircleIcon } from 'lucide-vue-next'
