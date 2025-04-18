@@ -13,6 +13,19 @@
                     :options="actions" />
             </div>
             <div class="flex gap-8 px-4 h-9 items-center">
+                <SliderInput :range="testRange"
+                    label="Тест"
+                    v-model="tests"
+                    @update:model-value="($event) => {
+                        table.getColumn('testMin')?.setFilterValue($event[0])
+                        table.getColumn('testMax')?.setFilterValue($event[1])
+                    }"
+                    :step="1" />
+                <SliderInput :range="lengthRange"
+                    label="Длина"
+                    v-model="lengthModel"
+                    @update:model-value="table.getColumn('length')?.setFilterValue($event)"
+                    :step="0.1" />
                 <SliderInput :range="strengthRange"
                     label="Прочность"
                     v-model="strengthModel"
@@ -249,6 +262,12 @@ const actions = computed(() => data.reduce((acc: string[], item: IFeeder) => {
     }
 }))
 
+const lengthRange = computed(() => {
+    const lengths = data.map((r: IFloat) => r.length)
+    return [Math.min(...lengths), Math.max(...lengths)]
+})
+const lengthModel = ref([])
+
 const silverRange = computed(() => {
     const silvers = data.map((r: IFeeder) => r.silver)
     return [Math.min(...silvers), Math.max(...silvers)]
@@ -261,6 +280,12 @@ const strengthRange = computed(() => {
 })
 const strengthModel = ref([])
 
+const testRange = computed(() => {
+    const testMins = data.map((r: IFeeder) => r.testMin)
+    const testMaxs = data.map((r: IFeeder) => r.testMax)
+    return [Math.min(...testMins), Math.max(...testMaxs)]
+})
+const tests = ref([])
 // const frictionRange = computed(() => {
 //     const frictions = data.map((r: IFeeder) => r.friction)
 //     return [Math.min(...frictions), Math.max(...frictions)]
@@ -325,7 +350,10 @@ const columns: ColumnDef<IFeeder>[] = [
                 onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
             }, () => [keyDict.testMin, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
         },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMin'))
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMin')),
+        filterFn: (row, id, value) => {
+            return row.getValue(id) as number >= value
+        },
     },
     {
         accessorKey: 'testMax',
@@ -336,7 +364,10 @@ const columns: ColumnDef<IFeeder>[] = [
                 onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
             }, () => [keyDict.testMax, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
         },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMax'))
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMax')),
+        filterFn: (row, id, value) => {
+            return row.getValue(id) as number <= value
+        },
     },
     {
         accessorKey: 'length',

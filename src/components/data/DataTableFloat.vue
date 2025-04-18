@@ -13,18 +13,24 @@
                     :options="actions" />
             </div>
             <div class="flex gap-8 px-4 h-9 items-center">
+                <SliderInput :range="testRange"
+                    label="Тест"
+                    v-model="tests"
+                    @update:model-value="($event) => {
+                        table.getColumn('testMin')?.setFilterValue($event[0])
+                        table.getColumn('testMax')?.setFilterValue($event[1])
+                    }"
+                    :step="1" />
                 <SliderInput :range="lengthRange"
                     label="Длина"
                     v-model="lengthModel"
                     @update:model-value="table.getColumn('length')?.setFilterValue($event)"
                     :step="0.1" />
-
                 <SliderInput :range="strengthRange"
                     label="Прочность"
                     v-model="strengthModel"
                     @update:model-value="table.getColumn('strength')?.setFilterValue($event)"
                     :step="0.1" />
-
                 <SliderInput :range="silverRange"
                     label="Цена"
                     v-model="silverModel"
@@ -275,6 +281,12 @@ const strengthRange = computed(() => {
 })
 const strengthModel = ref([])
 
+const testRange = computed(() => {
+    const testMins = data.map((r: IFeeder) => r.testMin)
+    const testMaxs = data.map((r: IFeeder) => r.testMax)
+    return [Math.min(...testMins), Math.max(...testMaxs)]
+})
+const tests = ref([])
 // const mechRange = computed(() => {
 //     const mechs = data.map((r: IFloat) => r.mech)
 //     return [Math.min(...mechs), Math.max(...mechs)]
@@ -333,7 +345,10 @@ const columns: ColumnDef<IFloat>[] = [
                 onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
             }, () => [keyDict.testMin, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
         },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMin'))
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMin')),
+        filterFn: (row, id, value) => {
+            return row.getValue(id) as number >= value
+        },
     },
     {
         accessorKey: 'testMax',
@@ -344,7 +359,10 @@ const columns: ColumnDef<IFloat>[] = [
                 onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
             }, () => [keyDict.testMax, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
         },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMax'))
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMax')),
+        filterFn: (row, id, value) => {
+            return row.getValue(id) as number <= value
+        },
     },
     {
         accessorKey: 'length',

@@ -13,7 +13,7 @@
                     :options="brands" />
                 <div class="flex gap-2 items-center">
                     <Label for="isSealed"
-                        class="cursor-pointer">Защита</Label>
+                        class="cursor-pointer">Защита от солёной воды</Label>
                     <Switch id="isSealed"
                         class="cursor-pointer"
                         v-model="isSealed"

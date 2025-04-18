@@ -39,6 +39,7 @@ import {
     TabsTrigger
 } from '@/components/ui/tabs';
 import LoadingComponent from '@/components/base/LoadingComponent.vue';
+import { Separator } from '@/components/ui/separator';
 
 const asyncComponents = {
     spinreels: defineAsyncComponent({
