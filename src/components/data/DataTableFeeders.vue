@@ -248,7 +248,7 @@ const actions = computed(() => data.reduce((acc: string[], item: IFeeder) => {
 }))
 
 const silverRange = computed(() => {
-    const silvers = data.map((r: IFloat) => r.silver)
+    const silvers = data.map((r: IFeeder) => r.silver)
     return [Math.min(...silvers), Math.max(...silvers)]
 })
 const silverModel = ref([])

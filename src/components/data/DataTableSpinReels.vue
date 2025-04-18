@@ -267,7 +267,7 @@ const inRange = (x: number, arr: number[]) => {
 }
 
 const silverRange = computed(() => {
-    const silvers = data.map((r: IFloat) => r.silver)
+    const silvers = data.map((r: IReel) => r.silver)
     return [Math.min(...silvers), Math.max(...silvers)]
 })
 const silverModel = ref([])
