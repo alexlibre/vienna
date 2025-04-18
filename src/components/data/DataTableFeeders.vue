@@ -13,6 +13,13 @@
                     :column="table.getColumn('actions')"
                     title="Строй"
                     :options="actions" />
+                <Separator orientation="vertical"
+                    class="mx-2 h-4" />
+                <SliderInput :range="silverRange"
+                    label="Цена"
+                    v-model="silverModel"
+                    @update:model-value="table.getColumn('silver')?.setFilterValue($event)"
+                    :step="1" />
                 <!-- 
                 <SliderInput :range="frictionRange"
                     label="Тест"
@@ -239,6 +246,12 @@ const actions = computed(() => data.reduce((acc: string[], item: IFeeder) => {
         value: item
     }
 }))
+
+const silverRange = computed(() => {
+    const silvers = data.map((r: IFloat) => r.silver)
+    return [Math.min(...silvers), Math.max(...silvers)]
+})
+const silverModel = ref([])
 
 // const frictionRange = computed(() => {
 //     const frictions = data.map((r: IFeeder) => r.friction)

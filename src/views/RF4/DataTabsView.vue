@@ -5,15 +5,19 @@
         <TabsList class="grid w-full px-4 grid-cols-3 sticky top-0 z-10">
             <TabsTrigger value="spinreels"
                 class="bg-primary-foreground">
-                БК
+                Безынерционные катушки
             </TabsTrigger>
             <TabsTrigger value="feeders"
                 class="bg-primary-foreground">
-                ДУ
+                Донные удилища
             </TabsTrigger>
             <!-- <TabsTrigger value="spinnings">
                 СУ
             </TabsTrigger> -->
+            <TabsTrigger value="float"
+                class="bg-primary-foreground">
+                Поплавочные удилища
+            </TabsTrigger>
         </TabsList>
 
         <Transition mode="in-out">
@@ -46,6 +50,10 @@ const asyncComponents = {
     }),
     spinnings: defineAsyncComponent({
         loader: () => import('@/components/data/DataTableSpinReels.vue'),
+        loadingComponent: LoadingComponent,
+    }),
+    float: defineAsyncComponent({
+        loader: () => import('@/components/data/DataTableFloat.vue'),
         loadingComponent: LoadingComponent,
     })
 }
