@@ -282,8 +282,8 @@ const strengthRange = computed(() => {
 const strengthModel = ref([])
 
 const testRange = computed(() => {
-    const testMins = data.map((r: IFeeder) => r.testMin)
-    const testMaxs = data.map((r: IFeeder) => r.testMax)
+    const testMins = data.map((r: IFloat) => r.testMin)
+    const testMaxs = data.map((r: IFloat) => r.testMax)
     return [Math.min(...testMins), Math.max(...testMaxs)]
 })
 const tests = ref([])
@@ -454,26 +454,6 @@ const columns: ColumnDef<IFloat>[] = [
         // },
     },
     {
-        accessorKey: 'cast',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.cast, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
-        },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('cast')),
-        enableHiding: true
-        // filterFn: (row, id, value) => {
-        //     return value.includes(row.getValue(id))
-        // },
-    },
-    // {
-    //     accessorKey: 'sealed',
-    //     header: 'Защита',
-    //     cell: ({ row }) => h('div', { class: 'flex justify-center' }, row.getValue('sealed') ? h(Droplet, { class: 'size-4 text-blue-500' }) : h(DropletOff, { class: 'size-4 text-red-500' })),
-    // },
-    {
         accessorKey: 'strength',
         header: ({ column }) => {
             return h(Button, {
@@ -526,7 +506,6 @@ const sorting = ref<SortingState>([])
 const columnFilters = ref<ColumnFiltersState>([])
 const columnVisibility = ref<VisibilityState>({
     sensitivity: false,
-    cast: false
 })
 const rowSelection = ref({})
 

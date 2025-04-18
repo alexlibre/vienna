@@ -2,7 +2,7 @@
     <Tabs :default-value="componentToRender"
         v-model:model-value="componentToRender"
         class="w-full p-4 relative">
-        <TabsList class="grid w-full gap-1 grid-cols-3 sticky top-0 z-10">
+        <TabsList class="flex w-full gap-1 sticky top-0 z-10">
             <TabsTrigger value="spinreels"
                 class="bg-primary-foreground">
                 Безынерционные катушки
@@ -17,6 +17,10 @@
             <TabsTrigger value="float"
                 class="bg-primary-foreground">
                 Поплавочные удилища
+            </TabsTrigger>
+            <TabsTrigger value="sea"
+                class="bg-primary-foreground">
+                Морские удилища
             </TabsTrigger>
         </TabsList>
 
@@ -39,7 +43,6 @@ import {
     TabsTrigger
 } from '@/components/ui/tabs';
 import LoadingComponent from '@/components/base/LoadingComponent.vue';
-import { Separator } from '@/components/ui/separator';
 
 const asyncComponents = {
     spinreels: defineAsyncComponent({
@@ -57,7 +60,11 @@ const asyncComponents = {
     float: defineAsyncComponent({
         loader: () => import('@/components/data/DataTableFloat.vue'),
         loadingComponent: LoadingComponent,
-    })
+    }),
+    sea: defineAsyncComponent({
+        loader: () => import('@/components/data/DataTableSea.vue'),
+        loadingComponent: LoadingComponent,
+    }),
 }
 
 const componentToRender = ref<keyof typeof asyncComponents>('spinreels')

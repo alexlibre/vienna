@@ -1,5 +1,5 @@
 <template>
-    <TabsContent value="feeders"
+    <TabsContent value="sea"
         class="relative">
         <div class="space-y-8 py-4 sticky top-9 z-10 bg-primary-foreground">
             <div class="flex gap-8 px-4 h-9 items-center">
@@ -199,7 +199,7 @@ import {
 } from '@/components/ui/table'
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Label } from '@/components/ui/label'
-import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
+// import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 
 import { valueUpdater } from '@/helpers'
 import { ArrowUpDown, ChevronDown } from 'lucide-vue-next'
@@ -226,12 +226,13 @@ import type {
 } from '@tanstack/vue-table'
 
 // @ts-ignore
-import * as feeders from '../../assets/mock/RF4-feeders.json'
+import * as sea from '../../assets/mock/RF4-sea.json'
 
 import DataTableFacetedFilter from "@/components/data/DataTableFacetedFilter.vue"
+import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 import { AcceptableValue } from 'reka-ui'
 
-import { type IFeeder, keyDict } from '@/composables/data/feeders'
+import { type ISeaRod, keyDict } from '@/composables/data/sea'
 // import DataTableRangeFilter from './DataTableRangeFilter.vue'
 
 const getName = (id: string): string => {
@@ -240,9 +241,9 @@ const getName = (id: string): string => {
 }
 
 // @ts-ignore
-const data = toRaw(shallowRef(feeders)).value.default as IFeeder[]
+const data = toRaw(shallowRef(sea)).value.default as ISeaRod[]
 
-const types = computed(() => data.reduce((acc: string[], item: IFeeder) => {
+const types = computed(() => data.reduce((acc: string[], item: ISeaRod) => {
     if (!acc.includes(item.type)) acc.push(item.type)
     return acc
 }, []).sort().map((item) => {
@@ -252,7 +253,7 @@ const types = computed(() => data.reduce((acc: string[], item: IFeeder) => {
     }
 }))
 
-const actions = computed(() => data.reduce((acc: string[], item: IFeeder) => {
+const actions = computed(() => data.reduce((acc: string[], item: ISeaRod) => {
     if (!acc.includes(item.actions)) acc.push(item.actions)
     return acc
 }, []).sort().map((item) => {
@@ -263,37 +264,31 @@ const actions = computed(() => data.reduce((acc: string[], item: IFeeder) => {
 }))
 
 const lengthRange = computed(() => {
-    const lengths = data.map((r: IFeeder) => r.length)
+    const lengths = data.map((r: ISeaRod) => r.length)
     return [Math.min(...lengths), Math.max(...lengths)]
 })
 const lengthModel = ref([])
 
 const silverRange = computed(() => {
-    const silvers = data.map((r: IFeeder) => r.silver)
+    const silvers = data.map((r: ISeaRod) => r.silver)
     return [Math.min(...silvers), Math.max(...silvers)]
 })
 const silverModel = ref([])
 
 const strengthRange = computed(() => {
-    const strengths = data.map((r: IFeeder) => r.strength)
+    const strengths = data.map((r: ISeaRod) => r.strength)
     return [Math.min(...strengths), Math.max(...strengths)]
 })
 const strengthModel = ref([])
 
 const testRange = computed(() => {
-    const testMins = data.map((r: IFeeder) => r.testMin)
-    const testMaxs = data.map((r: IFeeder) => r.testMax)
+    const testMins = data.map((r: ISeaRod) => r.testMin)
+    const testMaxs = data.map((r: ISeaRod) => r.testMax)
     return [Math.min(...testMins), Math.max(...testMaxs)]
 })
 const tests = ref([])
-// const frictionRange = computed(() => {
-//     const frictions = data.map((r: IFeeder) => r.friction)
-//     return [Math.min(...frictions), Math.max(...frictions)]
-// })
-// const frictionModel = ref([])
-
 // const mechRange = computed(() => {
-//     const mechs = data.map((r: IFeeder) => r.mech)
+//     const mechs = data.map((r: ISeaRod) => r.mech)
 //     return [Math.min(...mechs), Math.max(...mechs)]
 // })
 // const mechModel = ref([])
@@ -303,7 +298,7 @@ const tests = ref([])
 // }
 
 
-const columns: ColumnDef<IFeeder>[] = [
+const columns: ColumnDef<ISeaRod>[] = [
     {
         id: 'select',
         header: ({ table }) => h(Checkbox, {
@@ -458,21 +453,6 @@ const columns: ColumnDef<IFeeder>[] = [
         //     return value.includes(row.getValue(id))
         // },
     },
-    {
-        accessorKey: 'cast',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.cast, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
-        },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('cast')),
-        enableHiding: true
-        // filterFn: (row, id, value) => {
-        //     return value.includes(row.getValue(id))
-        // },
-    },
     // {
     //     accessorKey: 'sealed',
     //     header: 'Защита',
@@ -531,7 +511,6 @@ const sorting = ref<SortingState>([])
 const columnFilters = ref<ColumnFiltersState>([])
 const columnVisibility = ref<VisibilityState>({
     sensitivity: false,
-    cast: false
 })
 const rowSelection = ref({})
 
