@@ -18,7 +18,7 @@ export interface IFloat {
   silver: number;
 }
 
-export const keyDict: KeysEnum<IFeeder> = {
+export const keyDict: KeysEnum<IFloat> = {
   name: "Название",
   type: "Тип",
   testMin: "Тест min.",
