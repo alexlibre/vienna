@@ -7,13 +7,18 @@
                 class="bg-primary-foreground">
                 Безынерционные катушки
             </TabsTrigger>
+            <TabsTrigger value="powerreels"
+                class="bg-primary-foreground">
+                Силовые катушки
+            </TabsTrigger>
             <TabsTrigger value="feeders"
                 class="bg-primary-foreground">
                 Донные удилища
             </TabsTrigger>
-            <!-- <TabsTrigger value="spinnings">
-                СУ
-            </TabsTrigger> -->
+            <TabsTrigger value="spinings"
+                class="bg-primary-foreground">
+                Спининговые удилища
+            </TabsTrigger>
             <TabsTrigger value="float"
                 class="bg-primary-foreground">
                 Поплавочные удилища
@@ -49,12 +54,16 @@ const asyncComponents = {
         loader: () => import('@/components/data/DataTableSpinReels.vue'),
         loadingComponent: LoadingComponent,
     }),
+    powerreels: defineAsyncComponent({
+        loader: () => import('@/components/data/DataTablePowerReels.vue'),
+        loadingComponent: LoadingComponent,
+    }),
     feeders: defineAsyncComponent({
         loader: () => import('@/components/data/DataTableFeeders.vue'),
         loadingComponent: LoadingComponent,
     }),
-    spinnings: defineAsyncComponent({
-        loader: () => import('@/components/data/DataTableSpinReels.vue'),
+    spinings: defineAsyncComponent({
+        loader: () => import('@/components/data/DataTableSpinings.vue'),
         loadingComponent: LoadingComponent,
     }),
     float: defineAsyncComponent({

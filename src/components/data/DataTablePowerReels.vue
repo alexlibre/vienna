@@ -1,52 +1,37 @@
 <template>
-    <TabsContent value="float"
+    <TabsContent value="powerreels"
         class="relative">
         <div class="space-y-8 py-4 sticky top-9 z-10 bg-primary-foreground">
             <div class="flex gap-8 px-4 h-9 items-center">
-                <DataTableFacetedFilter v-if="table.getColumn('type')"
-                    :column="table.getColumn('type')"
-                    title="Тип"
-                    :options="types" />
-                <DataTableFacetedFilter v-if="table.getColumn('actions')"
-                    :column="table.getColumn('actions')"
-                    title="Строй"
-                    :options="actions" />
+                <DataTableFacetedFilter v-if="table.getColumn('brand')"
+                    :column="table.getColumn('brand')"
+                    title="Бренд"
+                    :options="brands" />
+                <div class="flex gap-2 items-center">
+                    <Label for="isSealed"
+                        class="cursor-pointer">Защита от солёной воды</Label>
+                    <Switch id="isSealed"
+                        class="cursor-pointer"
+                        v-model="isSealed"
+                        @update:modelValue="table.getColumn('sealed')?.setFilterValue($event)" />
+                </div>
             </div>
             <div class="flex gap-8 px-4 h-9 items-center">
-                <SliderInput :range="testRange"
-                    label="Тест"
-                    v-model="tests"
-                    @update:model-value="($event) => {
-                        table.getColumn('testMin')?.setFilterValue($event[0])
-                        table.getColumn('testMax')?.setFilterValue($event[1])
-                    }"
-                    :step="1" />
-                <SliderInput :range="lengthRange"
-                    label="Длина"
-                    v-model="lengthModel"
-                    @update:model-value="table.getColumn('length')?.setFilterValue($event)"
+                <SliderInput :range="frictionRange"
+                    label="Фрикцион"
+                    v-model="frictionModel"
+                    @update:model-value="table.getColumn('friction')?.setFilterValue($event)"
                     :step="0.1" />
-                <SliderInput :range="strengthRange"
-                    label="Прочность"
-                    v-model="strengthModel"
-                    @update:model-value="table.getColumn('strength')?.setFilterValue($event)"
+                <SliderInput :range="mechRange"
+                    label="Механизм"
+                    v-model="mechModel"
+                    @update:model-value="table.getColumn('mech')?.setFilterValue($event)"
                     :step="0.1" />
                 <SliderInput :range="silverRange"
                     label="Цена"
                     v-model="silverModel"
                     @update:model-value="table.getColumn('silver')?.setFilterValue($event)"
                     :step="1" />
-                <!-- 
-                <SliderInput :range="frictionRange"
-                    label="Тест"
-                    v-model="frictionModel"
-                    @update:model-value="table.getColumn('test')?.setFilterValue($event)"
-                    :step="0.1" />
-                <SliderInput :range="mechRange"
-                    label="Механизм"
-                    v-model="mechModel"
-                    @update:model-value="table.getColumn('mech')?.setFilterValue($event)"
-                    :step="0.1" /> -->
 
             </div>
             <div class="flex justify-between px-4">
@@ -187,6 +172,7 @@ import {
     SelectContent,
     SelectItem
 } from "@/components/ui/select"
+import { Switch } from '@/components/ui/switch'
 import {
     Table,
     TableBody,
@@ -196,10 +182,10 @@ import {
     TableRow,
 } from '@/components/ui/table'
 import { Label } from '@/components/ui/label'
-// import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
+import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 
 import { valueUpdater } from '@/helpers'
-import { ArrowUpDown, ChevronDown } from 'lucide-vue-next'
+import { ArrowUpDown, ChevronDown, Droplet, DropletOff } from 'lucide-vue-next'
 import { computed, h, ref, shallowRef, toRaw } from 'vue'
 
 import {
@@ -223,13 +209,12 @@ import type {
 } from '@tanstack/vue-table'
 
 // @ts-ignore
-import * as float from '../../assets/mock/RF4-float.json'
+import * as powerReels from '../../assets/mock/RF4-power.json'
 
 import DataTableFacetedFilter from "@/components/data/DataTableFacetedFilter.vue"
-import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 import { AcceptableValue } from 'reka-ui'
 
-import { type IFloat, keyDict } from '@/composables/data/float'
+import { type IPowerReel, keyDict } from '@/composables/data/powerReel'
 // import DataTableRangeFilter from './DataTableRangeFilter.vue'
 
 const getName = (id: string): string => {
@@ -238,10 +223,10 @@ const getName = (id: string): string => {
 }
 
 // @ts-ignore
-const data = toRaw(shallowRef(float)).value.default as IFloat[]
+const data = toRaw(shallowRef(powerReels)).value.default as IPowerReel[]
 
-const types = computed(() => data.reduce((acc: string[], item: IFloat) => {
-    if (!acc.includes(item.type)) acc.push(item.type)
+const brands = computed(() => data.reduce((acc: string[], item: IPowerReel) => {
+    if (!acc.includes(item.brand)) acc.push(item.brand)
     return acc
 }, []).sort().map((item) => {
     return {
@@ -250,227 +235,152 @@ const types = computed(() => data.reduce((acc: string[], item: IFloat) => {
     }
 }))
 
-const actions = computed(() => data.reduce((acc: string[], item: IFloat) => {
-    if (!acc.includes(item.actions)) acc.push(item.actions)
-    return acc
-}, []).sort().map((item) => {
-    return {
-        label: item,
-        value: item
-    }
-}))
-
-const lengthRange = computed(() => {
-    const lengths = data.map((r: IFloat) => r.length)
-    return [Math.min(...lengths), Math.max(...lengths)]
+const frictionRange = computed(() => {
+    const frictions = data.reduce((acc: number[], r: IPowerReel) => {
+        if (r.friction !== null) acc.push(r.friction)
+        return acc
+    }, [])
+    return [Math.min(...frictions), Math.max(...frictions)]
 })
-const lengthModel = ref([])
+const frictionModel = ref([])
+
+const mechRange = computed(() => {
+    const mechs = data.map((r: IPowerReel) => r.mech)
+    return [Math.min(...mechs), Math.max(...mechs)]
+})
+const mechModel = ref([])
+
+const inRange = (x: number, arr: number[]) => {
+    return ((x - arr[0]) * (x - arr[1]) <= 0);
+}
 
 const silverRange = computed(() => {
-    const silvers = data.map((r: IFloat) => r.silver)
+    const silvers = data.map((r: IPowerReel) => r.silver)
     return [Math.min(...silvers), Math.max(...silvers)]
 })
 const silverModel = ref([])
 
-const strengthRange = computed(() => {
-    const strengths = data.map((r: IFloat) => r.strength)
-    return [Math.min(...strengths), Math.max(...strengths)]
-})
-const strengthModel = ref([])
+const isSealed = ref(false)
 
-const testRange = computed(() => {
-    const testMins = data.map((r: IFloat) => r.testMin)
-    const testMaxs = data.map((r: IFloat) => r.testMax)
-    return [Math.min(...testMins), Math.max(...testMaxs)]
-})
-const tests = ref([])
-// const mechRange = computed(() => {
-//     const mechs = data.map((r: IFloat) => r.mech)
-//     return [Math.min(...mechs), Math.max(...mechs)]
-// })
-// const mechModel = ref([])
-
-// const inRange = (x: number, arr: number[]) => {
-//     return ((x - arr[0]) * (x - arr[1]) <= 0);
-// }
-
-
-const columns: ColumnDef<IFloat>[] = [
+const columns: ColumnDef<IPowerReel>[] = [
     {
         id: 'select',
         header: ({ table }) => h(Checkbox, {
             // @ts-ignore
             'modelValue': table.getIsAllPageRowsSelected() || (table.getIsSomePageRowsSelected() && 'indeterminate'),
-            'onUpdate:modelValue': value => table.toggleAllPageRowsSelected(!!value),
+            'onUpdate:modelValue': (value: any) => table.toggleAllPageRowsSelected(!!value),
             'ariaLabel': 'Select all',
         }),
         cell: ({ row }) => h(Checkbox, {
             'modelValue': row.getIsSelected(),
-            'onUpdate:modelValue': value => row.toggleSelected(!!value),
+            'onUpdate:modelValue': (value: any) => row.toggleSelected(!!value),
             'ariaLabel': 'Select row',
-            'class': 'j'
         }),
         enableSorting: false,
         enableHiding: false,
     },
     {
         accessorKey: 'name',
-        header: keyDict.name,
+        header: 'Название',
         enableHiding: false,
-        cell: ({ row }) => h('div', { class: 'capitalize text-nowrap' }, row.getValue('name')),
+        cell: ({ row }) => h('div', { class: 'capitalize' }, row.getValue('name')),
     },
     {
-        accessorKey: 'type',
+        accessorKey: 'brand',
         header: ({ column }) => {
             return h(Button, {
                 variant: 'ghost',
                 class: 'self-center',
                 onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.type, h(ArrowUpDown, { class: 'ml-2 h-4 w-4' })])
+            }, () => ['Бренд', h(ArrowUpDown, { class: 'ml-2 h-4 w-4' })])
         },
-        cell: ({ row }) => h('div', { class: 'capitalize pl-4' }, row.getValue('type')),
+        cell: ({ row }) => h('div', { class: 'capitalize pl-4' }, row.getValue('brand')),
         filterFn: (row, id, value) => {
             return value.includes(row.getValue(id))
         },
     },
     {
-        accessorKey: 'testMin',
+        accessorKey: 'ratio1',
         header: ({ column }) => {
             return h(Button, {
                 variant: 'ghost',
                 class: 'self-center',
                 onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.testMin, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+            }, () => ['Пер.число 1', h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
         },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMin')),
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('ratio1')),
+    },
+    {
+        accessorKey: 'ratio2',
+        header: ({ column }) => {
+            return h(Button, {
+                variant: 'ghost',
+                class: 'self-center',
+                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
+            }, () => ['Пер.число 2', h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+        },
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('ratio2') ? row.getValue('ratio2') : '—'),
+    },
+    {
+        accessorKey: 'speed1',
+        header: ({ column }) => {
+            return h(Button, {
+                variant: 'ghost',
+                class: 'self-center',
+                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
+            }, () => ['Скорость 1', h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+        },
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('speed1')),
+    },
+    {
+        accessorKey: 'speed2',
+        header: ({ column }) => {
+            return h(Button, {
+                variant: 'ghost',
+                class: 'self-center',
+                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
+            }, () => ['Скорость 2', h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+        },
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('speed2')),
+    },
+    {
+        accessorKey: 'friction',
+        header: ({ column }) => {
+            return h(Button, {
+                variant: 'ghost',
+                class: 'self-center',
+                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
+            }, () => ['Фрикцион', h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+        },
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('friction')),
         filterFn: (row, id, value) => {
-            return row.getValue(id) as number >= value
+            const val = row.getValue(id) as number
+            return inRange(val, value)
         },
     },
     {
-        accessorKey: 'testMax',
+        accessorKey: 'mech',
         header: ({ column }) => {
             return h(Button, {
                 variant: 'ghost',
                 class: 'self-center',
                 onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.testMax, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+            }, () => ['Механизм', h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
         },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('testMax')),
-        filterFn: (row, id, value) => {
-            return row.getValue(id) as number <= value
-        },
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('mech') ? row.getValue('mech') : 'нет данных'),
     },
     {
-        accessorKey: 'length',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.length, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+        accessorKey: 'sealed',
+        header: () => {
+            return h('p', {
+                class: 'text-sm font-medium',
+            }, 'Защита')
         },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('length')),
-    },
-    {
-        accessorKey: 'sensitivity',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.sensitivity, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+        cell: ({ row }) => h('div', { class: 'flex justify-center' }, row.getValue('sealed') ? h(Droplet, { class: 'size-4 text-blue-500' }) : h(DropletOff, { class: 'size-4 text-red-500' })),
+        filterFn: (row, id, value: boolean): boolean => {
+            const val: boolean = row.getValue(id)
+            return value ? val : true
         },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('sensitivity')),
-    },
-    {
-        accessorKey: 'rigidity',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.rigidity, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
-        },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, `${row.getValue('rigidity')} / 10` || '—'),
-    },
-    {
-        accessorKey: 'actions',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.actions, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
-        },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('actions')),
-        filterFn: (row, id, value) => {
-            return value.includes(row.getValue(id))
-        },
-    },
-    {
-        accessorKey: 'exp',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.exp, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
-        },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('exp')),
-        // filterFn: (row, id, value) => {
-        //     return value.includes(row.getValue(id))
-        // },
-    },
-    {
-        accessorKey: 'buff',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.buff, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
-        },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('buff')),
-        // filterFn: (row, id, value) => {
-        //     return value.includes(row.getValue(id))
-        // },
-    },
-    {
-        accessorKey: 'skills',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.skills, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
-        },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('skills')),
-        // filterFn: (row, id, value) => {
-        //     return value.includes(row.getValue(id))
-        // },
-    },
-    {
-        accessorKey: 'strength',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.strength, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
-        },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('strength') || '—'),
-    },
-    {
-        accessorKey: 'level',
-        header: ({ column }) => {
-            return h(Button, {
-                variant: 'ghost',
-                class: 'self-center',
-                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
-            }, () => [keyDict.level, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
-        },
-        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('level') || '—'),
     },
     {
         accessorKey: 'silver',
@@ -483,6 +393,18 @@ const columns: ColumnDef<IFloat>[] = [
         },
         cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('silver') || '—'),
     },
+    {
+        accessorKey: 'gold',
+        header: ({ column }) => {
+            return h(Button, {
+                variant: 'ghost',
+                class: 'self-center',
+                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
+            }, () => ['Цена, зол.', h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+        },
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('gold') || '—'),
+    },
+
     //   {
     //     id: 'actions',
     //     enableHiding: false,
@@ -501,9 +423,7 @@ const columns: ColumnDef<IFloat>[] = [
 
 const sorting = ref<SortingState>([])
 const columnFilters = ref<ColumnFiltersState>([])
-const columnVisibility = ref<VisibilityState>({
-    sensitivity: false,
-})
+const columnVisibility = ref<VisibilityState>({})
 const rowSelection = ref({})
 
 const expanded = ref<ExpandedState>({})

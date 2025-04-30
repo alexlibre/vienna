@@ -77,11 +77,10 @@
             </div>
         </div>
 
-        <div class="relative px-4">
-            <ScrollArea class="w-full h-full rounded-md border">
-                <div>
-                    <Table class="text-xs">
-                        <TableHeader>
+        <div class="relative px-4 mt-4">
+            <div class="relative rounded-md border">
+                <Table class="text-xs">
+                    <TableHeader class="sticky top-[240px] bg-primary-foreground">
                             <TableRow v-for="headerGroup in table.getHeaderGroups()"
                                 :key="headerGroup.id">
                                 <TableHead v-for="header in headerGroup.headers"
@@ -119,7 +118,6 @@
                         </TableBody>
                     </Table>
                 </div>
-            </ScrollArea>
         </div>
 
         <div class="flex items-center justify-end space-x-2 p-4">
@@ -197,7 +195,6 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table'
-import { ScrollArea } from "@/components/ui/scroll-area"
 import { Label } from '@/components/ui/label'
 // import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 

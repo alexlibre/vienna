@@ -66,49 +66,47 @@
             </div>
         </div>
 
-        <div class="relative px-4">
-            <ScrollArea class="w-full h-full rounded-md border">
-                <div>
-                    <Table class="text-xs">
-                        <TableHeader>
-                            <TableRow v-for="headerGroup in table.getHeaderGroups()"
-                                :key="headerGroup.id">
-                                <TableHead v-for="header in headerGroup.headers"
-                                    :key="header.id">
-                                    <FlexRender v-if="!header.isPlaceholder"
-                                        :render="header.column.columnDef.header"
-                                        :props="header.getContext()" />
-                                </TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            <template v-if="table.getRowModel().rows?.length">
-                                <template v-for="row in table.getRowModel().rows"
-                                    :key="row.id">
-                                    <TableRow :data-state="row.getIsSelected() && 'selected'">
-                                        <TableCell v-for="cell in row.getVisibleCells()"
-                                            :key="cell.id">
-                                            <FlexRender :render="cell.column.columnDef.cell"
-                                                :props="cell.getContext()" />
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow v-if="row.getIsExpanded()">
-                                        <TableCell :colspan="row.getAllCells().length">
-                                            {{ JSON.stringify(row.original) }}
-                                        </TableCell>
-                                    </TableRow>
-                                </template>
+        <div class="relative px-4 mt-4">
+            <div class="relative rounded-md border">
+                <Table class="text-xs">
+                    <TableHeader class="sticky top-[240px] bg-primary-foreground">
+                        <TableRow v-for="headerGroup in table.getHeaderGroups()"
+                            :key="headerGroup.id">
+                            <TableHead v-for="header in headerGroup.headers"
+                                :key="header.id">
+                                <FlexRender v-if="!header.isPlaceholder"
+                                    :render="header.column.columnDef.header"
+                                    :props="header.getContext()" />
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <template v-if="table.getRowModel().rows?.length">
+                            <template v-for="row in table.getRowModel().rows"
+                                :key="row.id">
+                                <TableRow :data-state="row.getIsSelected() && 'selected'">
+                                    <TableCell v-for="cell in row.getVisibleCells()"
+                                        :key="cell.id">
+                                        <FlexRender :render="cell.column.columnDef.cell"
+                                            :props="cell.getContext()" />
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow v-if="row.getIsExpanded()">
+                                    <TableCell :colspan="row.getAllCells().length">
+                                        {{ JSON.stringify(row.original) }}
+                                    </TableCell>
+                                </TableRow>
                             </template>
-                            <TableRow v-else>
-                                <TableCell :colspan="columns.length"
-                                    class="h-24 ">
-                                    Нет данных.
-                                </TableCell>
-                            </TableRow>
-                        </TableBody>
-                    </Table>
-                </div>
-            </ScrollArea>
+                        </template>
+                        <TableRow v-else>
+                            <TableCell :colspan="columns.length"
+                                class="h-24 ">
+                                Нет данных.
+                            </TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+            </div>
         </div>
 
         <div class="flex items-center justify-end space-x-2 p-4">
@@ -143,7 +141,7 @@
                 <div>
                     <Button variant="outline"
                         size="sm"
-                        :disabled="!table.getCanPreviousPage()"
+                        :disabled="!canPreviousPage"
                         @click="table.previousPage()">
                         Назад
                     </Button>
@@ -187,7 +185,6 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table'
-import { ScrollArea } from "@/components/ui/scroll-area"
 import { Label } from '@/components/ui/label'
 import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 
@@ -267,6 +264,8 @@ const mechModel = ref([])
 const inRange = (x: number, arr: number[]) => {
     return ((x - arr[0]) * (x - arr[1]) <= 0);
 }
+
+const canPreviousPage = computed(() => table.getCanPreviousPage())
 
 const silverRange = computed(() => {
     const silvers = data.map((r: IReel) => r.silver)

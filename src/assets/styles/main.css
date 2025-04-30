@@ -132,3 +132,8 @@
   border: none;
   border-radius: 27px;
 }
+
+::selection {
+  background-color: var(--color-red-500);
+  color: var(--color-white);
+}

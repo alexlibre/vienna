@@ -1,5 +1,5 @@
 <template>
-    <TabsContent value="float"
+    <TabsContent value="spinings"
         class="relative">
         <div class="space-y-8 py-4 sticky top-9 z-10 bg-primary-foreground">
             <div class="flex gap-8 px-4 h-9 items-center">
@@ -11,6 +11,10 @@
                     :column="table.getColumn('actions')"
                     title="Строй"
                     :options="actions" />
+                <DataTableFacetedFilter v-if="table.getColumn('class')"
+                    :column="table.getColumn('class')"
+                    title="Класс"
+                    :options="spinClasses" />
             </div>
             <div class="flex gap-8 px-4 h-9 items-center">
                 <SliderInput :range="testRange"
@@ -36,18 +40,6 @@
                     v-model="silverModel"
                     @update:model-value="table.getColumn('silver')?.setFilterValue($event)"
                     :step="1" />
-                <!-- 
-                <SliderInput :range="frictionRange"
-                    label="Тест"
-                    v-model="frictionModel"
-                    @update:model-value="table.getColumn('test')?.setFilterValue($event)"
-                    :step="0.1" />
-                <SliderInput :range="mechRange"
-                    label="Механизм"
-                    v-model="mechModel"
-                    @update:model-value="table.getColumn('mech')?.setFilterValue($event)"
-                    :step="0.1" /> -->
-
             </div>
             <div class="flex justify-between px-4">
                 <Input class="max-w-sm bg-primary-foreground"
@@ -81,43 +73,43 @@
             <div class="relative rounded-md border">
                 <Table class="text-xs">
                     <TableHeader class="sticky top-[240px] bg-primary-foreground">
-                            <TableRow v-for="headerGroup in table.getHeaderGroups()"
-                                :key="headerGroup.id">
-                                <TableHead v-for="header in headerGroup.headers"
-                                    :key="header.id">
-                                    <FlexRender v-if="!header.isPlaceholder"
-                                        :render="header.column.columnDef.header"
-                                        :props="header.getContext()" />
-                                </TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            <template v-if="table.getRowModel().rows?.length">
-                                <template v-for="row in table.getRowModel().rows"
-                                    :key="row.id">
-                                    <TableRow :data-state="row.getIsSelected() && 'selected'">
-                                        <TableCell v-for="cell in row.getVisibleCells()"
-                                            :key="cell.id">
-                                            <FlexRender :render="cell.column.columnDef.cell"
-                                                :props="cell.getContext()" />
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow v-if="row.getIsExpanded()">
-                                        <TableCell :colspan="row.getAllCells().length">
-                                            {{ JSON.stringify(row.original) }}
-                                        </TableCell>
-                                    </TableRow>
-                                </template>
+                        <TableRow v-for="headerGroup in table.getHeaderGroups()"
+                            :key="headerGroup.id">
+                            <TableHead v-for="header in headerGroup.headers"
+                                :key="header.id">
+                                <FlexRender v-if="!header.isPlaceholder"
+                                    :render="header.column.columnDef.header"
+                                    :props="header.getContext()" />
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <template v-if="table.getRowModel().rows?.length">
+                            <template v-for="row in table.getRowModel().rows"
+                                :key="row.id">
+                                <TableRow :data-state="row.getIsSelected() && 'selected'">
+                                    <TableCell v-for="cell in row.getVisibleCells()"
+                                        :key="cell.id">
+                                        <FlexRender :render="cell.column.columnDef.cell"
+                                            :props="cell.getContext()" />
+                                    </TableCell>
+                                </TableRow>
+                                <TableRow v-if="row.getIsExpanded()">
+                                    <TableCell :colspan="row.getAllCells().length">
+                                        {{ JSON.stringify(row.original) }}
+                                    </TableCell>
+                                </TableRow>
                             </template>
-                            <TableRow v-else>
-                                <TableCell :colspan="columns.length"
-                                    class="h-24 ">
-                                    Нет данных.
-                                </TableCell>
-                            </TableRow>
-                        </TableBody>
-                    </Table>
-                </div>
+                        </template>
+                        <TableRow v-else>
+                            <TableCell :colspan="columns.length"
+                                class="h-24 ">
+                                Нет данных.
+                            </TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+            </div>
         </div>
 
         <div class="flex items-center justify-end space-x-2 p-4">
@@ -196,7 +188,7 @@ import {
     TableRow,
 } from '@/components/ui/table'
 import { Label } from '@/components/ui/label'
-// import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
+import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 
 import { valueUpdater } from '@/helpers'
 import { ArrowUpDown, ChevronDown } from 'lucide-vue-next'
@@ -223,13 +215,12 @@ import type {
 } from '@tanstack/vue-table'
 
 // @ts-ignore
-import * as float from '../../assets/mock/RF4-float.json'
+import * as spinings from '../../assets/mock/RF4-spinings.json'
 
 import DataTableFacetedFilter from "@/components/data/DataTableFacetedFilter.vue"
-import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 import { AcceptableValue } from 'reka-ui'
 
-import { type IFloat, keyDict } from '@/composables/data/float'
+import { type ISpining, keyDict } from '@/composables/data/spinings'
 // import DataTableRangeFilter from './DataTableRangeFilter.vue'
 
 const getName = (id: string): string => {
@@ -238,9 +229,9 @@ const getName = (id: string): string => {
 }
 
 // @ts-ignore
-const data = toRaw(shallowRef(float)).value.default as IFloat[]
+const data = toRaw(shallowRef(spinings)).value.default as ISpining[]
 
-const types = computed(() => data.reduce((acc: string[], item: IFloat) => {
+const types = computed(() => data.reduce((acc: string[], item: ISpining) => {
     if (!acc.includes(item.type)) acc.push(item.type)
     return acc
 }, []).sort().map((item) => {
@@ -250,7 +241,7 @@ const types = computed(() => data.reduce((acc: string[], item: IFloat) => {
     }
 }))
 
-const actions = computed(() => data.reduce((acc: string[], item: IFloat) => {
+const actions = computed(() => data.reduce((acc: string[], item: ISpining) => {
     if (!acc.includes(item.actions)) acc.push(item.actions)
     return acc
 }, []).sort().map((item) => {
@@ -260,42 +251,42 @@ const actions = computed(() => data.reduce((acc: string[], item: IFloat) => {
     }
 }))
 
+const spinClasses = computed(() => data.reduce((acc: string[], item: ISpining) => {
+    if (!acc.includes(item.class)) acc.push(item.class)
+    return acc
+}, []).sort().map((item) => {
+    return {
+        label: item,
+        value: item
+    }
+}))
+
 const lengthRange = computed(() => {
-    const lengths = data.map((r: IFloat) => r.length)
+    const lengths = data.map((r: ISpining) => r.length)
     return [Math.min(...lengths), Math.max(...lengths)]
 })
 const lengthModel = ref([])
 
 const silverRange = computed(() => {
-    const silvers = data.map((r: IFloat) => r.silver)
+    const silvers = data.map((r: ISpining) => r.silver)
     return [Math.min(...silvers), Math.max(...silvers)]
 })
 const silverModel = ref([])
 
 const strengthRange = computed(() => {
-    const strengths = data.map((r: IFloat) => r.strength)
+    const strengths = data.map((r: ISpining) => r.strength)
     return [Math.min(...strengths), Math.max(...strengths)]
 })
 const strengthModel = ref([])
 
 const testRange = computed(() => {
-    const testMins = data.map((r: IFloat) => r.testMin)
-    const testMaxs = data.map((r: IFloat) => r.testMax)
+    const testMins = data.map((r: ISpining) => r.testMin)
+    const testMaxs = data.map((r: ISpining) => r.testMax)
     return [Math.min(...testMins), Math.max(...testMaxs)]
 })
 const tests = ref([])
-// const mechRange = computed(() => {
-//     const mechs = data.map((r: IFloat) => r.mech)
-//     return [Math.min(...mechs), Math.max(...mechs)]
-// })
-// const mechModel = ref([])
 
-// const inRange = (x: number, arr: number[]) => {
-//     return ((x - arr[0]) * (x - arr[1]) <= 0);
-// }
-
-
-const columns: ColumnDef<IFloat>[] = [
+const columns: ColumnDef<ISpining>[] = [
     {
         id: 'select',
         header: ({ table }) => h(Checkbox, {
@@ -329,6 +320,20 @@ const columns: ColumnDef<IFloat>[] = [
             }, () => [keyDict.type, h(ArrowUpDown, { class: 'ml-2 h-4 w-4' })])
         },
         cell: ({ row }) => h('div', { class: 'capitalize pl-4' }, row.getValue('type')),
+        filterFn: (row, id, value) => {
+            return value.includes(row.getValue(id))
+        },
+    },
+    {
+        accessorKey: 'class',
+        header: ({ column }) => {
+            return h(Button, {
+                variant: 'ghost',
+                class: 'self-center',
+                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
+            }, () => [keyDict.class, h(ArrowUpDown, { class: 'ml-2 h-4 w-4' })])
+        },
+        cell: ({ row }) => h('div', { class: 'capitalize pl-4' }, row.getValue('class')),
         filterFn: (row, id, value) => {
             return value.includes(row.getValue(id))
         },
@@ -451,6 +456,21 @@ const columns: ColumnDef<IFloat>[] = [
         // },
     },
     {
+        accessorKey: 'cast',
+        header: ({ column }) => {
+            return h(Button, {
+                variant: 'ghost',
+                class: 'self-center',
+                onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
+            }, () => [keyDict.cast, h(ArrowUpDown, { class: 'ml-2 h-4 w-4 ' })])
+        },
+        cell: ({ row }) => h('div', { class: 'pl-4' }, row.getValue('cast')),
+        enableHiding: true
+        // filterFn: (row, id, value) => {
+        //     return value.includes(row.getValue(id))
+        // },
+    },
+    {
         accessorKey: 'strength',
         header: ({ column }) => {
             return h(Button, {
@@ -503,6 +523,7 @@ const sorting = ref<SortingState>([])
 const columnFilters = ref<ColumnFiltersState>([])
 const columnVisibility = ref<VisibilityState>({
     sensitivity: false,
+    cast: false
 })
 const rowSelection = ref({})
 
