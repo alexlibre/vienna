@@ -1,12 +1,50 @@
 import { Updater } from "@tanstack/vue-table";
 import { Ref } from "vue";
 
-export function valueUpdater<T extends Updater<any>>(
-  updaterOrValue: T,
-  ref: Ref
+export function valueUpdater<T>(
+  updaterOrValue: Updater<T>,
+  ref: Ref<T>
 ) {
   ref.value =
     typeof updaterOrValue === "function"
-      ? updaterOrValue(ref.value)
-      : updaterOrValue;
+      ? (updaterOrValue as (old: T) => T)(ref.value)
+      : (updaterOrValue as T);
+}
+
+export type Option = { label: string; value: string | number };
+
+export function uniqueOptions<T>(
+  items: readonly T[],
+  selector: (item: T) => string | number
+): Option[] {
+  const seen = new Set<string | number>();
+  const result: (string | number)[] = [];
+  for (const item of items) {
+    const key = selector(item);
+    if (!seen.has(key)) {
+      seen.add(key);
+      result.push(key);
+    }
+  }
+  return result.sort((a, b) => {
+    if (typeof a === 'number' && typeof b === 'number') {
+      return a > b ? 1 : -1;
+    }
+    return String(a).localeCompare(String(b));
+  }).map((v) => ({ label: String(v), value: v }));
+}
+
+export function computeRange<T>(
+  items: readonly T[],
+  selector: (item: T) => number
+): [number, number] {
+  if (items.length === 0) return [0, 0];
+  let min = Infinity;
+  let max = -Infinity;
+  for (const item of items) {
+    const n = selector(item);
+    if (n < min) min = n;
+    if (n > max) max = n;
+  }
+  return [min, max];
 }
