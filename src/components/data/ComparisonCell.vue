@@ -1,6 +1,6 @@
 <template>
     <div :class="cellClasses"
-        class="pl-4">
+        class="px-2">
         <template v-if="isColorsArray">
             <div class="flex gap-1 flex-wrap items-center">
                 <div v-for="(color, idx) in (value as string[])" 
@@ -139,7 +139,7 @@ const isBestValue = computed(() => {
 // Классы для выделения лучшего значения
 const cellClasses = computed(() => {
     if (isBestValue.value) {
-        return 'flex items-center justify-center bg-green-100 dark:bg-green-900/30 font-semibold'
+        return 'flex items-center justify-center text-green-600 dark:text-green-400 font-bold'
     }
     return 'flex items-center justify-center'
 })

@@ -4,7 +4,7 @@ import * as reels from '@/assets/mock/RF4-spinreels.json'
 
 export const spinreelsConfig: DataSourceConfig = {
   id: 'spinreels',
-  label: 'Спининговые катушки',
+  label: 'Безынерционные',
   groupType: 'Катушки',
   data: (reels as any).default || [],
   columns: [

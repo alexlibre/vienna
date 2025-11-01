@@ -4,7 +4,7 @@ import * as float from '@/assets/mock/RF4-float.json'
 
 export const floatConfig: DataSourceConfig = {
   id: 'float',
-  label: 'Поплавки',
+  label: 'Поплавочные',
   groupType: 'Удилища',
   data: (float as any).default || [],
   columns: [

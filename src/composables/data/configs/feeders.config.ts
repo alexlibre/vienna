@@ -4,7 +4,7 @@ import * as feeders from '@/assets/mock/RF4-feeders.json'
 
 export const feedersConfig: DataSourceConfig = {
   id: 'feeders',
-  label: 'Фидеры',
+  label: 'Доночные',
   groupType: 'Удилища',
   data: (feeders as any).default || [],
   columns: [

@@ -4,7 +4,7 @@ import * as powerReels from '@/assets/mock/RF4-power.json'
 
 export const powerreelsConfig: DataSourceConfig = {
   id: 'powerreels',
-  label: 'Силовые катушки',
+  label: 'Силовые',
   groupType: 'Катушки',
   data: (powerReels as any).default || [],
   columns: [

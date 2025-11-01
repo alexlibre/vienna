@@ -4,7 +4,7 @@ import * as baitcastReels from '@/assets/mock/RF4-baitcastreels.json'
 
 export const baitcastreelsConfig: DataSourceConfig = {
   id: 'baitcastreels',
-  label: 'Байткастинговые катушки',
+  label: 'Байткастинговые',
   groupType: 'Катушки',
   data: (baitcastReels as any).default || [],
   columns: [

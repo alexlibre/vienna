@@ -147,9 +147,29 @@
         <!-- Таблица сравнения выбранных строк -->
         <div v-if="table && selectedRowsForComparison.length > 0"
             class="px-4 mt-8">
-            <h3 class="text-lg font-semibold mb-4">
-                Сравнение ({{ selectedRowsForComparison.length }})
-            </h3>
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-baseline gap-2">
+                    <h3 class="text-lg font-semibold">
+                        Сравнение ({{ selectedRowsForComparison.length }})
+                    </h3>
+                    <Button class="p-0 h-[14px] text-red-500"
+                        size="sm"
+                        variant="link"
+                        @click="deselectAllRows()">
+                        Очистить
+                    </Button>
+                </div>
+                <div class="flex gap-2 items-center">
+                        <Label for="comparison"
+                            class="cursor-pointer">Только отличающиеся</Label>
+                        <Switch id="comparison"
+                            class="cursor-pointer"
+                        :model-value="comparisonOnlyDifferent"
+                        @update:modelValue="(value) => {
+                            comparisonOnlyDifferent = !!value
+                        }" />
+                    </div>
+            </div>
             <div class="rounded-md border overflow-x-auto">
                 <Table class="text-xs">
                     <TableHeader>
@@ -159,13 +179,13 @@
                             </TableHead>
                             <TableHead v-for="row in selectedRowsForComparison"
                                 :key="row.id"
-                                class="min-w-[120px]">
+                                class="min-w-[120px] text-center">
                                 {{ getRowName(row) }}
                             </TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
-                        <TableRow v-for="columnConfig in visibleColumnsForComparison"
+                        <TableRow v-for="columnConfig in filteredColumnsForComparison"
                             :key="columnConfig.key">
                             <TableCell class="sticky left-0 bg-primary-foreground z-[9] font-medium">
                                 {{ columnConfig.label }}
@@ -636,6 +656,7 @@ const columnVisibility = ref<VisibilityState>(
 )
 const rowSelection = ref({})
 const expanded = ref<ExpandedState>({})
+const comparisonOnlyDifferent = ref<boolean>(false) // Только отличающиеся значения
 
 const table = computed(() => {
     if (!data.value || !columns.value || columns.value.length === 0) {
@@ -695,10 +716,52 @@ const visibleColumnsForComparison = computed(() => {
         })
 })
 
+// Отфильтрованные колонки для сравнения (только различающиеся, если включен переключатель)
+const filteredColumnsForComparison = computed(() => {
+    if (!comparisonOnlyDifferent.value) {
+        return visibleColumnsForComparison.value
+    }
+
+    // Фильтруем колонки, где есть различия в значениях
+    return visibleColumnsForComparison.value.filter(columnConfig => {
+        const values = selectedRowsForComparison.value.map(row => row.original[columnConfig.key])
+        
+        // Для числовых значений проверяем уникальность
+        const numericValues = values
+            .filter((v): v is number => {
+                if (typeof v === 'number' && !isNaN(v) && v !== null && v !== undefined) {
+                    return true
+                }
+                return false
+            })
+        
+        if (numericValues.length > 0) {
+            return new Set(numericValues).size > 1
+        }
+
+        // Для других значений проверяем уникальность строкового представления
+        const stringValues = values
+            .filter(v => v !== null && v !== undefined)
+            .map(v => {
+                if (Array.isArray(v)) {
+                    return v.join(',')
+                }
+                return String(v)
+            })
+        
+        return new Set(stringValues).size > 1
+    })
+})
+
 // Получение имени строки для заголовка
 const getRowName = (row: any): string => {
     const value = row.original.name || row.original.id || `Позиция ${row.id}`
     return String(value)
+}
+
+// Очистка выбора всех строк
+const deselectAllRows = () => {
+    rowSelection.value = {}
 }
 </script>
 

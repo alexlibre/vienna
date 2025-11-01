@@ -4,7 +4,7 @@ import * as spinings from '@/assets/mock/RF4-spinings.json'
 
 export const spiningsConfig: DataSourceConfig = {
   id: 'spinings',
-  label: 'Спининги',
+  label: 'Спининговые',
   groupType: 'Удилища',
   data: (spinings as any).default || [],
   columns: [
