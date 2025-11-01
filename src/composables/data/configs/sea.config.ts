@@ -5,6 +5,7 @@ import * as sea from '@/assets/mock/RF4-sea.json'
 export const seaConfig: DataSourceConfig = {
   id: 'sea',
   label: 'Морские',
+  groupType: 'Удилища',
   data: (sea as any).default || [],
   columns: [
     {
@@ -40,6 +41,7 @@ export const seaConfig: DataSourceConfig = {
       label: 'Тест max.',
       filterType: 'none',
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'length',
@@ -54,6 +56,7 @@ export const seaConfig: DataSourceConfig = {
       filterType: 'none',
       hidden: true,
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'rigidity',
@@ -61,6 +64,7 @@ export const seaConfig: DataSourceConfig = {
       filterType: 'none',
       sortable: true,
       cellFormatter: (val) => val ? `${val} / 10` : '—',
+      comparisonType: 'more-is-better',
     },
     {
       key: 'actions',
@@ -93,6 +97,7 @@ export const seaConfig: DataSourceConfig = {
       step: 0.1,
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'more-is-better',
     },
     {
       key: 'level',
@@ -100,6 +105,7 @@ export const seaConfig: DataSourceConfig = {
       filterType: 'none',
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
     {
       key: 'silver',
@@ -108,6 +114,7 @@ export const seaConfig: DataSourceConfig = {
       step: 1,
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
   ],
   defaultPageSize: 50,

@@ -5,6 +5,7 @@ import * as reels from '@/assets/mock/RF4-spinreels.json'
 export const spinreelsConfig: DataSourceConfig = {
   id: 'spinreels',
   label: 'Спининговые катушки',
+  groupType: 'Катушки',
   data: (reels as any).default || [],
   columns: [
     {
@@ -37,6 +38,7 @@ export const spinreelsConfig: DataSourceConfig = {
       filterType: 'range',
       step: 0.1,
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'frictionUp',
@@ -44,6 +46,7 @@ export const spinreelsConfig: DataSourceConfig = {
       filterType: 'none',
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'more-is-better',
     },
     {
       key: 'mech',
@@ -51,6 +54,7 @@ export const spinreelsConfig: DataSourceConfig = {
       filterType: 'range',
       step: 0.1,
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'sealed',
@@ -65,6 +69,7 @@ export const spinreelsConfig: DataSourceConfig = {
       step: 1,
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
     {
       key: 'gold',
@@ -72,6 +77,7 @@ export const spinreelsConfig: DataSourceConfig = {
       filterType: 'none',
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
   ],
   defaultPageSize: 50,

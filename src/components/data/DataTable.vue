@@ -3,32 +3,44 @@
         class="relative">
         <div class="space-y-8 py-4 sticky top-9 z-10 bg-primary-foreground">
             <!-- Faceted Filters -->
-            <div v-if="facetedFilters.length > 0 && table"
-                class="flex gap-8 px-4 h-9 items-center">
-                <template v-for="filter in facetedFilters"
-                    :key="filter.key">
-                    <DataTableFacetedFilter v-if="table?.getColumn(filter.key)"
-                        :column="table.getColumn(filter.key)!"
-                        :title="filter.title"
-                        :options="filter.options" />
-                </template>
-            </div>
-
-            <!-- Switch Filters -->
-            <div v-if="switchFilters.length > 0 && table"
-                class="flex gap-8 px-4 h-9 items-center">
-                <div v-for="filter in switchFilters"
-                    :key="filter.key"
-                    class="flex gap-2 items-center">
-                    <Label :for="filter.key"
-                        class="cursor-pointer">{{ filter.title }}</Label>
-                    <Switch :id="filter.key"
-                        class="cursor-pointer"
-                        :model-value="filter.model.value"
-                        @update:modelValue="(value) => {
-                            filter.model.value = !!value
-                            table?.getColumn(filter.key)?.setFilterValue(value)
-                        }" />
+            <div class="flex gap-4 items-center">
+                <div v-if="facetedFilters.length > 0 && table"
+                    class="flex gap-8 px-4 h-9 items-center">
+                    <template v-for="filter in facetedFilters"
+                        :key="filter.key">
+                        <DataTableFacetedFilter v-if="table?.getColumn(filter.key)"
+                            :column="table.getColumn(filter.key)!"
+                            :title="filter.title"
+                            :options="filter.options" />
+                    </template>
+                </div>
+                <!-- Switch Filters -->
+                <div v-if="switchFilters.length > 0 && table"
+                    class="flex gap-8 px-4 h-9 items-center">
+                    <div v-for="filter in switchFilters"
+                        :key="filter.key"
+                        class="flex gap-2 items-center">
+                        <Label :for="filter.key"
+                            class="cursor-pointer">{{ filter.title }}</Label>
+                        <Switch :id="filter.key"
+                            class="cursor-pointer"
+                            :model-value="filter.model.value"
+                            @update:modelValue="(value) => {
+                                filter.model.value = !!value
+                                table?.getColumn(filter.key)?.setFilterValue(value)
+                            }" />
+                    </div>
+                </div>
+                <!-- Color Multi Filters -->
+                <div v-if="colorFilters.length > 0 && table"
+                    class="flex gap-8 px-4 h-9 items-center">
+                    <template v-for="filter in colorFilters"
+                        :key="filter.key">
+                        <DataTableColorFilter v-if="table?.getColumn(filter.key)"
+                            :column="table.getColumn(filter.key)!"
+                            :title="filter.title"
+                            :options="filter.options" />
+                    </template>
                 </div>
             </div>
 
@@ -92,7 +104,7 @@
         <div class="relative px-4 mt-4">
             <div class="relative rounded-md border">
                 <Table class="text-xs">
-                    <TableHeader class="sticky top-[240px] bg-primary-foreground">
+                    <TableHeader class="sticky top-[240px] z-[9] bg-primary-foreground">
                         <TableRow v-for="headerGroup in table?.getHeaderGroups() || []"
                             :key="headerGroup.id">
                             <TableHead v-for="header in headerGroup.headers"
@@ -125,6 +137,44 @@
                             <TableCell :colspan="columns.length"
                                 class="h-24 ">
                                 Нет данных.
+                            </TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
+            </div>
+        </div>
+
+        <!-- Таблица сравнения выбранных строк -->
+        <div v-if="table && selectedRowsForComparison.length > 0"
+            class="px-4 mt-8">
+            <h3 class="text-lg font-semibold mb-4">
+                Сравнение ({{ selectedRowsForComparison.length }})
+            </h3>
+            <div class="rounded-md border overflow-x-auto">
+                <Table class="text-xs">
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead class="sticky left-0 bg-primary-foreground z-[9] min-w-[150px]">
+                                {{ config.groupType }}
+                            </TableHead>
+                            <TableHead v-for="row in selectedRowsForComparison"
+                                :key="row.id"
+                                class="min-w-[120px]">
+                                {{ getRowName(row) }}
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <TableRow v-for="columnConfig in visibleColumnsForComparison"
+                            :key="columnConfig.key">
+                            <TableCell class="sticky left-0 bg-primary-foreground z-[9] font-medium">
+                                {{ columnConfig.label }}
+                            </TableCell>
+                            <TableCell v-for="row in selectedRowsForComparison"
+                                :key="`${row.id}-${columnConfig.key}`">
+                                <ComparisonCell :value="row.original[columnConfig.key]"
+                                    :config="columnConfig"
+                                    :all-values="selectedRowsForComparison.map(r => r.original[columnConfig.key])" />
                             </TableCell>
                         </TableRow>
                     </TableBody>
@@ -211,7 +261,7 @@ import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'
 import SliderInput from '@/components/ui/slider-input/SliderInput.vue'
 
-import { valueUpdater, uniqueOptions, computeRange } from '@/helpers'
+import { valueUpdater, uniqueOptions, computeRange, uniqueOptionsFromArray, computeRangeFromArray } from '@/helpers'
 import { ArrowUpDown, ChevronDown, Droplet, DropletOff } from 'lucide-vue-next'
 import { computed, h, ref, shallowRef, toRaw, type Ref } from 'vue'
 
@@ -236,6 +286,8 @@ import type {
 } from '@tanstack/vue-table'
 
 import DataTableFacetedFilter from "@/components/data/DataTableFacetedFilter.vue"
+import DataTableColorFilter from "@/components/data/DataTableColorFilter.vue"
+import ComparisonCell from "@/components/data/ComparisonCell.vue"
 import { AcceptableValue } from 'reka-ui'
 import type { DataSourceConfig } from '@/composables/data/tableConfig'
 
@@ -254,6 +306,45 @@ const getColumnLabel = (id: string): string => {
 // Проверка наличия колонки name для поиска
 const nameColumn = computed(() => props.config.columns.some(col => col.key === 'name'))
 
+// Получение inline стиля для цвета
+const getColorStyle = (color: string): Record<string, string> => {
+    const normalizedColor = color.toLowerCase().trim()
+    
+    // Для transparent - специальная обработка
+    if (normalizedColor === 'transparent') {
+        return { backgroundColor: 'transparent', backgroundImage: 'linear-gradient(45deg, #ccc 25%, transparent 25%), linear-gradient(-45deg, #ccc 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #ccc 75%), linear-gradient(-45deg, transparent 75%, #ccc 75%)', backgroundSize: '4px 4px', backgroundPosition: '0 0, 0 2px, 2px -2px, -2px 0px' }
+    }
+    
+    // Маппинг цветов на hex значения
+    const colorMap: Record<string, string> = {
+        'white': '#ffffff',
+        'green': '#22c55e',
+        'blue': '#3b82f6',
+        'red': '#ef4444',
+        'yellow': '#facc15',
+        'orange': '#f97316',
+        'purple': '#a855f7',
+        'pink': '#ec4899',
+        'black': '#000000',
+        'brown': '#92400e',
+        'gray': '#6b7280',
+        'grey': '#6b7280',
+        'cyan': '#06b6d4',
+        'lime': '#84cc16',
+        'teal': '#14b8a6',
+        'indigo': '#6366f1',
+        'violet': '#8b5cf6',
+        'fuchsia': '#d946ef',
+        'rose': '#f43f5e',
+        'emerald': '#10b981',
+        'sky': '#0ea5e9',
+        'amber': '#f59e0b',
+    }
+    
+    const hexColor = colorMap[normalizedColor] || '#d1d5db'
+    return { backgroundColor: hexColor }
+}
+
 // Генерация фильтров
 const facetedFilters = computed(() => {
     return props.config.columns
@@ -261,7 +352,20 @@ const facetedFilters = computed(() => {
         .map(col => ({
             key: col.key,
             title: col.label,
-            options: uniqueOptions(data.value, (item: any) => item[col.key])
+            options: col.isArray 
+                ? uniqueOptionsFromArray(data.value, (item: any) => item[col.key])
+                : uniqueOptions(data.value, (item: any) => item[col.key])
+        }))
+})
+
+// Генерация colorMulti фильтров
+const colorFilters = computed(() => {
+    return props.config.columns
+        .filter(col => col.filterType === 'colorMulti')
+        .map(col => ({
+            key: col.key,
+            title: col.label,
+            options: uniqueOptionsFromArray(data.value, (item: any) => item[col.key])
         }))
 })
 
@@ -289,7 +393,9 @@ const rangeFilters = computed(() => {
     
     props.config.columns.forEach(col => {
         if (col.filterType === 'range') {
-            const range = computeRange(data.value, (item: any) => item[col.key] as number)
+            const range = col.isArray
+                ? computeRangeFromArray(data.value, (item: any) => item[col.key])
+                : computeRange(data.value, (item: any) => item[col.key] as number)
             if (!rangeFilterModels.has(col.key)) {
                 rangeFilterModels.set(col.key, ref<number[]>([...range]))
             } else {
@@ -370,18 +476,35 @@ const columns = computed<ColumnDef<any>[]>(() => {
         const col: ColumnDef<any> = {
             accessorKey: colConfig.key,
             header: colConfig.sortable !== false ? ({ column }) => {
+                const isSorted = column.getIsSorted()
                 return h(Button, {
                     variant: 'ghost',
-                    class: 'self-center',
-                    onClick: () => column.toggleSorting(column.getIsSorted() === 'asc'),
+                    class: `self-center ${isSorted ? 'font-bold text-red-500' : ''}`,
+                    onClick: () => column.toggleSorting(isSorted === 'asc'),
                 }, () => [colConfig.label, h(ArrowUpDown, { class: 'ml-2 h-4 w-4' })])
             } : colConfig.label,
-            enableHiding: colConfig.hidden !== true,
+            enableHiding: true, // Все колонки можно скрывать/показывать через UI
             cell: ({ row }) => {
                 const value = row.getValue(colConfig.key)
-                const formatted = colConfig.cellFormatter 
-                    ? colConfig.cellFormatter(value, row.original)
-                    : value
+                
+                // Специальное отображение для colors - цветные круги
+                if (colConfig.key === 'colors' && colConfig.filterType === 'colorMulti' && Array.isArray(value)) {
+                    return h('div', { 
+                        class: 'pl-4 flex gap-1 flex-wrap items-center' 
+                    }, value.map((color: string) => {
+                        return h('div', {
+                            class: 'rounded-full size-4 border border-gray-300 flex-shrink-0',
+                            style: getColorStyle(color)
+                        })
+                    }))
+                }
+                
+                let formatted = value
+                if (colConfig.isArray && Array.isArray(value)) {
+                    formatted = value.join(', ')
+                } else if (colConfig.cellFormatter) {
+                    formatted = colConfig.cellFormatter(value, row.original)
+                }
                 const displayValue = formatted !== null && formatted !== undefined ? String(formatted) : '—'
                 return h('div', { 
                     class: colConfig.key === 'name' ? 'capitalize text-nowrap' : 'pl-4' 
@@ -389,15 +512,80 @@ const columns = computed<ColumnDef<any>[]>(() => {
             },
         }
 
+        // Кастомная сортировка для массивов
+        if (colConfig.isArray && colConfig.sortable !== false) {
+            col.sortingFn = (rowA, rowB, columnId) => {
+                const valueA = rowA.getValue(columnId)
+                const valueB = rowB.getValue(columnId)
+                
+                // Если значение не массив, обрабатываем как обычно
+                if (!Array.isArray(valueA) && !Array.isArray(valueB)) {
+                    if (valueA == null) return valueB == null ? 0 : -1
+                    if (valueB == null) return 1
+                    if (typeof valueA === 'number' && typeof valueB === 'number') {
+                        return valueA - valueB
+                    }
+                    return String(valueA).localeCompare(String(valueB))
+                }
+                
+                // Если один из них не массив
+                if (!Array.isArray(valueA)) {
+                    return -1 // массивы идут после одиночных значений
+                }
+                if (!Array.isArray(valueB)) {
+                    return 1
+                }
+                
+                // Если оба массивы
+                if (valueA.length === 0) return valueB.length === 0 ? 0 : -1
+                if (valueB.length === 0) return 1
+                
+                // Для числовых массивов (sizes, prices) - сортируем по минимальному значению
+                if (typeof valueA[0] === 'number' && typeof valueB[0] === 'number') {
+                    const minA = Math.min(...valueA.filter((v: any) => v != null))
+                    const minB = Math.min(...valueB.filter((v: any) => v != null))
+                    if (isNaN(minA)) return isNaN(minB) ? 0 : -1
+                    if (isNaN(minB)) return 1
+                    return minA - minB
+                }
+                
+                // Для строковых массивов (colors) - сортируем по первому элементу
+                const firstA = valueA[0]?.toString() || ''
+                const firstB = valueB[0]?.toString() || ''
+                return firstA.localeCompare(firstB)
+            }
+        }
+
         // FilterFn в зависимости от типа фильтра
         if (colConfig.filterType === 'faceted') {
             col.filterFn = (row, id, value) => {
-                return value.includes(row.getValue(id))
+                if (!value || !Array.isArray(value)) return true
+                const rowValue = row.getValue(id)
+                if (colConfig.isArray && Array.isArray(rowValue)) {
+                    // Для массивов проверяем, есть ли пересечение
+                    return rowValue.some((v: any) => value.includes(v))
+                }
+                return value.includes(rowValue)
+            }
+        } else if (colConfig.filterType === 'colorMulti') {
+            col.filterFn = (row, id, value) => {
+                if (!value || !Array.isArray(value)) return true
+                const rowValue = row.getValue(id)
+                if (Array.isArray(rowValue)) {
+                    // Для массивов цветов проверяем, есть ли пересечение
+                    return rowValue.some((v: any) => value.includes(v))
+                }
+                return value.includes(rowValue)
             }
         } else if (colConfig.filterType === 'range') {
             col.filterFn = (row, id, value) => {
                 if (!value || !Array.isArray(value) || value.length !== 2) return true
-                const val = row.getValue(id) as number
+                const rowValue = row.getValue(id)
+                if (colConfig.isArray && Array.isArray(rowValue)) {
+                    // Для массивов проверяем, есть ли значение в диапазоне
+                    return rowValue.some((v: number) => v != null && v >= value[0] && v <= value[1])
+                }
+                const val = rowValue as number
                 if (val == null) return false
                 return val >= value[0] && val <= value[1]
             }
@@ -433,7 +621,14 @@ const sorting = ref<SortingState>([])
 const columnFilters = ref<ColumnFiltersState>([])
 const columnVisibility = ref<VisibilityState>(
     props.config.columns
-        .filter(col => col.hidden)
+        .filter(col => {
+            // Скрываем колонку если: hidden === true или visible === false
+            // Приоритет у visible, если указан оба параметра
+            if (col.visible !== undefined) {
+                return !col.visible
+            }
+            return col.hidden === true
+        })
         .reduce((acc, col) => {
             acc[col.key] = false
             return acc
@@ -480,6 +675,30 @@ const table = computed(() => {
 const updatePageSize = (newPageSize: AcceptableValue) => {
     if (newPageSize === null || !table.value) return;
     table.value.setPageSize(+newPageSize)
+}
+
+// Получение выбранных строк для сравнения
+const selectedRowsForComparison = computed(() => {
+    if (!table.value) return []
+    return table.value.getSelectedRowModel().rows || []
+})
+
+// Видимые колонки для сравнения (исключаем select и скрытые)
+const visibleColumnsForComparison = computed(() => {
+    return props.config.columns
+        .filter(col => {
+            // Исключаем rangeMinMax фильтры (они только для фильтрации)
+            if (col.filterType === 'rangeMinMax') return false
+            // Исключаем скрытые колонки
+            if (col.visible === false || col.hidden === true) return false
+            return true
+        })
+})
+
+// Получение имени строки для заголовка
+const getRowName = (row: any): string => {
+    const value = row.original.name || row.original.id || `Позиция ${row.id}`
+    return String(value)
 }
 </script>
 

@@ -5,6 +5,7 @@ import * as float from '@/assets/mock/RF4-float.json'
 export const floatConfig: DataSourceConfig = {
   id: 'float',
   label: 'Поплавки',
+  groupType: 'Удилища',
   data: (float as any).default || [],
   columns: [
     {
@@ -34,12 +35,14 @@ export const floatConfig: DataSourceConfig = {
       label: 'Тест min.',
       filterType: 'none',
       sortable: true,
+      comparisonType: 'less-is-better',
     },
     {
       key: 'testMax',
       label: 'Тест max.',
       filterType: 'none',
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'length',
@@ -54,6 +57,7 @@ export const floatConfig: DataSourceConfig = {
       filterType: 'none',
       hidden: true,
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'rigidity',
@@ -61,6 +65,7 @@ export const floatConfig: DataSourceConfig = {
       filterType: 'none',
       sortable: true,
       cellFormatter: (val) => val ? `${val} / 10` : '—',
+      comparisonType: 'more-is-better',
     },
     {
       key: 'actions',
@@ -93,6 +98,7 @@ export const floatConfig: DataSourceConfig = {
       step: 0.1,
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'more-is-better',
     },
     {
       key: 'level',
@@ -100,6 +106,7 @@ export const floatConfig: DataSourceConfig = {
       filterType: 'none',
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
     {
       key: 'silver',
@@ -108,6 +115,7 @@ export const floatConfig: DataSourceConfig = {
       step: 1,
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
   ],
   defaultPageSize: 50,

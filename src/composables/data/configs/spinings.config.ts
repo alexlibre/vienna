@@ -5,6 +5,7 @@ import * as spinings from '@/assets/mock/RF4-spinings.json'
 export const spiningsConfig: DataSourceConfig = {
   id: 'spinings',
   label: 'Спининги',
+  groupType: 'Удилища',
   data: (spinings as any).default || [],
   columns: [
     {
@@ -40,12 +41,14 @@ export const spiningsConfig: DataSourceConfig = {
       label: 'Тест min.',
       filterType: 'none',
       sortable: true,
+      comparisonType: 'less-is-better',
     },
     {
       key: 'testMax',
       label: 'Тест max.',
       filterType: 'none',
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'length',
@@ -60,6 +63,7 @@ export const spiningsConfig: DataSourceConfig = {
       filterType: 'none',
       hidden: true,
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'rigidity',
@@ -67,6 +71,7 @@ export const spiningsConfig: DataSourceConfig = {
       filterType: 'none',
       sortable: true,
       cellFormatter: (val) => val ? `${val} / 10` : '—',
+      comparisonType: 'more-is-better',
     },
     {
       key: 'actions',
@@ -98,6 +103,7 @@ export const spiningsConfig: DataSourceConfig = {
       filterType: 'none',
       hidden: true,
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'strength',
@@ -106,6 +112,7 @@ export const spiningsConfig: DataSourceConfig = {
       step: 0.1,
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'more-is-better',
     },
     {
       key: 'level',
@@ -113,6 +120,7 @@ export const spiningsConfig: DataSourceConfig = {
       filterType: 'none',
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
     {
       key: 'silver',
@@ -121,6 +129,7 @@ export const spiningsConfig: DataSourceConfig = {
       step: 1,
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
   ],
   defaultPageSize: 50,

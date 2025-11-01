@@ -1,0 +1,6821 @@
+[
+  {
+    "name": "Mono Original - 2.5LB",
+    "type": "Нейлоновая",
+    "strength": 1.2,
+    "diameter": 0.09,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 28
+  },
+  {
+    "name": "Mono Original - 2.5LB",
+    "type": "Нейлоновая",
+    "strength": 1.2,
+    "diameter": 0.09,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 82
+  },
+  {
+    "name": "Micro Carbon 2.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.2,
+    "diameter": 0.11,
+    "colors": [
+      "white"
+    ],
+    "size": 25,
+    "price": 49
+  },
+  {
+    "name": "Micro Carbon 2.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.2,
+    "diameter": 0.11,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 149
+  },
+  {
+    "name": "Micro Carbon 2.8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.3,
+    "diameter": 0.12,
+    "colors": [
+      "white"
+    ],
+    "size": 25,
+    "price": 49
+  },
+  {
+    "name": "Micro Carbon 2.8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.3,
+    "diameter": 0.12,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 149
+  },
+  {
+    "name": "Indiana - 5LB",
+    "type": "Нейлоновая",
+    "strength": 2.1,
+    "diameter": 0.16,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 14
+  },
+  {
+    "name": "Indiana - 5LB",
+    "type": "Нейлоновая",
+    "strength": 2.1,
+    "diameter": 0.16,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 350,
+    "price": 39
+  },
+  {
+    "name": "Power Carbon 4.6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.1,
+    "diameter": 0.16,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 121
+  },
+  {
+    "name": "Power Carbon 4.6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.1,
+    "diameter": 0.16,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 243
+  },
+  {
+    "name": "Power Line 4.8LB",
+    "type": "Нейлоновая",
+    "strength": 2.2,
+    "diameter": 0.14,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 56
+  },
+  {
+    "name": "Power Line 4.8LB",
+    "type": "Нейлоновая",
+    "strength": 2.2,
+    "diameter": 0.14,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 113
+  },
+  {
+    "name": "Pure Fluorocarbon 4.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.2,
+    "diameter": 0.17,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 89
+  },
+  {
+    "name": "Pure Fluorocarbon 4.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.2,
+    "diameter": 0.17,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 221
+  },
+  {
+    "name": "Fluorocarbon 4,8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.2,
+    "diameter": 0.16,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 90
+  },
+  {
+    "name": "Fluorocarbon 4,8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.2,
+    "diameter": 0.16,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 240
+  },
+  {
+    "name": "Super Line - 5lb",
+    "type": "Нейлоновая",
+    "strength": 2.3,
+    "diameter": 0.18,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 4
+  },
+  {
+    "name": "Mono Original - 5LB",
+    "type": "Нейлоновая",
+    "strength": 2.3,
+    "diameter": 0.15,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 26
+  },
+  {
+    "name": "Mono Original - 5LB",
+    "type": "Нейлоновая",
+    "strength": 2.3,
+    "diameter": 0.15,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 76
+  },
+  {
+    "name": "Fine Fluorocarbon 5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.3,
+    "diameter": 0.18,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 60
+  },
+  {
+    "name": "Fine Fluorocarbon 5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.3,
+    "diameter": 0.18,
+    "colors": [
+      "transparent"
+    ],
+    "size": 300,
+    "price": 149
+  },
+  {
+    "name": "Super Line - 7lb",
+    "type": "Нейлоновая",
+    "strength": 3.1,
+    "diameter": 0.2,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 4
+  },
+  {
+    "name": "Pure Fluorocarbon 7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.1,
+    "diameter": 0.21,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 90
+  },
+  {
+    "name": "Pure Fluorocarbon 7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.1,
+    "diameter": 0.21,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 224
+  },
+  {
+    "name": "Invisible 7LB",
+    "type": "Нейлоновая",
+    "strength": 3.2,
+    "diameter": 0.14,
+    "colors": [
+      "orange",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Fine Fluorocarbon 7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.2,
+    "diameter": 0.22,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 61
+  },
+  {
+    "name": "Fine Fluorocarbon 7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.2,
+    "diameter": 0.22,
+    "colors": [
+      "transparent"
+    ],
+    "size": 300,
+    "price": 153
+  },
+  {
+    "name": "Micro Braid 7LB",
+    "type": "Шнур",
+    "strength": 3.3,
+    "diameter": 0.06,
+    "colors": [
+      "blue",
+      "red"
+    ],
+    "size": 100,
+    "price": 100
+  },
+  {
+    "name": "Fluorocarbon 9LB",
+    "type": "Флюорокарбоновая",
+    "strength": 4.1,
+    "diameter": 0.24,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 90
+  },
+  {
+    "name": "Fluorocarbon 9LB",
+    "type": "Флюорокарбоновая",
+    "strength": 4.1,
+    "diameter": 0.24,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 240
+  },
+  {
+    "name": "Mono SS - 9LB",
+    "type": "Нейлоновая",
+    "strength": 4.2,
+    "diameter": 0.19,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 33
+  },
+  {
+    "name": "Mono SS - 9LB",
+    "type": "Нейлоновая",
+    "strength": 4.2,
+    "diameter": 0.19,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 129
+  },
+  {
+    "name": "Power Line 9LB",
+    "type": "Нейлоновая",
+    "strength": 4.2,
+    "diameter": 0.2,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 58
+  },
+  {
+    "name": "Power Line 9LB",
+    "type": "Нейлоновая",
+    "strength": 4.2,
+    "diameter": 0.2,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 119
+  },
+  {
+    "name": "Ultra Line 9LB",
+    "type": "Нейлоновая",
+    "strength": 4.2,
+    "diameter": 0.18,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 90
+  },
+  {
+    "name": "Ultra Line 9LB",
+    "type": "Нейлоновая",
+    "strength": 4.2,
+    "diameter": 0.18,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 180
+  },
+  {
+    "name": "Fine Fluorocarbon 9.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 4.3,
+    "diameter": 0.26,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 62
+  },
+  {
+    "name": "Fine Fluorocarbon 9.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 4.3,
+    "diameter": 0.26,
+    "colors": [
+      "transparent"
+    ],
+    "size": 300,
+    "price": 156
+  },
+  {
+    "name": "Mono Original - 11.5LB",
+    "type": "Нейлоновая",
+    "strength": 5.2,
+    "diameter": 0.21,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 23
+  },
+  {
+    "name": "Mono Original - 11.5LB",
+    "type": "Нейлоновая",
+    "strength": 5.2,
+    "diameter": 0.21,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 67
+  },
+  {
+    "name": "Heavy Line 13.5LB",
+    "type": "Нейлоновая",
+    "strength": 6.2,
+    "diameter": 0.22,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Heavy Line 13.5LB",
+    "type": "Нейлоновая",
+    "strength": 6.2,
+    "diameter": 0.22,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 150
+  },
+  {
+    "name": "Heavy Line 13.5LB",
+    "type": "Нейлоновая",
+    "strength": 6.2,
+    "diameter": 0.22,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 450
+  },
+  {
+    "name": "Fluorocarbon 13,6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 6.2,
+    "diameter": 0.28,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 95
+  },
+  {
+    "name": "Fluorocarbon 13,6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 6.2,
+    "diameter": 0.28,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 245
+  },
+  {
+    "name": "Hybrid - 16LB",
+    "type": "Шнур",
+    "strength": 7.2,
+    "diameter": 0.16,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": 110,
+    "price": 20
+  },
+  {
+    "name": "Hybrid - 16LB",
+    "type": "Шнур",
+    "strength": 7.2,
+    "diameter": 0.16,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": null,
+    "price": 57
+  },
+  {
+    "name": "Micro Braid 16LB",
+    "type": "Шнур",
+    "strength": 7.3,
+    "diameter": 0.12,
+    "colors": [
+      "blue",
+      "red"
+    ],
+    "size": 100,
+    "price": 100
+  },
+  {
+    "name": "Power Braid 18LB",
+    "type": "Шнур",
+    "strength": 8.2,
+    "diameter": 0.13,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 80
+  },
+  {
+    "name": "Power Braid 18LB",
+    "type": "Шнур",
+    "strength": 8.2,
+    "diameter": 0.13,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 160
+  },
+  {
+    "name": "Power Carbon 18LB",
+    "type": "Флюорокарбоновая",
+    "strength": 8.2,
+    "diameter": 0.35,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 129
+  },
+  {
+    "name": "Power Carbon 18LB",
+    "type": "Флюорокарбоновая",
+    "strength": 8.2,
+    "diameter": 0.35,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 259
+  },
+  {
+    "name": "Super Braid - 20lb",
+    "type": "Шнур",
+    "strength": 9.1,
+    "diameter": 0.2,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 6.5
+  },
+  {
+    "name": "DevilBraid - 20LB",
+    "type": "Шнур",
+    "strength": 9.2,
+    "diameter": 0.16,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 66
+  },
+  {
+    "name": "DevilBraid - 20LB",
+    "type": "Шнур",
+    "strength": 9.2,
+    "diameter": 0.16,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 261
+  },
+  {
+    "name": "DevilBraid - 20LB",
+    "type": "Шнур",
+    "strength": 9.2,
+    "diameter": 0.16,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 521
+  },
+  {
+    "name": "Power Braid 20LB",
+    "type": "Шнур",
+    "strength": 9.2,
+    "diameter": 0.15,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 85
+  },
+  {
+    "name": "Power Braid 20LB",
+    "type": "Шнур",
+    "strength": 9.2,
+    "diameter": 0.15,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 170
+  },
+  {
+    "name": "Carp Super Soft Mono 20 LB",
+    "type": "Поводковый нейлон",
+    "strength": 9.2,
+    "diameter": 0.34,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 30.9
+  },
+  {
+    "name": "US Mono 3D 20LB",
+    "type": "Поводковый нейлон",
+    "strength": 9.2,
+    "diameter": 0.33,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 15,
+    "price": 49.9
+  },
+  {
+    "name": "Carp X HMT Mono 20LB",
+    "type": "Поводковый нейлон",
+    "strength": 9.2,
+    "diameter": 0.32,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 54.5
+  },
+  {
+    "name": "Carp Super Soft Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 9.2,
+    "diameter": 0.2,
+    "colors": [
+      "green"
+    ],
+    "size": 20,
+    "price": 35.9
+  },
+  {
+    "name": "CarpX Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 9.2,
+    "diameter": 0.16,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 20,
+    "price": 59.8
+  },
+  {
+    "name": "US Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 9.2,
+    "diameter": 0.17,
+    "colors": [
+      "transparent",
+      "green",
+      "red",
+      "orange"
+    ],
+    "size": 15,
+    "price": 83.9
+  },
+  {
+    "name": "Super Line - 20lb",
+    "type": "Нейлоновая",
+    "strength": 9.3,
+    "diameter": 0.37,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 5.8
+  },
+  {
+    "name": "Fine Fluorocarbon 20LB",
+    "type": "Флюорокарбоновая",
+    "strength": 9.3,
+    "diameter": 0.39,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 65
+  },
+  {
+    "name": "Fine Fluorocarbon 20LB",
+    "type": "Флюорокарбоновая",
+    "strength": 9.3,
+    "diameter": 0.39,
+    "colors": [
+      "transparent"
+    ],
+    "size": 300,
+    "price": 165
+  },
+  {
+    "name": "ExtraSilk - 22LB",
+    "type": "Шнур",
+    "strength": 10.2,
+    "diameter": 0.18,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 41
+  },
+  {
+    "name": "ExtraSilk - 22LB",
+    "type": "Шнур",
+    "strength": 10.2,
+    "diameter": 0.18,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 121
+  },
+  {
+    "name": "Ultra Line 25LB",
+    "type": "Нейлоновая",
+    "strength": 11.3,
+    "diameter": 0.3,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 96
+  },
+  {
+    "name": "Ultra Line 25LB",
+    "type": "Нейлоновая",
+    "strength": 11.3,
+    "diameter": 0.3,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 193
+  },
+  {
+    "name": "Carp Super Soft Mono 25 LB",
+    "type": "Поводковый нейлон",
+    "strength": 11.3,
+    "diameter": 0.38,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 32.9
+  },
+  {
+    "name": "US Mono 3D 25LB",
+    "type": "Поводковый нейлон",
+    "strength": 11.3,
+    "diameter": 0.38,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 15,
+    "price": 52.9
+  },
+  {
+    "name": "Carp X HMT Mono 25LB",
+    "type": "Поводковый нейлон",
+    "strength": 11.3,
+    "diameter": 0.36,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 55.5
+  },
+  {
+    "name": "Ultra Braid 27 LB",
+    "type": "Шнур",
+    "strength": 12.2,
+    "diameter": 0.18,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 106
+  },
+  {
+    "name": "Ultra Braid 27 LB",
+    "type": "Шнур",
+    "strength": 12.2,
+    "diameter": 0.18,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 211
+  },
+  {
+    "name": "Power Carbon 27LB",
+    "type": "Флюорокарбоновая",
+    "strength": 12.3,
+    "diameter": 0.45,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 134
+  },
+  {
+    "name": "Power Carbon 27LB",
+    "type": "Флюорокарбоновая",
+    "strength": 12.3,
+    "diameter": 0.45,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 269
+  },
+  {
+    "name": "Ultra Line 84LB",
+    "type": "Нейлоновая",
+    "strength": 38.1,
+    "diameter": 0.8,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 110
+  },
+  {
+    "name": "Ultra Line 84LB",
+    "type": "Нейлоновая",
+    "strength": 38.1,
+    "diameter": 0.8,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 221
+  },
+  {
+    "name": "Super Line - 1.5lb",
+    "type": "Нейлоновая",
+    "strength": 0.7,
+    "diameter": 0.1,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 6
+  },
+  {
+    "name": "Micro Carbon 2.2LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1,
+    "diameter": 0.1,
+    "colors": [
+      "white"
+    ],
+    "size": 25,
+    "price": 49
+  },
+  {
+    "name": "Micro Carbon 2.2LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1,
+    "diameter": 0.1,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 149
+  },
+  {
+    "name": "Mono SS - 3LB",
+    "type": "Нейлоновая",
+    "strength": 1.4,
+    "diameter": 0.08,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 39
+  },
+  {
+    "name": "Mono SS - 3LB",
+    "type": "Нейлоновая",
+    "strength": 1.4,
+    "diameter": 0.08,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 152
+  },
+  {
+    "name": "Fluorocarbon 3LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.4,
+    "diameter": 0.12,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 90
+  },
+  {
+    "name": "Fluorocarbon 3LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.4,
+    "diameter": 0.12,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 240
+  },
+  {
+    "name": "Super Line - 3lb",
+    "type": "Нейлоновая",
+    "strength": 1.5,
+    "diameter": 0.14,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 4.5
+  },
+  {
+    "name": "Invisible 3.3LB",
+    "type": "Нейлоновая",
+    "strength": 1.5,
+    "diameter": 0.08,
+    "colors": [
+      "orange",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Micro Carbon 3.2LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.5,
+    "diameter": 0.13,
+    "colors": [
+      "white"
+    ],
+    "size": 25,
+    "price": 49
+  },
+  {
+    "name": "Micro Carbon 3.2LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.5,
+    "diameter": 0.13,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 149
+  },
+  {
+    "name": "Power Carbon 3.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.6,
+    "diameter": 0.14,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 119
+  },
+  {
+    "name": "Power Carbon 3.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.6,
+    "diameter": 0.14,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 238
+  },
+  {
+    "name": "Indiana - 3.5LB",
+    "type": "Нейлоновая",
+    "strength": 1.7,
+    "diameter": 0.14,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 16
+  },
+  {
+    "name": "Indiana - 3.5LB",
+    "type": "Нейлоновая",
+    "strength": 1.7,
+    "diameter": 0.14,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 350,
+    "price": 45
+  },
+  {
+    "name": "Micro Carbon 3.6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.7,
+    "diameter": 0.14,
+    "colors": [
+      "white"
+    ],
+    "size": 25,
+    "price": 49
+  },
+  {
+    "name": "Micro Carbon 3.6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.7,
+    "diameter": 0.14,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 149
+  },
+  {
+    "name": "Fluorocarbon 3,7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.7,
+    "diameter": 0.14,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 90
+  },
+  {
+    "name": "Fluorocarbon 3,7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.7,
+    "diameter": 0.14,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 240
+  },
+  {
+    "name": "Mono Original - 4LB",
+    "type": "Нейлоновая",
+    "strength": 1.8,
+    "diameter": 0.12,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 27
+  },
+  {
+    "name": "Mono Original - 4LB",
+    "type": "Нейлоновая",
+    "strength": 1.8,
+    "diameter": 0.12,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 79
+  },
+  {
+    "name": "Fine Fluorocarbon 4LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.8,
+    "diameter": 0.16,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 60
+  },
+  {
+    "name": "Fine Fluorocarbon 4LB",
+    "type": "Флюорокарбоновая",
+    "strength": 1.8,
+    "diameter": 0.16,
+    "colors": [
+      "transparent"
+    ],
+    "size": 300,
+    "price": 149
+  },
+  {
+    "name": "Invisible 4.2LB",
+    "type": "Нейлоновая",
+    "strength": 1.9,
+    "diameter": 0.1,
+    "colors": [
+      "orange",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Mono SS - 4.5LB",
+    "type": "Нейлоновая",
+    "strength": 2,
+    "diameter": 0.11,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 37
+  },
+  {
+    "name": "Mono SS - 4.5LB",
+    "type": "Нейлоновая",
+    "strength": 2,
+    "diameter": 0.11,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 145
+  },
+  {
+    "name": "Invisible 5.5LB",
+    "type": "Нейлоновая",
+    "strength": 2.5,
+    "diameter": 0.12,
+    "colors": [
+      "orange",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Power Carbon 5.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.5,
+    "diameter": 0.18,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 124
+  },
+  {
+    "name": "Power Carbon 5.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.5,
+    "diameter": 0.18,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 249
+  },
+  {
+    "name": "Power Line 5.5LB",
+    "type": "Нейлоновая",
+    "strength": 2.6,
+    "diameter": 0.16,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 56
+  },
+  {
+    "name": "Power Line 5.5LB",
+    "type": "Нейлоновая",
+    "strength": 2.6,
+    "diameter": 0.16,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 113
+  },
+  {
+    "name": "Fluorocarbon 5,7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.6,
+    "diameter": 0.18,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 90
+  },
+  {
+    "name": "Fluorocarbon 5,7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.6,
+    "diameter": 0.18,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 240
+  },
+  {
+    "name": "Pure Fluorocarbon 6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.7,
+    "diameter": 0.19,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 89
+  },
+  {
+    "name": "Pure Fluorocarbon 6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.7,
+    "diameter": 0.19,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 221
+  },
+  {
+    "name": "Micro Braid 6LB",
+    "type": "Шнур",
+    "strength": 2.8,
+    "diameter": 0.04,
+    "colors": [
+      "blue",
+      "red"
+    ],
+    "size": 100,
+    "price": 100
+  },
+  {
+    "name": "Fine Fluorocarbon 6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.8,
+    "diameter": 0.21,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 61
+  },
+  {
+    "name": "Fine Fluorocarbon 6LB",
+    "type": "Флюорокарбоновая",
+    "strength": 2.8,
+    "diameter": 0.21,
+    "colors": [
+      "transparent"
+    ],
+    "size": 300,
+    "price": 153
+  },
+  {
+    "name": "Mono SS - 6.5LB",
+    "type": "Нейлоновая",
+    "strength": 3,
+    "diameter": 0.15,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 35
+  },
+  {
+    "name": "Mono SS - 6.5LB",
+    "type": "Нейлоновая",
+    "strength": 3,
+    "diameter": 0.15,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 137
+  },
+  {
+    "name": "ExtraSilk - 6.5LB",
+    "type": "Шнур",
+    "strength": 3,
+    "diameter": 0.08,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 45
+  },
+  {
+    "name": "ExtraSilk - 6.5LB",
+    "type": "Шнур",
+    "strength": 3,
+    "diameter": 0.08,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 133
+  },
+  {
+    "name": "Mono Original - 7.5LB",
+    "type": "Нейлоновая",
+    "strength": 3.4,
+    "diameter": 0.18,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 25
+  },
+  {
+    "name": "Mono Original - 7.5LB",
+    "type": "Нейлоновая",
+    "strength": 3.4,
+    "diameter": 0.18,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 73
+  },
+  {
+    "name": "Ultra Line 7.5LB",
+    "type": "Нейлоновая",
+    "strength": 3.4,
+    "diameter": 0.16,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 90
+  },
+  {
+    "name": "Ultra Line 7.5LB",
+    "type": "Нейлоновая",
+    "strength": 3.4,
+    "diameter": 0.16,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 180
+  },
+  {
+    "name": "Power Carbon 7.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.4,
+    "diameter": 0.2,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 126
+  },
+  {
+    "name": "Power Carbon 7.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.4,
+    "diameter": 0.2,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 253
+  },
+  {
+    "name": "Indiana - 8LB",
+    "type": "Нейлоновая",
+    "strength": 3.5,
+    "diameter": 0.19,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 13
+  },
+  {
+    "name": "Indiana - 8LB",
+    "type": "Нейлоновая",
+    "strength": 3.5,
+    "diameter": 0.19,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 350,
+    "price": 36
+  },
+  {
+    "name": "Power Line 7.5LB",
+    "type": "Нейлоновая",
+    "strength": 3.5,
+    "diameter": 0.18,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 56
+  },
+  {
+    "name": "Power Line 7.5LB",
+    "type": "Нейлоновая",
+    "strength": 3.5,
+    "diameter": 0.18,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 119
+  },
+  {
+    "name": "Hybrid - 8LB",
+    "type": "Шнур",
+    "strength": 3.5,
+    "diameter": 0.11,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": 110,
+    "price": 17
+  },
+  {
+    "name": "Hybrid - 8LB",
+    "type": "Шнур",
+    "strength": 3.5,
+    "diameter": 0.11,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": null,
+    "price": 49
+  },
+  {
+    "name": "Fluorocarbon 7,7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.5,
+    "diameter": 0.2,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 90
+  },
+  {
+    "name": "Fluorocarbon 7,7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.5,
+    "diameter": 0.2,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 240
+  },
+  {
+    "name": "Pure Fluorocarbon 8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.6,
+    "diameter": 0.23,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 91
+  },
+  {
+    "name": "Pure Fluorocarbon 8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 3.6,
+    "diameter": 0.23,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 229
+  },
+  {
+    "name": "Invisible 8LB",
+    "type": "Нейлоновая",
+    "strength": 3.7,
+    "diameter": 0.16,
+    "colors": [
+      "orange",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Micro Braid 8LB",
+    "type": "Шнур",
+    "strength": 3.7,
+    "diameter": 0.08,
+    "colors": [
+      "blue",
+      "red"
+    ],
+    "size": 100,
+    "price": 100
+  },
+  {
+    "name": "Super Line - 8.5lb",
+    "type": "Нейлоновая",
+    "strength": 3.9,
+    "diameter": 0.24,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 4
+  },
+  {
+    "name": "ExtraSilk - 9LB",
+    "type": "Шнур",
+    "strength": 4,
+    "diameter": 0.1,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 44
+  },
+  {
+    "name": "ExtraSilk - 9LB",
+    "type": "Шнур",
+    "strength": 4,
+    "diameter": 0.1,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 130
+  },
+  {
+    "name": "Power Carbon 8.8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 4,
+    "diameter": 0.25,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 128
+  },
+  {
+    "name": "Power Carbon 8.8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 4,
+    "diameter": 0.25,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 257
+  },
+  {
+    "name": "Invisible 9.7LB",
+    "type": "Нейлоновая",
+    "strength": 4.4,
+    "diameter": 0.18,
+    "colors": [
+      "orange",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Pure Fluorocarbon 10LB",
+    "type": "Флюорокарбоновая",
+    "strength": 4.4,
+    "diameter": 0.26,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 93
+  },
+  {
+    "name": "Pure Fluorocarbon 10LB",
+    "type": "Флюорокарбоновая",
+    "strength": 4.4,
+    "diameter": 0.26,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 230
+  },
+  {
+    "name": "Super Braid - 10lb",
+    "type": "Шнур",
+    "strength": 4.5,
+    "diameter": 0.14,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 6
+  },
+  {
+    "name": "Super Line - 10lb",
+    "type": "Нейлоновая",
+    "strength": 4.8,
+    "diameter": 0.26,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 4
+  },
+  {
+    "name": "Indiana - 11LB",
+    "type": "Нейлоновая",
+    "strength": 5,
+    "diameter": 0.22,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 13
+  },
+  {
+    "name": "Indiana - 11LB",
+    "type": "Нейлоновая",
+    "strength": 5,
+    "diameter": 0.22,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 350,
+    "price": 34
+  },
+  {
+    "name": "Ultra Line 11LB",
+    "type": "Нейлоновая",
+    "strength": 5,
+    "diameter": 0.2,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 90
+  },
+  {
+    "name": "Ultra Line 11LB",
+    "type": "Нейлоновая",
+    "strength": 5,
+    "diameter": 0.2,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 180
+  },
+  {
+    "name": "Hybrid - 11LB",
+    "type": "Шнур",
+    "strength": 5,
+    "diameter": 0.14,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": 110,
+    "price": 17
+  },
+  {
+    "name": "Hybrid - 11LB",
+    "type": "Шнур",
+    "strength": 5,
+    "diameter": 0.14,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": null,
+    "price": 49
+  },
+  {
+    "name": "Micro Braid 11LB",
+    "type": "Шнур",
+    "strength": 5,
+    "diameter": 0.1,
+    "colors": [
+      "blue",
+      "red"
+    ],
+    "size": 100,
+    "price": 100
+  },
+  {
+    "name": "ExtraSilk - 12LB",
+    "type": "Шнур",
+    "strength": 5.4,
+    "diameter": 0.12,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 43
+  },
+  {
+    "name": "ExtraSilk - 12LB",
+    "type": "Шнур",
+    "strength": 5.4,
+    "diameter": 0.12,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 127
+  },
+  {
+    "name": "DevilBraid - 12LB",
+    "type": "Шнур",
+    "strength": 5.4,
+    "diameter": 0.1,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 63
+  },
+  {
+    "name": "DevilBraid - 12LB",
+    "type": "Шнур",
+    "strength": 5.4,
+    "diameter": 0.1,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 241
+  },
+  {
+    "name": "DevilBraid - 12LB",
+    "type": "Шнур",
+    "strength": 5.4,
+    "diameter": 0.1,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 497
+  },
+  {
+    "name": "Ultra Braid 12 LB",
+    "type": "Шнур",
+    "strength": 5.4,
+    "diameter": 0.1,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 100
+  },
+  {
+    "name": "Ultra Braid 12 LB",
+    "type": "Шнур",
+    "strength": 5.4,
+    "diameter": 0.1,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 199
+  },
+  {
+    "name": "Fine Fluorocarbon 12LB",
+    "type": "Флюорокарбоновая",
+    "strength": 5.4,
+    "diameter": 0.28,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 63
+  },
+  {
+    "name": "Fine Fluorocarbon 12LB",
+    "type": "Флюорокарбоновая",
+    "strength": 5.4,
+    "diameter": 0.28,
+    "colors": [
+      "transparent"
+    ],
+    "size": 300,
+    "price": 159
+  },
+  {
+    "name": "Invisible 12LB",
+    "type": "Нейлоновая",
+    "strength": 5.5,
+    "diameter": 0.2,
+    "colors": [
+      "orange",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Pure Fluorocarbon 12LB",
+    "type": "Флюорокарбоновая",
+    "strength": 5.5,
+    "diameter": 0.28,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 95
+  },
+  {
+    "name": "Pure Fluorocarbon 12LB",
+    "type": "Флюорокарбоновая",
+    "strength": 5.5,
+    "diameter": 0.28,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 235
+  },
+  {
+    "name": "Super Line - 12lb",
+    "type": "Нейлоновая",
+    "strength": 5.6,
+    "diameter": 0.28,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 4.5
+  },
+  {
+    "name": "Power Braid 13LB",
+    "type": "Шнур",
+    "strength": 5.9,
+    "diameter": 0.1,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 80
+  },
+  {
+    "name": "Power Braid 13LB",
+    "type": "Шнур",
+    "strength": 5.9,
+    "diameter": 0.1,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 160
+  },
+  {
+    "name": "Power Carbon 13LB",
+    "type": "Флюорокарбоновая",
+    "strength": 6,
+    "diameter": 0.28,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 129
+  },
+  {
+    "name": "Power Carbon 13LB",
+    "type": "Флюорокарбоновая",
+    "strength": 6,
+    "diameter": 0.28,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 259
+  },
+  {
+    "name": "Pure Fluorocarbon 14LB",
+    "type": "Флюорокарбоновая",
+    "strength": 6.4,
+    "diameter": 0.32,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 96
+  },
+  {
+    "name": "Pure Fluorocarbon 14LB",
+    "type": "Флюорокарбоновая",
+    "strength": 6.4,
+    "diameter": 0.32,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 238
+  },
+  {
+    "name": "Power Line 14LB",
+    "type": "Нейлоновая",
+    "strength": 6.5,
+    "diameter": 0.25,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 60
+  },
+  {
+    "name": "Power Line 14LB",
+    "type": "Нейлоновая",
+    "strength": 6.5,
+    "diameter": 0.25,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 123
+  },
+  {
+    "name": "DevilBraid - 14LB",
+    "type": "Шнур",
+    "strength": 6.5,
+    "diameter": 0.12,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 63
+  },
+  {
+    "name": "DevilBraid - 14LB",
+    "type": "Шнур",
+    "strength": 6.5,
+    "diameter": 0.12,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 241
+  },
+  {
+    "name": "DevilBraid - 14LB",
+    "type": "Шнур",
+    "strength": 6.5,
+    "diameter": 0.12,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 497
+  },
+  {
+    "name": "Mono Original - 15LB",
+    "type": "Нейлоновая",
+    "strength": 6.8,
+    "diameter": 0.25,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 23
+  },
+  {
+    "name": "Mono Original - 15LB",
+    "type": "Нейлоновая",
+    "strength": 6.8,
+    "diameter": 0.25,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 67
+  },
+  {
+    "name": "Carp Super Soft Mono 15 LB",
+    "type": "Поводковый нейлон",
+    "strength": 6.8,
+    "diameter": 0.3,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 29.9
+  },
+  {
+    "name": "Carp Super Soft Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 6.8,
+    "diameter": 0.18,
+    "colors": [
+      "green"
+    ],
+    "size": 20,
+    "price": 34.9
+  },
+  {
+    "name": "US Braid 15LB",
+    "type": "Поводковый шнур",
+    "strength": 6.8,
+    "diameter": 0.14,
+    "colors": [
+      "transparent",
+      "green",
+      "red",
+      "orange"
+    ],
+    "size": 15,
+    "price": 79.9
+  },
+  {
+    "name": "Ultra Braid 15 LB",
+    "type": "Шнур",
+    "strength": 6.9,
+    "diameter": 0.12,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 100
+  },
+  {
+    "name": "Ultra Braid 15 LB",
+    "type": "Шнур",
+    "strength": 6.9,
+    "diameter": 0.12,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 199
+  },
+  {
+    "name": "Power Carbon 15LB",
+    "type": "Флюорокарбоновая",
+    "strength": 6.9,
+    "diameter": 0.3,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 129
+  },
+  {
+    "name": "Power Carbon 15LB",
+    "type": "Флюорокарбоновая",
+    "strength": 6.9,
+    "diameter": 0.3,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 258
+  },
+  {
+    "name": "Mono SS - 15LB",
+    "type": "Нейлоновая",
+    "strength": 7,
+    "diameter": 0.24,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 33
+  },
+  {
+    "name": "Mono SS - 15LB",
+    "type": "Нейлоновая",
+    "strength": 7,
+    "diameter": 0.24,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 129
+  },
+  {
+    "name": "Fluorocarbon 16,3LB",
+    "type": "Флюорокарбоновая",
+    "strength": 7.4,
+    "diameter": 0.32,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 95
+  },
+  {
+    "name": "Fluorocarbon 16,3LB",
+    "type": "Флюорокарбоновая",
+    "strength": 7.4,
+    "diameter": 0.32,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 245
+  },
+  {
+    "name": "Super Line - 16.5lb",
+    "type": "Нейлоновая",
+    "strength": 7.5,
+    "diameter": 0.32,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 5
+  },
+  {
+    "name": "Indiana - 16LB",
+    "type": "Нейлоновая",
+    "strength": 7.5,
+    "diameter": 0.27,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 14
+  },
+  {
+    "name": "Indiana - 16LB",
+    "type": "Нейлоновая",
+    "strength": 7.5,
+    "diameter": 0.27,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 350,
+    "price": 39
+  },
+  {
+    "name": "Ultra Line 16.5LB",
+    "type": "Нейлоновая",
+    "strength": 7.6,
+    "diameter": 0.25,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 95
+  },
+  {
+    "name": "Ultra Line 16.5LB",
+    "type": "Нейлоновая",
+    "strength": 7.6,
+    "diameter": 0.25,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 190
+  },
+  {
+    "name": "Fine Fluorocarbon 17LB",
+    "type": "Флюорокарбоновая",
+    "strength": 7.7,
+    "diameter": 0.35,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 64
+  },
+  {
+    "name": "Fine Fluorocarbon 17LB",
+    "type": "Флюорокарбоновая",
+    "strength": 7.7,
+    "diameter": 0.35,
+    "colors": [
+      "transparent"
+    ],
+    "size": 300,
+    "price": 162
+  },
+  {
+    "name": "Power Line 17LB",
+    "type": "Нейлоновая",
+    "strength": 7.8,
+    "diameter": 0.28,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 60
+  },
+  {
+    "name": "Power Line 17LB",
+    "type": "Нейлоновая",
+    "strength": 7.8,
+    "diameter": 0.28,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 123
+  },
+  {
+    "name": "Pure Fluorocarbon 17LB",
+    "type": "Флюорокарбоновая",
+    "strength": 7.8,
+    "diameter": 0.36,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 97
+  },
+  {
+    "name": "Pure Fluorocarbon 17LB",
+    "type": "Флюорокарбоновая",
+    "strength": 7.8,
+    "diameter": 0.36,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 240
+  },
+  {
+    "name": "CarpX PureCarbon 17LB",
+    "type": "Поводковый флюоррокарбон",
+    "strength": 7.8,
+    "diameter": 0.36,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 98.8
+  },
+  {
+    "name": "Mono Original - 18LB",
+    "type": "Нейлоновая",
+    "strength": 8,
+    "diameter": 0.28,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 23
+  },
+  {
+    "name": "Mono Original - 18LB",
+    "type": "Нейлоновая",
+    "strength": 8,
+    "diameter": 0.28,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 67
+  },
+  {
+    "name": "ExtraSilk - 17LB",
+    "type": "Шнур",
+    "strength": 8,
+    "diameter": 0.15,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 41
+  },
+  {
+    "name": "ExtraSilk - 17LB",
+    "type": "Шнур",
+    "strength": 8,
+    "diameter": 0.15,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 121
+  },
+  {
+    "name": "Ultra Line 19LB",
+    "type": "Нейлоновая",
+    "strength": 8.7,
+    "diameter": 0.28,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 95
+  },
+  {
+    "name": "Ultra Line 19LB",
+    "type": "Нейлоновая",
+    "strength": 8.7,
+    "diameter": 0.28,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 190
+  },
+  {
+    "name": "Fluorocarbon 20,7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 9.4,
+    "diameter": 0.38,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 95
+  },
+  {
+    "name": "Fluorocarbon 20,7LB",
+    "type": "Флюорокарбоновая",
+    "strength": 9.4,
+    "diameter": 0.38,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 245
+  },
+  {
+    "name": "Ultra Braid 21 LB",
+    "type": "Шнур",
+    "strength": 9.5,
+    "diameter": 0.16,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 106
+  },
+  {
+    "name": "Ultra Braid 21 LB",
+    "type": "Шнур",
+    "strength": 9.5,
+    "diameter": 0.16,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 211
+  },
+  {
+    "name": "Power Line 21LB",
+    "type": "Нейлоновая",
+    "strength": 9.6,
+    "diameter": 0.3,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 63
+  },
+  {
+    "name": "Power Line 21LB",
+    "type": "Нейлоновая",
+    "strength": 9.6,
+    "diameter": 0.3,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 127
+  },
+  {
+    "name": "Pure Fluorocarbon 21LB",
+    "type": "Флюорокарбоновая",
+    "strength": 9.7,
+    "diameter": 0.42,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 99
+  },
+  {
+    "name": "Pure Fluorocarbon 21LB",
+    "type": "Флюорокарбоновая",
+    "strength": 9.7,
+    "diameter": 0.42,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 245
+  },
+  {
+    "name": "CarpX PureCarbon 21LB",
+    "type": "Поводковый флюоррокарбон",
+    "strength": 9.7,
+    "diameter": 0.42,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 99.8
+  },
+  {
+    "name": "Power Carbon 21.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 9.8,
+    "diameter": 0.4,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 131
+  },
+  {
+    "name": "Power Carbon 21.5LB",
+    "type": "Флюорокарбоновая",
+    "strength": 9.8,
+    "diameter": 0.4,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 263
+  },
+  {
+    "name": "Hybrid - 22LB",
+    "type": "Шнур",
+    "strength": 10,
+    "diameter": 0.19,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": 110,
+    "price": 22
+  },
+  {
+    "name": "Hybrid - 22LB",
+    "type": "Шнур",
+    "strength": 10,
+    "diameter": 0.19,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": null,
+    "price": 63
+  },
+  {
+    "name": "Fine Fluorocarbon 22LB",
+    "type": "Флюорокарбоновая",
+    "strength": 10,
+    "diameter": 0.42,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 66
+  },
+  {
+    "name": "Fine Fluorocarbon 22LB",
+    "type": "Флюорокарбоновая",
+    "strength": 10,
+    "diameter": 0.42,
+    "colors": [
+      "transparent"
+    ],
+    "size": 300,
+    "price": 166
+  },
+  {
+    "name": "Mono SS - 23LB",
+    "type": "Нейлоновая",
+    "strength": 10.4,
+    "diameter": 0.3,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 33
+  },
+  {
+    "name": "Mono SS - 23LB",
+    "type": "Нейлоновая",
+    "strength": 10.4,
+    "diameter": 0.3,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 129
+  },
+  {
+    "name": "Indiana - 23LB",
+    "type": "Нейлоновая",
+    "strength": 10.5,
+    "diameter": 0.32,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 15
+  },
+  {
+    "name": "Indiana - 23LB",
+    "type": "Нейлоновая",
+    "strength": 10.5,
+    "diameter": 0.32,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 350,
+    "price": 42
+  },
+  {
+    "name": "Heavy Line 23LB",
+    "type": "Нейлоновая",
+    "strength": 10.6,
+    "diameter": 0.3,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Heavy Line 23LB",
+    "type": "Нейлоновая",
+    "strength": 10.6,
+    "diameter": 0.3,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 150
+  },
+  {
+    "name": "Heavy Line 23LB",
+    "type": "Нейлоновая",
+    "strength": 10.6,
+    "diameter": 0.3,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 450
+  },
+  {
+    "name": "Super Line - 24lb",
+    "type": "Нейлоновая",
+    "strength": 11,
+    "diameter": 0.4,
+    "colors": [
+      "transparent"
+    ],
+    "size": 120,
+    "price": 6
+  },
+  {
+    "name": "Mono Original - 25LB",
+    "type": "Нейлоновая",
+    "strength": 11.5,
+    "diameter": 0.33,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 23
+  },
+  {
+    "name": "Mono Original - 25LB",
+    "type": "Нейлоновая",
+    "strength": 11.5,
+    "diameter": 0.33,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 67
+  },
+  {
+    "name": "Pure Fluorocarbon 26LB",
+    "type": "Флюорокарбоновая",
+    "strength": 11.6,
+    "diameter": 0.46,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 100
+  },
+  {
+    "name": "Pure Fluorocarbon 26LB",
+    "type": "Флюорокарбоновая",
+    "strength": 11.6,
+    "diameter": 0.46,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 248
+  },
+  {
+    "name": "CarpX PureCarbon 26LB",
+    "type": "Поводковый флюоррокарбон",
+    "strength": 11.6,
+    "diameter": 0.46,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 101.8
+  },
+  {
+    "name": "Power Braid 26LB",
+    "type": "Шнур",
+    "strength": 12,
+    "diameter": 0.18,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 85
+  },
+  {
+    "name": "Power Braid 26LB",
+    "type": "Шнур",
+    "strength": 12,
+    "diameter": 0.18,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 170
+  },
+  {
+    "name": "Hybrid - 28LB",
+    "type": "Шнур",
+    "strength": 12.5,
+    "diameter": 0.24,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": 110,
+    "price": 23
+  },
+  {
+    "name": "Hybrid - 28LB",
+    "type": "Шнур",
+    "strength": 12.5,
+    "diameter": 0.24,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": null,
+    "price": 66
+  },
+  {
+    "name": "Fluorocarbon 28LB",
+    "type": "Флюорокарбоновая",
+    "strength": 12.7,
+    "diameter": 0.46,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 100
+  },
+  {
+    "name": "Fluorocarbon 28LB",
+    "type": "Флюорокарбоновая",
+    "strength": 12.7,
+    "diameter": 0.46,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 250
+  },
+  {
+    "name": "Carp Super Soft Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 12.7,
+    "diameter": 0.26,
+    "colors": [
+      "green"
+    ],
+    "size": 20,
+    "price": 37.9
+  },
+  {
+    "name": "Power Line 28LB",
+    "type": "Нейлоновая",
+    "strength": 12.8,
+    "diameter": 0.35,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 63
+  },
+  {
+    "name": "Power Line 28LB",
+    "type": "Нейлоновая",
+    "strength": 12.8,
+    "diameter": 0.35,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 127
+  },
+  {
+    "name": "DevilBraid - 28LB",
+    "type": "Шнур",
+    "strength": 12.8,
+    "diameter": 0.2,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 66
+  },
+  {
+    "name": "DevilBraid - 28LB",
+    "type": "Шнур",
+    "strength": 12.8,
+    "diameter": 0.2,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 261
+  },
+  {
+    "name": "DevilBraid - 28LB",
+    "type": "Шнур",
+    "strength": 12.8,
+    "diameter": 0.2,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 521
+  },
+  {
+    "name": "Indiana - 28LB",
+    "type": "Нейлоновая",
+    "strength": 13,
+    "diameter": 0.38,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 15
+  },
+  {
+    "name": "Indiana - 28LB",
+    "type": "Нейлоновая",
+    "strength": 13,
+    "diameter": 0.38,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 350,
+    "price": 42
+  },
+  {
+    "name": "Super Braid - 30lb",
+    "type": "Шнур",
+    "strength": 13,
+    "diameter": 0.26,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 6.5
+  },
+  {
+    "name": "Ultra Braid 29 LB",
+    "type": "Шнур",
+    "strength": 13.3,
+    "diameter": 0.2,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 110
+  },
+  {
+    "name": "Ultra Braid 29 LB",
+    "type": "Шнур",
+    "strength": 13.3,
+    "diameter": 0.2,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 219
+  },
+  {
+    "name": "ExtraSilk - 30LB",
+    "type": "Шнур",
+    "strength": 13.5,
+    "diameter": 0.22,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 43
+  },
+  {
+    "name": "ExtraSilk - 30LB",
+    "type": "Шнур",
+    "strength": 13.5,
+    "diameter": 0.22,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 121
+  },
+  {
+    "name": "Power Braid 30LB",
+    "type": "Шнур",
+    "strength": 13.5,
+    "diameter": 0.2,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 89
+  },
+  {
+    "name": "Power Braid 30LB",
+    "type": "Шнур",
+    "strength": 13.5,
+    "diameter": 0.2,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 180
+  },
+  {
+    "name": "HIPower Nylon 30LB",
+    "type": "Нейлоновая",
+    "strength": 13.6,
+    "diameter": 0.38,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 300,
+    "price": 190
+  },
+  {
+    "name": "HIPower Nylon 30LB",
+    "type": "Нейлоновая",
+    "strength": 13.6,
+    "diameter": 0.38,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 600,
+    "price": 370
+  },
+  {
+    "name": "HIPower Nylon 30LB",
+    "type": "Нейлоновая",
+    "strength": 13.6,
+    "diameter": 0.38,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 1200,
+    "price": 729
+  },
+  {
+    "name": "HIPower Braid 30LB",
+    "type": "Шнур",
+    "strength": 13.6,
+    "diameter": 0.24,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 219
+  },
+  {
+    "name": "HIPower Braid 30LB",
+    "type": "Шнур",
+    "strength": 13.6,
+    "diameter": 0.24,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 399
+  },
+  {
+    "name": "HIPower Braid 30LB",
+    "type": "Шнур",
+    "strength": 13.6,
+    "diameter": 0.24,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 749
+  },
+  {
+    "name": "HIPower Braid 30LB RGB",
+    "type": "Шнур",
+    "strength": 13.6,
+    "diameter": 0.24,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 249
+  },
+  {
+    "name": "HIPower Braid 30LB RGB",
+    "type": "Шнур",
+    "strength": 13.6,
+    "diameter": 0.24,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 437
+  },
+  {
+    "name": "HIPower Braid 30LB RGB",
+    "type": "Шнур",
+    "strength": 13.6,
+    "diameter": 0.24,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 869
+  },
+  {
+    "name": "Carp Super Soft Mono 30 LB",
+    "type": "Поводковый нейлон",
+    "strength": 13.6,
+    "diameter": 0.43,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 33.9
+  },
+  {
+    "name": "US Mono 3D 30LB",
+    "type": "Поводковый нейлон",
+    "strength": 13.6,
+    "diameter": 0.44,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 15,
+    "price": 54.9
+  },
+  {
+    "name": "Carp X HMT Mono 30LB",
+    "type": "Поводковый нейлон",
+    "strength": 13.6,
+    "diameter": 0.42,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 57.5
+  },
+  {
+    "name": "CarpX Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 13.6,
+    "diameter": 0.28,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 20,
+    "price": 61.8
+  },
+  {
+    "name": "US Braid 30LB",
+    "type": "Поводковый шнур",
+    "strength": 13.6,
+    "diameter": 0.24,
+    "colors": [
+      "transparent",
+      "green",
+      "red",
+      "orange"
+    ],
+    "size": 15,
+    "price": 82.9
+  },
+  {
+    "name": "Pure Fluorocarbon 30LB",
+    "type": "Флюорокарбоновая",
+    "strength": 13.8,
+    "diameter": 0.49,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 105
+  },
+  {
+    "name": "Pure Fluorocarbon 30LB",
+    "type": "Флюорокарбоновая",
+    "strength": 13.8,
+    "diameter": 0.49,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 260
+  },
+  {
+    "name": "Leader Nylon 30LB",
+    "type": "Поводковый нейлон",
+    "strength": 13.8,
+    "diameter": 0.36,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 99.8
+  },
+  {
+    "name": "CarpX PureCarbon 30LB",
+    "type": "Поводковый флюоррокарбон",
+    "strength": 13.8,
+    "diameter": 0.49,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 103.8
+  },
+  {
+    "name": "Ultra Line 30LB",
+    "type": "Нейлоновая",
+    "strength": 14,
+    "diameter": 0.35,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 96
+  },
+  {
+    "name": "Ultra Line 30LB",
+    "type": "Нейлоновая",
+    "strength": 14,
+    "diameter": 0.35,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 197
+  },
+  {
+    "name": "Mono Original - 32LB",
+    "type": "Нейлоновая",
+    "strength": 14.5,
+    "diameter": 0.4,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 24
+  },
+  {
+    "name": "Mono Original - 32LB",
+    "type": "Нейлоновая",
+    "strength": 14.5,
+    "diameter": 0.4,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 70
+  },
+  {
+    "name": "Mono SS - 33LB",
+    "type": "Нейлоновая",
+    "strength": 15,
+    "diameter": 0.36,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 33
+  },
+  {
+    "name": "Mono SS - 33LB",
+    "type": "Нейлоновая",
+    "strength": 15,
+    "diameter": 0.36,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 129
+  },
+  {
+    "name": "Hybrid - 35LB",
+    "type": "Шнур",
+    "strength": 15,
+    "diameter": 0.28,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": 110,
+    "price": 24
+  },
+  {
+    "name": "Hybrid - 35LB",
+    "type": "Шнур",
+    "strength": 15,
+    "diameter": 0.28,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": null,
+    "price": 69
+  },
+  {
+    "name": "Power Carbon 33LB",
+    "type": "Флюорокарбоновая",
+    "strength": 15,
+    "diameter": 0.5,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 136
+  },
+  {
+    "name": "Power Carbon 33LB",
+    "type": "Флюорокарбоновая",
+    "strength": 15,
+    "diameter": 0.5,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 273
+  },
+  {
+    "name": "Power Line 33LB",
+    "type": "Нейлоновая",
+    "strength": 15.1,
+    "diameter": 0.4,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 66
+  },
+  {
+    "name": "Power Line 33LB",
+    "type": "Нейлоновая",
+    "strength": 15.1,
+    "diameter": 0.4,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 133
+  },
+  {
+    "name": "ExtraSilk - 34LB",
+    "type": "Шнур",
+    "strength": 15.6,
+    "diameter": 0.26,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 44
+  },
+  {
+    "name": "ExtraSilk - 34LB",
+    "type": "Шнур",
+    "strength": 15.6,
+    "diameter": 0.26,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 130
+  },
+  {
+    "name": "DevilBraid - 34LB",
+    "type": "Шнур",
+    "strength": 15.6,
+    "diameter": 0.23,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 66
+  },
+  {
+    "name": "DevilBraid - 34LB",
+    "type": "Шнур",
+    "strength": 15.6,
+    "diameter": 0.23,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 261
+  },
+  {
+    "name": "DevilBraid - 34LB",
+    "type": "Шнур",
+    "strength": 15.6,
+    "diameter": 0.23,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 521
+  },
+  {
+    "name": "Carp Super Soft Mono 35 LB",
+    "type": "Поводковый нейлон",
+    "strength": 15.8,
+    "diameter": 0.48,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 34.9
+  },
+  {
+    "name": "Carp X HMT Mono 35LB",
+    "type": "Поводковый нейлон",
+    "strength": 15.8,
+    "diameter": 0.46,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 57.5
+  },
+  {
+    "name": "Carp Super Soft Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 15.8,
+    "diameter": 0.32,
+    "colors": [
+      "green"
+    ],
+    "size": 20,
+    "price": 38.9
+  },
+  {
+    "name": "Indiana - 35LB",
+    "type": "Нейлоновая",
+    "strength": 16,
+    "diameter": 0.45,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 15
+  },
+  {
+    "name": "Indiana - 35LB",
+    "type": "Нейлоновая",
+    "strength": 16,
+    "diameter": 0.45,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 350,
+    "price": 45
+  },
+  {
+    "name": "Ultra Braid 36 LB",
+    "type": "Шнур",
+    "strength": 16.4,
+    "diameter": 0.23,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 114
+  },
+  {
+    "name": "Ultra Braid 36 LB",
+    "type": "Шнур",
+    "strength": 16.4,
+    "diameter": 0.23,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 227
+  },
+  {
+    "name": "Power Line 37LB",
+    "type": "Нейлоновая",
+    "strength": 16.8,
+    "diameter": 0.45,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 66
+  },
+  {
+    "name": "Power Line 37LB",
+    "type": "Нейлоновая",
+    "strength": 16.8,
+    "diameter": 0.45,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 133
+  },
+  {
+    "name": "Heavy Line 38LB",
+    "type": "Нейлоновая",
+    "strength": 17.3,
+    "diameter": 0.38,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 75
+  },
+  {
+    "name": "Heavy Line 38LB",
+    "type": "Нейлоновая",
+    "strength": 17.3,
+    "diameter": 0.38,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 150
+  },
+  {
+    "name": "Heavy Line 38LB",
+    "type": "Нейлоновая",
+    "strength": 17.3,
+    "diameter": 0.38,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 450
+  },
+  {
+    "name": "Ultra Line 38LB",
+    "type": "Нейлоновая",
+    "strength": 17.3,
+    "diameter": 0.4,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 100
+  },
+  {
+    "name": "Ultra Line 38LB",
+    "type": "Нейлоновая",
+    "strength": 17.3,
+    "diameter": 0.4,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 200
+  },
+  {
+    "name": "Pure Fluorocarbon 38LB",
+    "type": "Флюорокарбоновая",
+    "strength": 17.4,
+    "diameter": 0.54,
+    "colors": [
+      "transparent"
+    ],
+    "size": 110,
+    "price": 107
+  },
+  {
+    "name": "Pure Fluorocarbon 38LB",
+    "type": "Флюорокарбоновая",
+    "strength": 17.4,
+    "diameter": 0.54,
+    "colors": [
+      "transparent"
+    ],
+    "size": 350,
+    "price": 265
+  },
+  {
+    "name": "CarpX PureCarbon 38LB",
+    "type": "Поводковый флюоррокарбон",
+    "strength": 17.4,
+    "diameter": 0.54,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 105.8
+  },
+  {
+    "name": "Power Braid 39LB",
+    "type": "Шнур",
+    "strength": 17.7,
+    "diameter": 0.24,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 89
+  },
+  {
+    "name": "Power Braid 39LB",
+    "type": "Шнур",
+    "strength": 17.7,
+    "diameter": 0.24,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 180
+  },
+  {
+    "name": "Mono Original - 40LB",
+    "type": "Нейлоновая",
+    "strength": 18,
+    "diameter": 0.48,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 26
+  },
+  {
+    "name": "Mono Original - 40LB",
+    "type": "Нейлоновая",
+    "strength": 18,
+    "diameter": 0.48,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 76
+  },
+  {
+    "name": "HIPower Nylon 40LB",
+    "type": "Нейлоновая",
+    "strength": 18,
+    "diameter": 0.5,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 300,
+    "price": 190
+  },
+  {
+    "name": "HIPower Nylon 40LB",
+    "type": "Нейлоновая",
+    "strength": 18,
+    "diameter": 0.5,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 600,
+    "price": 370
+  },
+  {
+    "name": "HIPower Nylon 40LB",
+    "type": "Нейлоновая",
+    "strength": 18,
+    "diameter": 0.5,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 1200,
+    "price": 729
+  },
+  {
+    "name": "Super Braid - 40lb",
+    "type": "Шнур",
+    "strength": 18,
+    "diameter": 0.32,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 8
+  },
+  {
+    "name": "HIPower Braid 40LB",
+    "type": "Шнур",
+    "strength": 18,
+    "diameter": 0.28,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 219
+  },
+  {
+    "name": "HIPower Braid 40LB",
+    "type": "Шнур",
+    "strength": 18,
+    "diameter": 0.28,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 399
+  },
+  {
+    "name": "HIPower Braid 40LB",
+    "type": "Шнур",
+    "strength": 18,
+    "diameter": 0.28,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 749
+  },
+  {
+    "name": "HIPower Braid 40LB RGB",
+    "type": "Шнур",
+    "strength": 18,
+    "diameter": 0.28,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 249
+  },
+  {
+    "name": "HIPower Braid 40LB RGB",
+    "type": "Шнур",
+    "strength": 18,
+    "diameter": 0.28,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 437
+  },
+  {
+    "name": "HIPower Braid 40LB RGB",
+    "type": "Шнур",
+    "strength": 18,
+    "diameter": 0.28,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 869
+  },
+  {
+    "name": "Leader Nylon 40LB",
+    "type": "Поводковый нейлон",
+    "strength": 18,
+    "diameter": 0.46,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 108.8
+  },
+  {
+    "name": "Carp Super Soft Mono 40 LB",
+    "type": "Поводковый нейлон",
+    "strength": 18.1,
+    "diameter": 0.51,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 37.9
+  },
+  {
+    "name": "US Mono 3D 40LB",
+    "type": "Поводковый нейлон",
+    "strength": 18.1,
+    "diameter": 0.52,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 15,
+    "price": 57.9
+  },
+  {
+    "name": "Carp X HMT Mono 40LB",
+    "type": "Поводковый нейлон",
+    "strength": 18.1,
+    "diameter": 0.5,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 59.5
+  },
+  {
+    "name": "CarpX Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 18.1,
+    "diameter": 0.33,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 20,
+    "price": 63.8
+  },
+  {
+    "name": "US Braid 40LB",
+    "type": "Поводковый шнур",
+    "strength": 18.1,
+    "diameter": 0.3,
+    "colors": [
+      "transparent",
+      "green",
+      "red",
+      "orange"
+    ],
+    "size": 15,
+    "price": 84.9
+  },
+  {
+    "name": "Hybrid - 42LB",
+    "type": "Шнур",
+    "strength": 19,
+    "diameter": 0.33,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": 110,
+    "price": 24
+  },
+  {
+    "name": "Hybrid - 42LB",
+    "type": "Шнур",
+    "strength": 19,
+    "diameter": 0.33,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": null,
+    "price": 70
+  },
+  {
+    "name": "Fluorocarbon 41,8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 19,
+    "diameter": 0.54,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 100
+  },
+  {
+    "name": "Fluorocarbon 41,8LB",
+    "type": "Флюорокарбоновая",
+    "strength": 19,
+    "diameter": 0.54,
+    "colors": [
+      "transparent"
+    ],
+    "size": 100,
+    "price": 250
+  },
+  {
+    "name": "Carp Super Soft Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 19,
+    "diameter": 0.35,
+    "colors": [
+      "green"
+    ],
+    "size": 20,
+    "price": 39.9
+  },
+  {
+    "name": "Ultra Line 42LB",
+    "type": "Нейлоновая",
+    "strength": 19.1,
+    "diameter": 0.45,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 103
+  },
+  {
+    "name": "Ultra Line 42LB",
+    "type": "Нейлоновая",
+    "strength": 19.1,
+    "diameter": 0.45,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 207
+  },
+  {
+    "name": "Power Carbon 42LB",
+    "type": "Флюорокарбоновая",
+    "strength": 19.1,
+    "diameter": 0.55,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 138
+  },
+  {
+    "name": "Power Carbon 42LB",
+    "type": "Флюорокарбоновая",
+    "strength": 19.1,
+    "diameter": 0.55,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 277
+  },
+  {
+    "name": "CarpX PureCarbon 45LB",
+    "type": "Поводковый флюоррокарбон",
+    "strength": 20.4,
+    "diameter": 0.58,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 107.8
+  },
+  {
+    "name": "Power Line 45LB",
+    "type": "Нейлоновая",
+    "strength": 20.5,
+    "diameter": 0.5,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 68
+  },
+  {
+    "name": "Power Line 45LB",
+    "type": "Нейлоновая",
+    "strength": 20.5,
+    "diameter": 0.5,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 137
+  },
+  {
+    "name": "ExtraSilk - 46LB",
+    "type": "Шнур",
+    "strength": 21,
+    "diameter": 0.32,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 45
+  },
+  {
+    "name": "ExtraSilk - 46LB",
+    "type": "Шнур",
+    "strength": 21,
+    "diameter": 0.32,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 133
+  },
+  {
+    "name": "Heavy Line 48LB",
+    "type": "Нейлоновая",
+    "strength": 22,
+    "diameter": 0.46,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 77
+  },
+  {
+    "name": "Heavy Line 48LB",
+    "type": "Нейлоновая",
+    "strength": 22,
+    "diameter": 0.46,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 153
+  },
+  {
+    "name": "Heavy Line 48LB",
+    "type": "Нейлоновая",
+    "strength": 22,
+    "diameter": 0.46,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 459
+  },
+  {
+    "name": "Super Braid - 50lb",
+    "type": "Шнур",
+    "strength": 22,
+    "diameter": 0.36,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 8.5
+  },
+  {
+    "name": "DevilBraid - 48LB",
+    "type": "Шнур",
+    "strength": 22,
+    "diameter": 0.3,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 69
+  },
+  {
+    "name": "DevilBraid - 48LB",
+    "type": "Шнур",
+    "strength": 22,
+    "diameter": 0.3,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 273
+  },
+  {
+    "name": "DevilBraid - 48LB",
+    "type": "Шнур",
+    "strength": 22,
+    "diameter": 0.3,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 545
+  },
+  {
+    "name": "HIPower Nylon 50LB",
+    "type": "Нейлоновая",
+    "strength": 22.5,
+    "diameter": 0.6,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 300,
+    "price": 190
+  },
+  {
+    "name": "HIPower Nylon 50LB",
+    "type": "Нейлоновая",
+    "strength": 22.5,
+    "diameter": 0.6,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 600,
+    "price": 370
+  },
+  {
+    "name": "HIPower Nylon 50LB",
+    "type": "Нейлоновая",
+    "strength": 22.5,
+    "diameter": 0.6,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 1200,
+    "price": 729
+  },
+  {
+    "name": "HIPower Braid 50LB",
+    "type": "Шнур",
+    "strength": 22.5,
+    "diameter": 0.32,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 219
+  },
+  {
+    "name": "HIPower Braid 50LB",
+    "type": "Шнур",
+    "strength": 22.5,
+    "diameter": 0.32,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 399
+  },
+  {
+    "name": "HIPower Braid 50LB",
+    "type": "Шнур",
+    "strength": 22.5,
+    "diameter": 0.32,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 749
+  },
+  {
+    "name": "HIPower Braid 50LB RGB",
+    "type": "Шнур",
+    "strength": 22.5,
+    "diameter": 0.32,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 249
+  },
+  {
+    "name": "HIPower Braid 50LB RGB",
+    "type": "Шнур",
+    "strength": 22.5,
+    "diameter": 0.32,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 437
+  },
+  {
+    "name": "HIPower Braid 50LB RGB",
+    "type": "Шнур",
+    "strength": 22.5,
+    "diameter": 0.32,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 869
+  },
+  {
+    "name": "Carp Super Soft Mono 50 LB",
+    "type": "Поводковый нейлон",
+    "strength": 22.6,
+    "diameter": 0.6,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 38.9
+  },
+  {
+    "name": "US Mono 3D 50LB",
+    "type": "Поводковый нейлон",
+    "strength": 22.6,
+    "diameter": 0.6,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 15,
+    "price": 59.9
+  },
+  {
+    "name": "Carp X HMT Mono 50LB",
+    "type": "Поводковый нейлон",
+    "strength": 22.6,
+    "diameter": 0.58,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 59.5
+  },
+  {
+    "name": "CarpX Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 22.6,
+    "diameter": 0.37,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 20,
+    "price": 65.8
+  },
+  {
+    "name": "US Braid 50LB",
+    "type": "Поводковый шнур",
+    "strength": 22.6,
+    "diameter": 0.36,
+    "colors": [
+      "transparent",
+      "green",
+      "red",
+      "orange"
+    ],
+    "size": 15,
+    "price": 86.9
+  },
+  {
+    "name": "Power Braid 50LB",
+    "type": "Шнур",
+    "strength": 22.8,
+    "diameter": 0.28,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 93
+  },
+  {
+    "name": "Power Braid 50LB",
+    "type": "Шнур",
+    "strength": 22.8,
+    "diameter": 0.28,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 187
+  },
+  {
+    "name": "Power Carbon 50LB",
+    "type": "Флюорокарбоновая",
+    "strength": 22.8,
+    "diameter": 0.6,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 141
+  },
+  {
+    "name": "Power Carbon 50LB",
+    "type": "Флюорокарбоновая",
+    "strength": 22.8,
+    "diameter": 0.6,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 283
+  },
+  {
+    "name": "Mono SS - 50LB",
+    "type": "Нейлоновая",
+    "strength": 23,
+    "diameter": 0.48,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 33
+  },
+  {
+    "name": "Mono SS - 50LB",
+    "type": "Нейлоновая",
+    "strength": 23,
+    "diameter": 0.48,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 129
+  },
+  {
+    "name": "Ultra Braid 51 LB",
+    "type": "Шнур",
+    "strength": 23,
+    "diameter": 0.3,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 117
+  },
+  {
+    "name": "Ultra Braid 51 LB",
+    "type": "Шнур",
+    "strength": 23,
+    "diameter": 0.3,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 235
+  },
+  {
+    "name": "Leader Nylon 50LB",
+    "type": "Поводковый нейлон",
+    "strength": 23,
+    "diameter": 0.52,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 114.8
+  },
+  {
+    "name": "SL-Type Fluorocarbon 51LB",
+    "type": "Флюорокарбоновая",
+    "strength": 23.1,
+    "diameter": 0.6,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 149
+  },
+  {
+    "name": "Ultra Line 52LB",
+    "type": "Нейлоновая",
+    "strength": 23.7,
+    "diameter": 0.5,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 105
+  },
+  {
+    "name": "Ultra Line 52LB",
+    "type": "Нейлоновая",
+    "strength": 23.7,
+    "diameter": 0.5,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 211
+  },
+  {
+    "name": "Power Line 54LB",
+    "type": "Нейлоновая",
+    "strength": 24.6,
+    "diameter": 0.6,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 70
+  },
+  {
+    "name": "Power Line 54LB",
+    "type": "Нейлоновая",
+    "strength": 24.6,
+    "diameter": 0.6,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 140
+  },
+  {
+    "name": "Carp Super Soft Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 24.9,
+    "diameter": 0.4,
+    "colors": [
+      "green"
+    ],
+    "size": 20,
+    "price": 41.9
+  },
+  {
+    "name": "Mono Original - 55LB",
+    "type": "Нейлоновая",
+    "strength": 25,
+    "diameter": 0.6,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 29
+  },
+  {
+    "name": "Mono Original - 55LB",
+    "type": "Нейлоновая",
+    "strength": 25,
+    "diameter": 0.6,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 85
+  },
+  {
+    "name": "Hybrid - 55LB",
+    "type": "Шнур",
+    "strength": 25,
+    "diameter": 0.38,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": 110,
+    "price": 25
+  },
+  {
+    "name": "Hybrid - 55LB",
+    "type": "Шнур",
+    "strength": 25,
+    "diameter": 0.38,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": null,
+    "price": 73
+  },
+  {
+    "name": "DevilBraid - 58LB",
+    "type": "Шнур",
+    "strength": 26.5,
+    "diameter": 0.34,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 72
+  },
+  {
+    "name": "DevilBraid - 58LB",
+    "type": "Шнур",
+    "strength": 26.5,
+    "diameter": 0.34,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 289
+  },
+  {
+    "name": "DevilBraid - 58LB",
+    "type": "Шнур",
+    "strength": 26.5,
+    "diameter": 0.34,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 577
+  },
+  {
+    "name": "Mono SS - 60LB",
+    "type": "Нейлоновая",
+    "strength": 27,
+    "diameter": 0.55,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 34
+  },
+  {
+    "name": "Mono SS - 60LB",
+    "type": "Нейлоновая",
+    "strength": 27,
+    "diameter": 0.55,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 133
+  },
+  {
+    "name": "HIPower Nylon 60LB",
+    "type": "Нейлоновая",
+    "strength": 27,
+    "diameter": 0.7,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 300,
+    "price": 199
+  },
+  {
+    "name": "HIPower Nylon 60LB",
+    "type": "Нейлоновая",
+    "strength": 27,
+    "diameter": 0.7,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 600,
+    "price": 379
+  },
+  {
+    "name": "HIPower Nylon 60LB",
+    "type": "Нейлоновая",
+    "strength": 27,
+    "diameter": 0.7,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 1200,
+    "price": 749
+  },
+  {
+    "name": "Super Braid - 60lb",
+    "type": "Шнур",
+    "strength": 27,
+    "diameter": 0.4,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 8.5
+  },
+  {
+    "name": "Leader Nylon 60LB",
+    "type": "Поводковый нейлон",
+    "strength": 27,
+    "diameter": 0.58,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 119.8
+  },
+  {
+    "name": "US Mono 3D 60LB",
+    "type": "Поводковый нейлон",
+    "strength": 27.2,
+    "diameter": 0.68,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 15,
+    "price": 63.9
+  },
+  {
+    "name": "Carp X HMT Mono 60LB",
+    "type": "Поводковый нейлон",
+    "strength": 27.2,
+    "diameter": 0.66,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 61.5
+  },
+  {
+    "name": "CarpX Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 27.2,
+    "diameter": 0.41,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 20,
+    "price": 67.8
+  },
+  {
+    "name": "US Braid 60LB",
+    "type": "Поводковый шнур",
+    "strength": 27.2,
+    "diameter": 0.4,
+    "colors": [
+      "transparent",
+      "green",
+      "red",
+      "orange"
+    ],
+    "size": 15,
+    "price": 88.9
+  },
+  {
+    "name": "Power Carbon 61LB",
+    "type": "Флюорокарбоновая",
+    "strength": 27.7,
+    "diameter": 0.7,
+    "colors": [
+      "white"
+    ],
+    "size": 100,
+    "price": 143
+  },
+  {
+    "name": "Power Carbon 61LB",
+    "type": "Флюорокарбоновая",
+    "strength": 27.7,
+    "diameter": 0.7,
+    "colors": [
+      "white"
+    ],
+    "size": 300,
+    "price": 287
+  },
+  {
+    "name": "ExtraSilk - 60LB",
+    "type": "Шнур",
+    "strength": 28,
+    "diameter": 0.38,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 47
+  },
+  {
+    "name": "ExtraSilk - 60LB",
+    "type": "Шнур",
+    "strength": 28,
+    "diameter": 0.38,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 139
+  },
+  {
+    "name": "Heavy Line 62LB",
+    "type": "Нейлоновая",
+    "strength": 28.2,
+    "diameter": 0.54,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 79
+  },
+  {
+    "name": "Heavy Line 62LB",
+    "type": "Нейлоновая",
+    "strength": 28.2,
+    "diameter": 0.54,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 157
+  },
+  {
+    "name": "Heavy Line 62LB",
+    "type": "Нейлоновая",
+    "strength": 28.2,
+    "diameter": 0.54,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 475
+  },
+  {
+    "name": "Ultra Line 62LB",
+    "type": "Нейлоновая",
+    "strength": 28.2,
+    "diameter": 0.6,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 108
+  },
+  {
+    "name": "Ultra Line 62LB",
+    "type": "Нейлоновая",
+    "strength": 28.2,
+    "diameter": 0.6,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 217
+  },
+  {
+    "name": "SL-Type Fluorocarbon 62LB",
+    "type": "Флюорокарбоновая",
+    "strength": 28.2,
+    "diameter": 0.7,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 149
+  },
+  {
+    "name": "Power Braid 63LB",
+    "type": "Шнур",
+    "strength": 28.5,
+    "diameter": 0.33,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 93
+  },
+  {
+    "name": "Power Braid 63LB",
+    "type": "Шнур",
+    "strength": 28.5,
+    "diameter": 0.33,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 187
+  },
+  {
+    "name": "Ultra Braid 64 LB",
+    "type": "Шнур",
+    "strength": 29.2,
+    "diameter": 0.34,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 120
+  },
+  {
+    "name": "Ultra Braid 64 LB",
+    "type": "Шнур",
+    "strength": 29.2,
+    "diameter": 0.34,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 240
+  },
+  {
+    "name": "DevilBraid - 66LB",
+    "type": "Шнур",
+    "strength": 30,
+    "diameter": 0.36,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 76
+  },
+  {
+    "name": "DevilBraid - 66LB",
+    "type": "Шнур",
+    "strength": 30,
+    "diameter": 0.36,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 299
+  },
+  {
+    "name": "DevilBraid - 66LB",
+    "type": "Шнур",
+    "strength": 30,
+    "diameter": 0.36,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 599
+  },
+  {
+    "name": "HIPower Braid 65LB",
+    "type": "Шнур",
+    "strength": 30,
+    "diameter": 0.38,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 229
+  },
+  {
+    "name": "HIPower Braid 65LB",
+    "type": "Шнур",
+    "strength": 30,
+    "diameter": 0.38,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 419
+  },
+  {
+    "name": "HIPower Braid 65LB",
+    "type": "Шнур",
+    "strength": 30,
+    "diameter": 0.38,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 789
+  },
+  {
+    "name": "HIPower Braid 65LB RGB",
+    "type": "Шнур",
+    "strength": 30,
+    "diameter": 0.38,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 266
+  },
+  {
+    "name": "HIPower Braid 65LB RGB",
+    "type": "Шнур",
+    "strength": 30,
+    "diameter": 0.38,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 464
+  },
+  {
+    "name": "HIPower Braid 65LB RGB",
+    "type": "Шнур",
+    "strength": 30,
+    "diameter": 0.38,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 928
+  },
+  {
+    "name": "Super Braid - 70lb",
+    "type": "Шнур",
+    "strength": 31,
+    "diameter": 0.44,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 8.8
+  },
+  {
+    "name": "US Mono 3D 70LB",
+    "type": "Поводковый нейлон",
+    "strength": 31.7,
+    "diameter": 0.75,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 15,
+    "price": 69.9
+  },
+  {
+    "name": "Carp X HMT Mono 70LB",
+    "type": "Поводковый нейлон",
+    "strength": 31.7,
+    "diameter": 0.74,
+    "colors": [
+      "transparent"
+    ],
+    "size": 20,
+    "price": 64.5
+  },
+  {
+    "name": "CarpX Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 31.7,
+    "diameter": 0.44,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 20,
+    "price": 69.8
+  },
+  {
+    "name": "US Braid 70LB",
+    "type": "Поводковый шнур",
+    "strength": 31.7,
+    "diameter": 0.43,
+    "colors": [
+      "transparent",
+      "green",
+      "red",
+      "orange"
+    ],
+    "size": 15,
+    "price": 91.9
+  },
+  {
+    "name": "Heavy Line 70LB",
+    "type": "Нейлоновая",
+    "strength": 32,
+    "diameter": 0.62,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 80
+  },
+  {
+    "name": "Heavy Line 70LB",
+    "type": "Нейлоновая",
+    "strength": 32,
+    "diameter": 0.62,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 159
+  },
+  {
+    "name": "Heavy Line 70LB",
+    "type": "Нейлоновая",
+    "strength": 32,
+    "diameter": 0.62,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 481
+  },
+  {
+    "name": "Ultra Braid 70 LB",
+    "type": "Шнур",
+    "strength": 32,
+    "diameter": 0.36,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 120
+  },
+  {
+    "name": "Ultra Braid 70 LB",
+    "type": "Шнур",
+    "strength": 32,
+    "diameter": 0.36,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 240
+  },
+  {
+    "name": "Carp Super Soft Braid 20LB",
+    "type": "Поводковый шнур",
+    "strength": 32.6,
+    "diameter": 0.46,
+    "colors": [
+      "green"
+    ],
+    "size": 20,
+    "price": 44.9
+  },
+  {
+    "name": "Ultra Line 72LB",
+    "type": "Нейлоновая",
+    "strength": 32.8,
+    "diameter": 0.7,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 109
+  },
+  {
+    "name": "Ultra Line 72LB",
+    "type": "Нейлоновая",
+    "strength": 32.8,
+    "diameter": 0.7,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 219
+  },
+  {
+    "name": "Mono SS - 72LB",
+    "type": "Нейлоновая",
+    "strength": 33,
+    "diameter": 0.7,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 36
+  },
+  {
+    "name": "Mono SS - 72LB",
+    "type": "Нейлоновая",
+    "strength": 33,
+    "diameter": 0.7,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 141
+  },
+  {
+    "name": "Hybrid - 72LB",
+    "type": "Шнур",
+    "strength": 33,
+    "diameter": 0.4,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": 110,
+    "price": 30
+  },
+  {
+    "name": "Hybrid - 72LB",
+    "type": "Шнур",
+    "strength": 33,
+    "diameter": 0.4,
+    "colors": [
+      "black",
+      "green"
+    ],
+    "size": null,
+    "price": 86
+  },
+  {
+    "name": "DevilBraid - 77LB",
+    "type": "Шнур",
+    "strength": 35,
+    "diameter": 0.38,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 79
+  },
+  {
+    "name": "DevilBraid - 77LB",
+    "type": "Шнур",
+    "strength": 35,
+    "diameter": 0.38,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 313
+  },
+  {
+    "name": "DevilBraid - 77LB",
+    "type": "Шнур",
+    "strength": 35,
+    "diameter": 0.38,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 625
+  },
+  {
+    "name": "SL-Type Fluorocarbon 77LB",
+    "type": "Флюорокарбоновая",
+    "strength": 35,
+    "diameter": 0.8,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 149
+  },
+  {
+    "name": "Mono Original - 80LB",
+    "type": "Нейлоновая",
+    "strength": 36,
+    "diameter": 0.85,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 100,
+    "price": 30
+  },
+  {
+    "name": "Mono Original - 80LB",
+    "type": "Нейлоновая",
+    "strength": 36,
+    "diameter": 0.85,
+    "colors": [
+      "transparent",
+      "white"
+    ],
+    "size": 350,
+    "price": 89
+  },
+  {
+    "name": "HIPower Nylon 80LB",
+    "type": "Нейлоновая",
+    "strength": 36,
+    "diameter": 0.8,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 300,
+    "price": 199
+  },
+  {
+    "name": "HIPower Nylon 80LB",
+    "type": "Нейлоновая",
+    "strength": 36,
+    "diameter": 0.8,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 600,
+    "price": 379
+  },
+  {
+    "name": "HIPower Nylon 80LB",
+    "type": "Нейлоновая",
+    "strength": 36,
+    "diameter": 0.8,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 1200,
+    "price": 749
+  },
+  {
+    "name": "Super Braid - 80lb",
+    "type": "Шнур",
+    "strength": 36,
+    "diameter": 0.48,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 13
+  },
+  {
+    "name": "Power Braid 79LB",
+    "type": "Шнур",
+    "strength": 36,
+    "diameter": 0.38,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 95
+  },
+  {
+    "name": "Power Braid 79LB",
+    "type": "Шнур",
+    "strength": 36,
+    "diameter": 0.38,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 190
+  },
+  {
+    "name": "HIPower Braid 80LB",
+    "type": "Шнур",
+    "strength": 36,
+    "diameter": 0.44,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 229
+  },
+  {
+    "name": "HIPower Braid 80LB",
+    "type": "Шнур",
+    "strength": 36,
+    "diameter": 0.44,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 419
+  },
+  {
+    "name": "HIPower Braid 80LB",
+    "type": "Шнур",
+    "strength": 36,
+    "diameter": 0.44,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 789
+  },
+  {
+    "name": "HIPower Braid 80LB RGB",
+    "type": "Шнур",
+    "strength": 36,
+    "diameter": 0.44,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 266
+  },
+  {
+    "name": "HIPower Braid 80LB RGB",
+    "type": "Шнур",
+    "strength": 36,
+    "diameter": 0.44,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 464
+  },
+  {
+    "name": "HIPower Braid 80LB RGB",
+    "type": "Шнур",
+    "strength": 36,
+    "diameter": 0.44,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 928
+  },
+  {
+    "name": "Leader Nylon 80LB",
+    "type": "Поводковый нейлон",
+    "strength": 36,
+    "diameter": 0.72,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 125.8
+  },
+  {
+    "name": "US Mono 3D 80LB",
+    "type": "Поводковый нейлон",
+    "strength": 36.2,
+    "diameter": 0.82,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 15,
+    "price": 74.9
+  },
+  {
+    "name": "US Braid 80LB",
+    "type": "Поводковый шнур",
+    "strength": 36.2,
+    "diameter": 0.46,
+    "colors": [
+      "transparent",
+      "green",
+      "red",
+      "orange"
+    ],
+    "size": 15,
+    "price": 94.9
+  },
+  {
+    "name": "Heavy Line 80LB",
+    "type": "Нейлоновая",
+    "strength": 36.4,
+    "diameter": 0.7,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 80
+  },
+  {
+    "name": "Heavy Line 80LB",
+    "type": "Нейлоновая",
+    "strength": 36.4,
+    "diameter": 0.7,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 161
+  },
+  {
+    "name": "Heavy Line 80LB",
+    "type": "Нейлоновая",
+    "strength": 36.4,
+    "diameter": 0.7,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 487
+  },
+  {
+    "name": "Power Braid 86LB",
+    "type": "Шнур",
+    "strength": 39,
+    "diameter": 0.42,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 95
+  },
+  {
+    "name": "Power Braid 86LB",
+    "type": "Шнур",
+    "strength": 39,
+    "diameter": 0.42,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 190
+  },
+  {
+    "name": "Super Braid - 90lb",
+    "type": "Шнур",
+    "strength": 40,
+    "diameter": 0.5,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 17.5
+  },
+  {
+    "name": "ExtraSilk - 90LB",
+    "type": "Шнур",
+    "strength": 40,
+    "diameter": 0.45,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 49
+  },
+  {
+    "name": "ExtraSilk - 90LB",
+    "type": "Шнур",
+    "strength": 40,
+    "diameter": 0.45,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 145
+  },
+  {
+    "name": "Leader Nylon 90LB",
+    "type": "Поводковый нейлон",
+    "strength": 41,
+    "diameter": 0.78,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 129.8
+  },
+  {
+    "name": "SL-Type Fluorocarbon 95LB",
+    "type": "Флюорокарбоновая",
+    "strength": 43.2,
+    "diameter": 0.9,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 149
+  },
+  {
+    "name": "Heavy Line 96LB",
+    "type": "Нейлоновая",
+    "strength": 43.6,
+    "diameter": 0.8,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 82
+  },
+  {
+    "name": "Heavy Line 96LB",
+    "type": "Нейлоновая",
+    "strength": 43.6,
+    "diameter": 0.8,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 165
+  },
+  {
+    "name": "Heavy Line 96LB",
+    "type": "Нейлоновая",
+    "strength": 43.6,
+    "diameter": 0.8,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 493
+  },
+  {
+    "name": "Mono SS - 100LB",
+    "type": "Нейлоновая",
+    "strength": 45,
+    "diameter": 0.9,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 38
+  },
+  {
+    "name": "Mono SS - 100LB",
+    "type": "Нейлоновая",
+    "strength": 45,
+    "diameter": 0.9,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 149
+  },
+  {
+    "name": "HIPower Nylon 100LB",
+    "type": "Нейлоновая",
+    "strength": 45,
+    "diameter": 1,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 300,
+    "price": 220
+  },
+  {
+    "name": "HIPower Nylon 100LB",
+    "type": "Нейлоновая",
+    "strength": 45,
+    "diameter": 1,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 600,
+    "price": 420
+  },
+  {
+    "name": "HIPower Nylon 100LB",
+    "type": "Нейлоновая",
+    "strength": 45,
+    "diameter": 1,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 1200,
+    "price": 820
+  },
+  {
+    "name": "Super Braid - 100lb",
+    "type": "Шнур",
+    "strength": 45,
+    "diameter": 0.55,
+    "colors": [
+      "blue",
+      "transparent",
+      "green"
+    ],
+    "size": 110,
+    "price": 26
+  },
+  {
+    "name": "Power Braid 99LB",
+    "type": "Шнур",
+    "strength": 45,
+    "diameter": 0.48,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 100,
+    "price": 99
+  },
+  {
+    "name": "Power Braid 99LB",
+    "type": "Шнур",
+    "strength": 45,
+    "diameter": 0.48,
+    "colors": [
+      "transparent",
+      "green"
+    ],
+    "size": 300,
+    "price": 199
+  },
+  {
+    "name": "HIPower Braid 100LB",
+    "type": "Шнур",
+    "strength": 45,
+    "diameter": 0.5,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 239
+  },
+  {
+    "name": "HIPower Braid 100LB",
+    "type": "Шнур",
+    "strength": 45,
+    "diameter": 0.5,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 429
+  },
+  {
+    "name": "HIPower Braid 100LB",
+    "type": "Шнур",
+    "strength": 45,
+    "diameter": 0.5,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 810
+  },
+  {
+    "name": "HIPower Braid 100LB RGB",
+    "type": "Шнур",
+    "strength": 45,
+    "diameter": 0.5,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 279
+  },
+  {
+    "name": "HIPower Braid 100LB RGB",
+    "type": "Шнур",
+    "strength": 45,
+    "diameter": 0.5,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 487
+  },
+  {
+    "name": "HIPower Braid 100LB RGB",
+    "type": "Шнур",
+    "strength": 45,
+    "diameter": 0.5,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 974
+  },
+  {
+    "name": "Leader Nylon 100LB",
+    "type": "Поводковый нейлон",
+    "strength": 45,
+    "diameter": 0.84,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 134.8
+  },
+  {
+    "name": "Heavy Line 108LB",
+    "type": "Нейлоновая",
+    "strength": 49,
+    "diameter": 0.9,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 84
+  },
+  {
+    "name": "Heavy Line 108LB",
+    "type": "Нейлоновая",
+    "strength": 49,
+    "diameter": 0.9,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 169
+  },
+  {
+    "name": "Heavy Line 108LB",
+    "type": "Нейлоновая",
+    "strength": 49,
+    "diameter": 0.9,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 505
+  },
+  {
+    "name": "DevilBraid - 120LB",
+    "type": "Шнур",
+    "strength": 55,
+    "diameter": 0.5,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 85
+  },
+  {
+    "name": "DevilBraid - 120LB",
+    "type": "Шнур",
+    "strength": 55,
+    "diameter": 0.5,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 337
+  },
+  {
+    "name": "DevilBraid - 120LB",
+    "type": "Шнур",
+    "strength": 55,
+    "diameter": 0.5,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 673
+  },
+  {
+    "name": "SL-Type Fluorocarbon 121LB",
+    "type": "Флюорокарбоновая",
+    "strength": 55,
+    "diameter": 1,
+    "colors": [
+      "transparent"
+    ],
+    "size": 30,
+    "price": 199
+  },
+  {
+    "name": "Mono SS - 123LB",
+    "type": "Нейлоновая",
+    "strength": 56,
+    "diameter": 1.2,
+    "colors": [
+      "blue"
+    ],
+    "size": 100,
+    "price": 40
+  },
+  {
+    "name": "Mono SS - 123LB",
+    "type": "Нейлоновая",
+    "strength": 56,
+    "diameter": 1.2,
+    "colors": [
+      "blue"
+    ],
+    "size": 500,
+    "price": 157
+  },
+  {
+    "name": "Ultra Braid 128 LB",
+    "type": "Шнур",
+    "strength": 58,
+    "diameter": 0.5,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 125
+  },
+  {
+    "name": "Ultra Braid 128 LB",
+    "type": "Шнур",
+    "strength": 58,
+    "diameter": 0.5,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 250
+  },
+  {
+    "name": "Heavy Line 132LB",
+    "type": "Нейлоновая",
+    "strength": 60,
+    "diameter": 1,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 89
+  },
+  {
+    "name": "Heavy Line 132LB",
+    "type": "Нейлоновая",
+    "strength": 60,
+    "diameter": 1,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 179
+  },
+  {
+    "name": "Heavy Line 132LB",
+    "type": "Нейлоновая",
+    "strength": 60,
+    "diameter": 1,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 535
+  },
+  {
+    "name": "HIPower Nylon 130LB",
+    "type": "Нейлоновая",
+    "strength": 60,
+    "diameter": 1.1,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 300,
+    "price": 220
+  },
+  {
+    "name": "HIPower Nylon 130LB",
+    "type": "Нейлоновая",
+    "strength": 60,
+    "diameter": 1.1,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 600,
+    "price": 420
+  },
+  {
+    "name": "HIPower Nylon 130LB",
+    "type": "Нейлоновая",
+    "strength": 60,
+    "diameter": 1.1,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 1200,
+    "price": 820
+  },
+  {
+    "name": "Heavy Braid 132LB",
+    "type": "Шнур",
+    "strength": 60,
+    "diameter": 0.5,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 100,
+    "price": 115
+  },
+  {
+    "name": "Heavy Braid 132LB",
+    "type": "Шнур",
+    "strength": 60,
+    "diameter": 0.5,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 300,
+    "price": 230
+  },
+  {
+    "name": "Heavy Braid 132LB",
+    "type": "Шнур",
+    "strength": 60,
+    "diameter": 0.5,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 689
+  },
+  {
+    "name": "HIPower Braid 130LB",
+    "type": "Шнур",
+    "strength": 60,
+    "diameter": 0.54,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 239
+  },
+  {
+    "name": "HIPower Braid 130LB",
+    "type": "Шнур",
+    "strength": 60,
+    "diameter": 0.54,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 429
+  },
+  {
+    "name": "HIPower Braid 130LB",
+    "type": "Шнур",
+    "strength": 60,
+    "diameter": 0.54,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 810
+  },
+  {
+    "name": "HIPower Braid 130LB RGB",
+    "type": "Шнур",
+    "strength": 60,
+    "diameter": 0.54,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 279
+  },
+  {
+    "name": "HIPower Braid 130LB RGB",
+    "type": "Шнур",
+    "strength": 60,
+    "diameter": 0.54,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 487
+  },
+  {
+    "name": "HIPower Braid 130LB RGB",
+    "type": "Шнур",
+    "strength": 60,
+    "diameter": 0.54,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 974
+  },
+  {
+    "name": "Leader Nylon 130LB",
+    "type": "Поводковый нейлон",
+    "strength": 60,
+    "diameter": 0.96,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 139.8
+  },
+  {
+    "name": "ExtraSilk - 140LB",
+    "type": "Шнур",
+    "strength": 65,
+    "diameter": 0.6,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 120,
+    "price": 50
+  },
+  {
+    "name": "ExtraSilk - 140LB",
+    "type": "Шнур",
+    "strength": 65,
+    "diameter": 0.6,
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "size": 350,
+    "price": 148
+  },
+  {
+    "name": "DevilBraid - 160LB",
+    "type": "Шнур",
+    "strength": 74,
+    "diameter": 0.58,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 100,
+    "price": 89
+  },
+  {
+    "name": "DevilBraid - 160LB",
+    "type": "Шнур",
+    "strength": 74,
+    "diameter": 0.58,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 450,
+    "price": 353
+  },
+  {
+    "name": "DevilBraid - 160LB",
+    "type": "Шнур",
+    "strength": 74,
+    "diameter": 0.58,
+    "colors": [
+      "green",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 699
+  },
+  {
+    "name": "HIPower Nylon 170LB",
+    "type": "Нейлоновая",
+    "strength": 77,
+    "diameter": 1.25,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 300,
+    "price": 240
+  },
+  {
+    "name": "HIPower Nylon 170LB",
+    "type": "Нейлоновая",
+    "strength": 77,
+    "diameter": 1.25,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 600,
+    "price": 460
+  },
+  {
+    "name": "HIPower Nylon 170LB",
+    "type": "Нейлоновая",
+    "strength": 77,
+    "diameter": 1.25,
+    "colors": [
+      "yellow",
+      "orange",
+      "transparent"
+    ],
+    "size": 1200,
+    "price": 899
+  },
+  {
+    "name": "Heavy Line 170LB",
+    "type": "Нейлоновая",
+    "strength": 77.5,
+    "diameter": 1.2,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 100,
+    "price": 95
+  },
+  {
+    "name": "Heavy Line 170LB",
+    "type": "Нейлоновая",
+    "strength": 77.5,
+    "diameter": 1.2,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 300,
+    "price": 191
+  },
+  {
+    "name": "Heavy Line 170LB",
+    "type": "Нейлоновая",
+    "strength": 77.5,
+    "diameter": 1.2,
+    "colors": [
+      "orange",
+      "transparent",
+      "green",
+      "violet"
+    ],
+    "size": 1000,
+    "price": 571
+  },
+  {
+    "name": "Ultra Braid 176 LB",
+    "type": "Шнур",
+    "strength": 80,
+    "diameter": 0.58,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 100,
+    "price": 140
+  },
+  {
+    "name": "Ultra Braid 176 LB",
+    "type": "Шнур",
+    "strength": 80,
+    "diameter": 0.58,
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "size": 300,
+    "price": 280
+  },
+  {
+    "name": "Leader Nylon 175LB",
+    "type": "Поводковый нейлон",
+    "strength": 80,
+    "diameter": 1.18,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 145.8
+  },
+  {
+    "name": "HIPower Braid 180LB",
+    "type": "Шнур",
+    "strength": 82,
+    "diameter": 0.6,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 249
+  },
+  {
+    "name": "HIPower Braid 180LB",
+    "type": "Шнур",
+    "strength": 82,
+    "diameter": 0.6,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 439
+  },
+  {
+    "name": "HIPower Braid 180LB",
+    "type": "Шнур",
+    "strength": 82,
+    "diameter": 0.6,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 830
+  },
+  {
+    "name": "HIPower Braid 180LB RGB",
+    "type": "Шнур",
+    "strength": 82,
+    "diameter": 0.6,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 299
+  },
+  {
+    "name": "HIPower Braid 180LB RGB",
+    "type": "Шнур",
+    "strength": 82,
+    "diameter": 0.6,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 520
+  },
+  {
+    "name": "HIPower Braid 180LB RGB",
+    "type": "Шнур",
+    "strength": 82,
+    "diameter": 0.6,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 1044
+  },
+  {
+    "name": "Heavy Braid 185LB",
+    "type": "Шнур",
+    "strength": 84,
+    "diameter": 0.58,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 100,
+    "price": 126
+  },
+  {
+    "name": "Heavy Braid 185LB",
+    "type": "Шнур",
+    "strength": 84,
+    "diameter": 0.58,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 300,
+    "price": 250
+  },
+  {
+    "name": "Heavy Braid 185LB",
+    "type": "Шнур",
+    "strength": 84,
+    "diameter": 0.58,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 749
+  },
+  {
+    "name": "Leader Nylon 200LB",
+    "type": "Поводковый нейлон",
+    "strength": 91,
+    "diameter": 1.28,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 149.8
+  },
+  {
+    "name": "Heavy Braid 242LB",
+    "type": "Шнур",
+    "strength": 110,
+    "diameter": 0.64,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 100,
+    "price": 150
+  },
+  {
+    "name": "Heavy Braid 242LB",
+    "type": "Шнур",
+    "strength": 110,
+    "diameter": 0.64,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 300,
+    "price": 300
+  },
+  {
+    "name": "Heavy Braid 242LB",
+    "type": "Шнур",
+    "strength": 110,
+    "diameter": 0.64,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 890
+  },
+  {
+    "name": "HIPower Braid 240LB",
+    "type": "Шнур",
+    "strength": 110,
+    "diameter": 0.66,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 318
+  },
+  {
+    "name": "HIPower Braid 240LB",
+    "type": "Шнур",
+    "strength": 110,
+    "diameter": 0.66,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 599
+  },
+  {
+    "name": "HIPower Braid 240LB",
+    "type": "Шнур",
+    "strength": 110,
+    "diameter": 0.66,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 1149
+  },
+  {
+    "name": "HIPower Braid 240LB RGB",
+    "type": "Шнур",
+    "strength": 110,
+    "diameter": 0.66,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 379
+  },
+  {
+    "name": "HIPower Braid 240LB RGB",
+    "type": "Шнур",
+    "strength": 110,
+    "diameter": 0.66,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 660
+  },
+  {
+    "name": "HIPower Braid 240LB RGB",
+    "type": "Шнур",
+    "strength": 110,
+    "diameter": 0.66,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 1324
+  },
+  {
+    "name": "Leader Nylon 250LB",
+    "type": "Поводковый нейлон",
+    "strength": 113,
+    "diameter": 1.38,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 159.8
+  },
+  {
+    "name": "Leader Nylon 300LB",
+    "type": "Поводковый нейлон",
+    "strength": 136,
+    "diameter": 1.5,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 179.8
+  },
+  {
+    "name": "HIPower Braid 320LB",
+    "type": "Шнур",
+    "strength": 145,
+    "diameter": 0.7,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 380
+  },
+  {
+    "name": "HIPower Braid 320LB",
+    "type": "Шнур",
+    "strength": 145,
+    "diameter": 0.7,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 749
+  },
+  {
+    "name": "HIPower Braid 320LB",
+    "type": "Шнур",
+    "strength": 145,
+    "diameter": 0.7,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 1399
+  },
+  {
+    "name": "HIPower Braid 320LB RGB",
+    "type": "Шнур",
+    "strength": 145,
+    "diameter": 0.7,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 439
+  },
+  {
+    "name": "HIPower Braid 320LB RGB",
+    "type": "Шнур",
+    "strength": 145,
+    "diameter": 0.7,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 800
+  },
+  {
+    "name": "HIPower Braid 320LB RGB",
+    "type": "Шнур",
+    "strength": 145,
+    "diameter": 0.7,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 1534
+  },
+  {
+    "name": "Heavy Braid 326LB",
+    "type": "Шнур",
+    "strength": 148,
+    "diameter": 0.7,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 100,
+    "price": 179
+  },
+  {
+    "name": "Heavy Braid 326LB",
+    "type": "Шнур",
+    "strength": 148,
+    "diameter": 0.7,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 300,
+    "price": 360
+  },
+  {
+    "name": "Heavy Braid 326LB",
+    "type": "Шнур",
+    "strength": 148,
+    "diameter": 0.7,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 989
+  },
+  {
+    "name": "Leader Nylon 400LB",
+    "type": "Поводковый нейлон",
+    "strength": 181,
+    "diameter": 1.8,
+    "colors": [
+      "transparent"
+    ],
+    "size": 50,
+    "price": 199.8
+  },
+  {
+    "name": "Heavy Braid 420LB",
+    "type": "Шнур",
+    "strength": 190.6,
+    "diameter": 0.78,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 100,
+    "price": 200
+  },
+  {
+    "name": "Heavy Braid 420LB",
+    "type": "Шнур",
+    "strength": 190.6,
+    "diameter": 0.78,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 300,
+    "price": 397
+  },
+  {
+    "name": "Heavy Braid 420LB",
+    "type": "Шнур",
+    "strength": 190.6,
+    "diameter": 0.78,
+    "colors": [
+      "white",
+      "orange"
+    ],
+    "size": 1000,
+    "price": 1255
+  },
+  {
+    "name": "HIPower Braid 450LB",
+    "type": "Шнур",
+    "strength": 205,
+    "diameter": 0.8,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 300,
+    "price": 449
+  },
+  {
+    "name": "HIPower Braid 450LB",
+    "type": "Шнур",
+    "strength": 205,
+    "diameter": 0.8,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 600,
+    "price": 849
+  },
+  {
+    "name": "HIPower Braid 450LB",
+    "type": "Шнур",
+    "strength": 205,
+    "diameter": 0.8,
+    "colors": [
+      "green",
+      "yellow",
+      "white"
+    ],
+    "size": 1200,
+    "price": 1599
+  },
+  {
+    "name": "HIPower Braid 450LB RGB",
+    "type": "Шнур",
+    "strength": 205,
+    "diameter": 0.8,
+    "colors": [
+      "gradient"
+    ],
+    "size": 300,
+    "price": 499
+  },
+  {
+    "name": "HIPower Braid 450LB RGB",
+    "type": "Шнур",
+    "strength": 205,
+    "diameter": 0.8,
+    "colors": [
+      "gradient"
+    ],
+    "size": 600,
+    "price": 900
+  },
+  {
+    "name": "HIPower Braid 450LB RGB",
+    "type": "Шнур",
+    "strength": 205,
+    "diameter": 0.8,
+    "colors": [
+      "gradient"
+    ],
+    "size": 1200,
+    "price": 1744
+  }
+]

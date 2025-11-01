@@ -5,6 +5,7 @@ import { seaConfig } from './sea.config'
 import { spinreelsConfig } from './spinreels.config'
 import { powerreelsConfig } from './powerreels.config'
 import { baitcastreelsConfig } from './baitcastreels.config'
+import { braidsConfig } from './braids.config'
 
 export { spiningsConfig } from './spinings.config'
 export { feedersConfig } from './feeders.config'
@@ -13,6 +14,7 @@ export { seaConfig } from './sea.config'
 export { spinreelsConfig } from './spinreels.config'
 export { powerreelsConfig } from './powerreels.config'
 export { baitcastreelsConfig } from './baitcastreels.config'
+export { braidsConfig } from './braids.config'
 
 export const allDataSources = [
   spiningsConfig,
@@ -22,5 +24,6 @@ export const allDataSources = [
   spinreelsConfig,
   powerreelsConfig,
   baitcastreelsConfig,
+  braidsConfig,
 ] as const
 

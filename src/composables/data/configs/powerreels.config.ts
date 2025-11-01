@@ -5,6 +5,7 @@ import * as powerReels from '@/assets/mock/RF4-power.json'
 export const powerreelsConfig: DataSourceConfig = {
   id: 'powerreels',
   label: 'Силовые катушки',
+  groupType: 'Катушки',
   data: (powerReels as any).default || [],
   columns: [
     {
@@ -50,6 +51,7 @@ export const powerreelsConfig: DataSourceConfig = {
       filterType: 'range',
       step: 0.1,
       sortable: true,
+      comparisonType: 'more-is-better',
     },
     {
       key: 'mech',
@@ -58,6 +60,7 @@ export const powerreelsConfig: DataSourceConfig = {
       step: 0.1,
       sortable: true,
       cellFormatter: (val) => val || 'нет данных',
+      comparisonType: 'more-is-better',
     },
     {
       key: 'sealed',
@@ -72,6 +75,7 @@ export const powerreelsConfig: DataSourceConfig = {
       step: 1,
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
     {
       key: 'gold',
@@ -79,6 +83,7 @@ export const powerreelsConfig: DataSourceConfig = {
       filterType: 'none',
       sortable: true,
       cellFormatter: (val) => val || '—',
+      comparisonType: 'less-is-better',
     },
   ],
   defaultPageSize: 50,
