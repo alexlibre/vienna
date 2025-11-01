@@ -144,64 +144,6 @@
             </div>
         </div>
 
-        <!-- Таблица сравнения выбранных строк -->
-        <div v-if="table && selectedRowsForComparison.length > 0"
-            class="px-4 mt-8">
-            <div class="flex items-center justify-between mb-4">
-                <div class="flex items-baseline gap-2">
-                    <h3 class="text-lg font-semibold">
-                        Сравнение ({{ selectedRowsForComparison.length }})
-                    </h3>
-                    <Button class="p-0 h-[14px] text-red-500"
-                        size="sm"
-                        variant="link"
-                        @click="deselectAllRows()">
-                        Очистить
-                    </Button>
-                </div>
-                <div class="flex gap-2 items-center">
-                        <Label for="comparison"
-                            class="cursor-pointer">Только отличающиеся</Label>
-                        <Switch id="comparison"
-                            class="cursor-pointer"
-                        :model-value="comparisonOnlyDifferent"
-                        @update:modelValue="(value) => {
-                            comparisonOnlyDifferent = !!value
-                        }" />
-                    </div>
-            </div>
-            <div class="rounded-md border overflow-x-auto">
-                <Table class="text-xs">
-                    <TableHeader>
-                        <TableRow>
-                            <TableHead class="sticky left-0 bg-primary-foreground z-[9] min-w-[150px]">
-                                {{ config.groupType }}
-                            </TableHead>
-                            <TableHead v-for="row in selectedRowsForComparison"
-                                :key="row.id"
-                                class="min-w-[120px] text-center">
-                                {{ getRowName(row) }}
-                            </TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        <TableRow v-for="columnConfig in filteredColumnsForComparison"
-                            :key="columnConfig.key">
-                            <TableCell class="sticky left-0 bg-primary-foreground z-[9] font-medium">
-                                {{ columnConfig.label }}
-                            </TableCell>
-                            <TableCell v-for="row in selectedRowsForComparison"
-                                :key="`${row.id}-${columnConfig.key}`">
-                                <ComparisonCell :value="row.original[columnConfig.key]"
-                                    :config="columnConfig"
-                                    :all-values="selectedRowsForComparison.map(r => r.original[columnConfig.key])" />
-                            </TableCell>
-                        </TableRow>
-                    </TableBody>
-                </Table>
-            </div>
-        </div>
-
         <div class="flex items-center justify-end space-x-2 p-4">
             <div class="flex-1 text-sm text-muted-foreground">
                 <p>
@@ -245,6 +187,65 @@
                         Вперед
                     </Button>
                 </div>
+            </div>
+        </div>
+
+        
+        <!-- Таблица сравнения выбранных строк -->
+        <div v-if="table && selectedRowsForComparison.length > 0"
+            class="px-4 mt-8">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-baseline gap-2">
+                    <h3 class="text-lg font-semibold">
+                        Сравнение ({{ selectedRowsForComparison.length }})
+                    </h3>
+                    <Button class="p-0 h-[14px] text-red-500"
+                        size="sm"
+                        variant="link"
+                        @click="deselectAllRows()">
+                        Очистить
+                    </Button>
+                </div>
+                <div class="flex gap-2 items-center">
+                        <Label for="comparison"
+                            class="cursor-pointer">Только отличающиеся</Label>
+                        <Switch id="comparison"
+                            class="cursor-pointer"
+                        :model-value="comparisonOnlyDifferent"
+                        @update:modelValue="(value) => {
+                            comparisonOnlyDifferent = !!value
+                        }" />
+                    </div>
+            </div>
+            <div class="rounded-md border overflow-x-auto">
+                <Table class="text-xs">
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead class="sticky left-0 bg-primary-foreground z-[9] min-w-[150px]">
+                                {{ config.groupType }}
+                            </TableHead>
+                            <TableHead v-for="row in selectedRowsForComparison"
+                                :key="row.id"
+                                class="min-w-[120px] text-center">
+                                {{ getRowName(row) }}
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        <TableRow v-for="columnConfig in filteredColumnsForComparison"
+                            :key="columnConfig.key" class="hover:border-b hover:border-red-500">
+                            <TableCell class="sticky left-0 bg-primary-foreground z-[9] font-medium">
+                                {{ columnConfig.label }}
+                            </TableCell>
+                            <TableCell v-for="row in selectedRowsForComparison"
+                                :key="`${row.id}-${columnConfig.key}`">
+                                <ComparisonCell :value="row.original[columnConfig.key]"
+                                    :config="columnConfig"
+                                    :all-values="selectedRowsForComparison.map(r => r.original[columnConfig.key])" />
+                            </TableCell>
+                        </TableRow>
+                    </TableBody>
+                </Table>
             </div>
         </div>
     </TabsContent>
@@ -763,5 +764,6 @@ const getRowName = (row: any): string => {
 const deselectAllRows = () => {
     rowSelection.value = {}
 }
+
 </script>
 

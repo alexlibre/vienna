@@ -9,13 +9,10 @@
                     :style="getColorStyle(color)" />
             </div>
         </template>
-        <template v-else-if="value !== null && value !== undefined">
+        <template v-else>
             <div class="text-center">
                 {{ formattedValue }}
             </div>
-        </template>
-        <template v-else>
-            —
         </template>
     </div>
 </template>
@@ -83,12 +80,34 @@ const isColorsArray = computed(() => {
 })
 
 const formattedValue = computed(() => {
-    if (props.config.cellFormatter) {
-        return props.config.cellFormatter(props.value)
+    // Пустые значения - показываем "—"
+    if (props.value === null || props.value === undefined || props.value === '') {
+        return '—'
     }
+    
+    // True - показываем "+"
+    if (props.value === true || props.value === 'true') {
+        return '+'
+    }
+    
+    // Если есть форматтер, используем его
+    if (props.config.cellFormatter) {
+        const formatted = props.config.cellFormatter(props.value)
+        // Проверяем результат форматтера на пустоту
+        if (formatted === null || formatted === undefined || formatted === '') {
+            return '—'
+        }
+        return formatted
+    }
+    
+    // Массивы - объединяем через запятую
     if (props.config.isArray && Array.isArray(props.value)) {
+        if (props.value.length === 0) {
+            return '—'
+        }
         return props.value.join(', ')
     }
+    
     return String(props.value)
 })
 
